@@ -1,0 +1,128 @@
+1,knife_shaft,Holds the knife blade and serves as a mounting point for the grip.
+
+2,cutting_edge,A reinforced strip of material honed to a knife edge.
+3,grip,"A semi-textured and shaped section of the weapon, built to serve as a grabbing point from which to thrust and swing it."
+4,grip_cap,A cover for a tinyl compartment used to store built-in items to maintain the weapon.
+5,staff_shaft,"Primary functional part of the staff, it is rigid yet remains slightly flexible, increasing its durability and ability to do damage."
+6,axe_head,A solid and weighty chunk of material which mounts to a shaft and which has a cutting edge on its striking-face.
+7,shaft,Serves as the handle for swinging a weapon.
+8,axe_head_fastener,Holds the axe head onto the shaft it is attached to.
+9,blaster_pistol_barrel,A metal tube that focuses and directs the energy from a blaster towards its intended target.
+10,blaster_rifle_barrel,A metal tube that focuses and directs the energy from a blaster rifle towards its intended target.
+11,blaster_power_handler,This regulates a blaster's power output.
+12,chemical_dispersion_mechanism,This mechanism is responsible for a weapon's chemical dispersion.
+13,energization_crystals,Energization crystals can greatly increase the effectiveness of laser and blaster weapons.
+14,galven_tube_circuits,"These galven circuits help maintain a laser beam's cohesion over incredible distances.  These circuits are placed inside of a galven tube alongside galven coils, in line with the laser barrel.   Regular blasters generally have a more simplified version of this technology, compared to what is required for laser weaponry."
+15,laser_cannon_cooling_sleeve,"Laser cannons generate excessive heat while in use, and cooling sleeves are an important part of the sophisticated cooling system that is used to protect sensitive internal components."
+16,laser_cannon_gun_tube,A gun-tube for a laser cannon.
+17,laser_generator,A laser generator is the most common source of energy for laser cannons.
+18,laser_magnetic_flashback_supressor,"A crescent-shaped device at the end of some laser barrels, a flashback suppressor is designed to prevent occasionally unstable laser beams from damaging the barrel."
+19,parallel_weapon_targeting_computer,This targeting computer is designed to be used with weapons that have been placed parallel to each other on one mount.
+20,projectile_feed_mechanism,A projectile weapon's feed mechanism.
+21,projectile_pistol_barrel,Projectile pistol barrels guide and direct projectiles that are propelled via a pistol's firing mechanism.
+22,projectile_rifle_barrel,Projectile rifle barrels guide and direct projectiles that are propelled via a rifle's firing mechanism.
+23,scope_weapon,A weapon's scope can increase its accuracy.
+24,stock_unit,This is a stock for a rifle.
+25,sword_core,This is the main body of a sword's blade.
+26,turbo_laser_gun_tube,This is the gun tube for a turbolaser.
+27,blade_vibro_unit,"This vibro-unit will turn a normal blade into a much more destructive weapon by creating thousands of microscopic vibrations a second, greatly improving its cutting ability."
+28,weapon_mount,A mount that allows a weapon to be attached to it.
+29,weapon_mount_light,A mount for use with lighter weapons.
+30,weapon_targeting_computer,"A weapon's targeting computer helps determine the range to the target, and can greatly help a gunner's accuracy."
+31,weapon_trajectory_computer,A weapon's trajectory computer can help determine the trajectory of a target.
+32,cartridge_feed_mechanism,This mechanism feeds a weapon from its cartridge.
+33,trigger_pulse_prism,A trigger pulse prism.
+34,prism_mount,A prism mount.
+35,fusing_module_casing,A fusing module casing.
+36,insulation,Some insulation.
+37,warhead_and_control_coupling,This is coupling for the warhead and its control unit.
+38,scope_schell,The shell of a weapon scope.
+39,scope_shell,The shell of a weapon scope.
+40,projectile,"A shaped hunk of metal, for use in making projectile ammunition."
+41,cartridge_casing,A cartridge casing.
+42,propulsive_charge,"A propulsive charge, when properly used, can accelerate projectiles at incredible speeds."
+43,neutralization_material,Biological neutralization material.
+44,grip_unit,A grip unit.
+45,lance_shaft,A lance blade-shaft's assembly.
+46,power_circuits,Power circuits.
+47,axe_base,An axe base.
+48,enclosure_shell,An enclosure shell.
+49,blaster_power_handler_advanced,This advanced power handler is suited for more powerful blasters.
+50,projectile_feed_mechanism_advanced,An advanced feed mechanism for projectile weapons.
+51,projectile_pistol_barrel_advanced,Projectile pistol barrels guide and direct projectiles that are propelled via a pistol's firing mechanism.  This is an advanced barrel design.
+52,scope_weapon_advanced,"A weapon's scope can increase its accuracy.  This is an advanced scope design, and is more effective than a standard scope."
+53,stock_unit_advanced,This is an advanced stock for a rifle.
+54,blaster_rifle_barrel_advanced,"A metal tube that focuses and directs the energy from a blaster rifle towards its intended target.  This is an advanced barrel design, and is more effective than the basic barrel."
+55,chemical_dispersion_mechanism_advanced,This mechanism is responsible for a weapon's chemical dispersion.  This is an advanced design and allows for a greater effect.
+56,sword_core_advanced,This is the main body of a sword's blade.  This advanced design allows for a stronger sword.
+57,projectile_rifle_barrel_advanced,Projectile rifle barrels guide and direct projectiles that are propelled via a rifle's firing mechanism.  This is an advanced barrel design.
+58,blade_vibro_unit_advanced,An advanced Vibro Blade unit
+59,blaster_power_handler_enhancement,This unit can be added to a Blaster Power Handler to improve any weapons made with it.
+60,projectile_feed_mechanism_enhancement,This unit can be added to a Projectile Feed Mechanism to improve any weapons made with it.
+61,blade_vibro_unit_enhancementgg,This unit can be added to a Vibro Blade Unit to improve any weapons made with it.
+62,blaster_power_handler_enhancement_durability,When used in a Blaster Power Handler this Heavy Duty Power Converter gives weapons a much longer usage time before failing due to burn-out.
+63,projectile_feed_mechanism_enhancement_durability,This Heavy Duty Feed Mechanism can be used in the construction of Projectile Feed Mechanisms to extend the usable lifespan of a weapon.
+64,blade_vibro_unit_enhancement_durability,Vibro Blade Units made with this Heavy Duty Vibro Motor last much longer than standard units.
+65,blade_vibro_unit_enhancement_wounding,A Weaponsmith can incorporate this High Frequency Vibro Motor into a Vibro Blade Unit to create weapons that cause devastating wounds to an enemy.
+66,projectile_feed_mechanism_enhancement_max_damage,When incorporated into a Projectile Feed Mechanism this High Velocity Feed Mechanism gives weapons a much higher damage capacity.
+67,blade_vibro_unit_enhancement_max_damage,This High Powered Vibro Motor can be added to a Vibro Blade Unit to create weapons with higher damage potentials.
+68,blaster_power_handler_enhancement_max_damage,A High Powered Energy Capacitor can be added to a Blaster Power Handler to create weapons with a much higher damage potential.
+69,projectile_feed_mechanism_enhancement_min_damage,This Balanced Feed Mechanism can be used in the creation of a Projectile Feed Mechanism to give a weapon a higher average damage output.
+70,blaster_power_handler_enhancement_min_damage,This Large Energy Capacitor gives a Blaster Power Handler a higher sustained energy output resulting in weapons with a higher average damage rate.
+71,blade_vibro_unit_enhancement_min_damage,This Finely Tuned Vibro Motor causes a steadier vibro output of Vibro Blade Units made with it resulting in a higher average damage output.
+72,reinforcement_core,A frame used to strengthen melee weapons.
+73,reinforcement_core_advanced,An advanced reinforcement core for melee weapons.
+75,krayt_dragon_pearl,"A gizzard stone used by the Krayt Dragon to help it digest its food. The stone, is a lustrous, milky color and can be tuned by a Jedi for use as a focusing crystal in a lightsaber.  This pearl must be tuned by a Jedi before use.  Once tuned this pearl becomes a part of the lightsabers focusing device and can only be used in a lightsaber by the Jedi who tuned it."
+76,force_crystal,"A Force Crystal, used by Jedi in their lightsabers.  This crystal must be tuned by a Jedi before use.  Once tuned this crystal becomes a focusing crystal and can only be used in a lightsaber by the Jedi who tuned it."
+77,misc_saber_upgrade_module,This slot is for any of the various types of lightsaber modules that you want to use to change its properties or capabilities. Modules for increasing the damage done and changing the color of the blade are examples of the types of modules that might be used to fill this ingredient slot.
+78,projectile_feed_mechanism_enhancement_gorax,Bone shards taken from a Gorax.
+79,lance_force_crystal,"A Force Crystal, used by Jedi in their lightsabers.  This crystal must be tuned by a Jedi before use.  Once tuned this crystal becomes a focusing crystal and can only be used in a lightsaber by the Jedi who tuned it."
+80,refined_crystal_pack,A prepared crystal and mount used to form the foundation of a lightsaber.
+81,blaster_pistol_barrel_advanced,A more powerful version of the standard Blaster Pistol Barrel.  This can be used to craft exceptionally damaging blaster pistols.
+82,blade_vibro_unit_nightsister,A Nightsister Vibro Blade unit.
+83,lance_nightsister_schematic,This document contains the information necessary to craft a Nightsister Energy Lance.
+84,shield_generator_personal_imperial_test_schematic,This data disk contains the schematic for a new Imperial personal shield prototype.
+85,quest_stimpack_a_schematic,Blueprint for a experimental stimpack not yet available to the general public.
+86,quest_stimpack_a,A experimental stimpack not yet available to the general public.
+87,acklay_bone_reinforcement_core,These Acklay bones could make an effective reinforcement core.
+88,acklay_bone_segment_schematic,A study of the Acklay's bone structure provides insights into the methods of constructing a stronger bone armor segment.
+89,acklay_muscle_weaving_schematic,A study of the Acklay's muscle structure provides insights into the methods of constructing a better R. I. S. armor segment.
+90,geonosian_power_cube,A power cube used to increase the effectiveness of the Geonosian items.  This one is white.
+91,geonosian_power_cube_red,A power cube used to increase the effectiveness of the Geonosian items.  This one is red.
+92,geonosian_power_cube_yellow,A power cube used to increase the effectiveness of the Geonosian items.  This one is yellow.
+93,geonosian_power_cube_green,A power cube used to increase the effectiveness of the Geonosian items.  This one is green.
+94,geonosian_reinforcement_core,A Geonosian style reinforcement core.
+95,geonosian_reinforcement_core_schematic,A schematic for making reinforcement cores in the Geonosian style.
+96,geonosian_solidifying_agent,A solidifying agent used by the Geonosians to increase the effectiveness of their weapons.
+97,geonosian_sonic_blaster_schematic,A schematic for making Geonosian Sonic Blasters.
+98,geonosian_sword_core,A Geonosian style sword core.
+99,geonosian_sword_core_schematic,A schematic for making sword cores in the Geonosian style.
+100,geonosian_tenloss_dxr6_schematic,A schematic for the Tenloss DXR-6 weapon.
+101,spider_fang,This spider's fang appears as if it would be an effective enhancement to a projectile feed mechanism.
+102,spider_venom,The venom of a poisonous spider.
+103,blade_vibro_unit_quest,"A vibro-unit will turn a normal blade into a much more destructive weapon by creating high frequency vibrations, greatly improving its cutting ability.
+
+This device is lighter than a stander vibro-unit. Reducing the overall weight of the weapon in which it is used."
+104,sword_core_quest,"This is the main body of a sword's blade.  The reinforced design strengthens the blade, making for an especially devastating weapon."
+105,blaster_pistol_barrel_quest,"A metal tube that focuses and directs the energy from a blaster towards its intended target.
+
+This barrel has been specially designed to release bolts from the pistol at the highest velocity possible, increasing the damage done by the weapon."
+106,blaster_power_handler_quest,"This regulates a blaster's power output. The high capacity design of this particular power handler feeds more energy through the weapon, increasing damage, and slightly reducing recharge time."
+107,projectile_pistol_barrel_quest,"Projectile pistol barrels guide and direct projectiles that are propelled via a pistol's firing mechanism.  This barrel has been bored to a higher caliber, allowing larger ammunition to be used and increasing the amount of damage done by the weapon."
+108,projectile_rifle_barrel_advanced_quest,"Projectile rifle barrels guide and direct projectiles that are propelled via a rifle's firing mechanism.  This barrel has been bored to a higher caliber, allowing larger ammunition to be used and increasing the amount of damage done by the weapon."
+109,stock_unit_advanced_quest,This is a stock for a rifle that has been form fitted to brace against the shoulder.
+110,scope_weapon_advanced_quest,A weapon's scope can increase its accuracy.  This scope has been precision tuned to a wide variety of ranges.
+111,rancor_tooth_quest,"Pulled from the mouth of a Rancor, this tooth appears to be swimming with filth and bacteria. It may be possible to craft a devastating weapon from this item, but it might be unpleasant for the user to wield."
+112,schematic_republic_blaster_quest,This document contains the information necessary to craft a Modified Republic Blaster.
+
+You must be a Master Weaponsmith to understand the intricate details of this document.
+113,schematic_carbine_e11_quest,This document contains the information necessary to craft an Enhanced E11 Carbine.
+
+You must have the Weaponsmith skill Firearms 3 in order to understand the intricate details of this document.
+114,schematic_pistol_fwg5_quest,This document contains the information necessary to craft a Featherweight FWG5 Pistol.
+
+You must have the Weaponsmith skill Firearms 2 in order to understand the intricate details of this document.
+115,melee_core_enhancement,This looks as if it could be used to enhance a suitable melee core component.
+116,sword_scythe_schematic,This document contains the information necessary to craft a Scythe Blade.
+117,barrel_stabelizer,"This keeps the barrel steady and level while firing, maintaining good accuracy."
+118,corvette_rifle_barrel,This is a stabilization piece for the barrel of a Berserker style rifle.

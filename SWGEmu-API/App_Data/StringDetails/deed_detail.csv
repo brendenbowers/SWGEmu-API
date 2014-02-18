@@ -1,0 +1,101 @@
+1,corellia_house_large_deed,A deed for a large Corellian house. This can only be placed on Corellia.
+2,corellia_house_medium_deed,A deed for a medium Corellian house. This can only be placed on Corellia.
+3,corellia_house_small_deed,A deed for a small Corellian house.  This can only be placed on Corellia.
+4,clothing_factory,A deed for a clothing and armor factory.
+5,food_factory,A deed for a food factory.
+6,item_factory,A deed for an item and weapon factory.
+7,structure_factory,A deed for a structure and installation factory.
+8,fusion_generator_deed_name,A deed for a fusion power generator.
+9,photo_bio_generator_deed_name,A deed for a photo-bio power generator.
+10,solar_generator_deed_name,A deed for a solar power generator.
+11,wind_generator_deed_name,A deed for a wind power generator.
+12,creature_harvester_deed_name,A deed for an automated creature farm installation.
+13,flora_harvester_deed_name,A deed for an automated flora farm installation.
+14,gas_harvester_deed_name,A deed for a gas harvester installation.
+15,liquid_harvester_deed_name,A deed for a liquid harvester installation.
+16,moisture_harvester_deed_name,A deed for a moisture harvester apparatus.
+17,ore_s1_harvester_deed_name,A deed for an ore harvester (Style 1) apparatus.
+18,ore_s2_harvester_name,A deed for an ore harvester (Style 2) apparatus.
+19,naboo_house_large_deed,A deed for a large Naboo house. This can only be placed on Naboo.
+20,naboo_house_medium_deed,A deed for a medium Naboo house. This can only be placed on Naboo.
+21,naboo_house_small_deed,A deed for a small Naboo house. This can only be placed on Naboo.
+22,tatooine_house_large_deed,A deed for a large Tatooine house. This can only be placed on Tatooine.
+23,tatooine_house_medium_deed,A deed for a medium Tatooine house. This can only be placed on Tatooine.
+24,tatooine_house_small_deed,A deed for a small Tatooine house. This can only be placed on Tatooine.
+25,turret_block_large_deed_name,A deed for a large block turret.
+26,turret_block_medium_deed_name,A deed for a medium block turret.
+27,turret_block_small_deed_name,A deed for a small block turret.
+28,covert_detector_32m,A deed for a covert faction scanner.
+29,ore_s2_harvester_deed_name,A deed for an ore harvester (Style 2) apparatus.
+30,naboo_house_medium_style_2_deed,A deed for a medium Naboo house. This is the second style design. This can only be placed on Naboo.
+31,naboo_house_small_style_2_deed,A deed for a small Naboo house. This is the second style design. This can only be placed on Naboo.
+32,tatooine_house_small_style_2_deed,A deed for a small Tatooine house. This is the second style design. This can only be placed on Tatooine.
+33,minefield_1x1,A deed for a small minefield.
+34,moisture_harvester_medium_deed_name,A deed for a medium moisture harvester apparatus.
+35,gas_harvester_medium_deed_name,A deed for a medium gas harvester installation.
+36,liquid_harvester_medium_deed_name,A deed for a medium liquid harvester installation.
+37,corellia_house_small_floor_2_deed,A deed for a small Corellian house. This is the second floorplan design.  This can only be placed on Corellia.
+38,liquid_harvester_heavy_deed_name,A deed for a heavy liquid harvester installation.
+39,flora_harvester_medium_deed_name,A deed for a medium flora harvester installation.
+40,flora_harvester_heavy_deed_name,A deed for a heavy flora harvester installation.
+41,corellia_house_small_style_2_floor_2_deed,A deed for a small Corellian house.  This is the second floorplan design complemented by the second style design. This can only be placed on Corellia.
+42,corellia_house_small_style_2_deed,A deed for a small Corellian house.  This is the second style design. This can only be placed on Corellia.
+43,generic_house_small_floor_2_deed,A deed for a small generic house.  This is the second floorplan design.  This can be placed on several different planets.
+44,generic_house_small_deed,A deed for a small generic house.  This can be placed on several different planets.
+45,generic_house_small_style_2_deed,A deed for a small generic house. This is the 2nd style design. This can be placed on several different planets.
+46,generic_house_medium_deed,A deed for a medium generic house.  This can be placed on several different planets.
+47,generic_house_medium_style_2_deed,A deed for a medium generic house. This is the second style design. This can be placed on several different planets.
+48,generic_house_large_style_2_deed,A deed for a large generic house. This is the second style design. This can be placed on several different planets.
+49,generic_house_large_deed,A deed for a large generic house. This can be placed on several different planets.
+50,corellia_house_large_style_2_deed,A deed for a large Corellian house. This is the second style design. This can only be placed on Corellia.
+51,turret_tower_lg,A deed for a large tower turret.
+52,turret_tower_sm,A deed for a small tower turret.
+53,turret_tower_med,A deed for a medium tower turret.
+54,turret_block_lg,A deed for a large block turret.
+55,turret_block_sm,A deed for a small block turret.
+56,turret_dish_lg,A deed for a large dish turret.
+57,turret_dish_sm,A deed for a small dish turret.
+58,turret_dish_med,A deed for a medium dish turret.
+59,turret_block_med,A deed for a medium block turret.
+60,hq_base,A deed for an unknown faction headquarters.
+61,hq_s01,A deed for a factional forward outpost.
+62,hq_s02,A deed for a factional field hospital.
+63,hq_s03,A deed for a factional tactical center.
+64,hq_s04,A deed for a factional detachment headquarts.
+65,hq_s05,A deed for a factional strategic base.
+66,gas_harvester_heavy_deed_name,This deed can be used to place a heavy gas harvester.
+67,moisture_harvester_heavy_deed_name,This deed can be used to place a heavy moisture harvester.
+68,ore_heavy_harvester_deed_name,This deed can be used to place a heavy ore harvester.
+69,treadwell_basic_deed,"This is a deed for a custom-crafted Droid unit. To use this deed, use the READY DROID UNIT option, and your droid will be generated and the deed used up."
+70,binary_load_lifter_advanced_basic_deed,"This is a deed for a custom-crafted Droid unit. To use this deed, use the READY DROID UNIT option, and your droid will be generated and the deed used up."
+71,binary_load_lifter_basic_deed,"This is a deed for a custom-crafted Droid unit. To use this deed, use the READY DROID UNIT option, and your droid will be generated and the deed used up."
+72,droid_basic_base_deed,"This is a deed for a custom-crafted Droid unit. To use this deed, use the READY DROID UNIT option, and your droid will be generated and the deed used up."
+73,dz70_basic_deed,"This is a deed for a custom-crafted Droid unit. To use this deed, use the READY DROID UNIT option, and your droid will be generated and the deed used up."
+74,le_repair_advanced_basic_deed,"This is a deed for a custom-crafted Droid unit. To use this deed, use the READY DROID UNIT option, and your droid will be generated and the deed used up."
+75,le_repair_basic_deed,"This is a deed for a custom-crafted Droid unit. To use this deed, use the READY DROID UNIT option, and your droid will be generated and the deed used up."
+76,mse_basic_deed,"This is a deed for a custom-crafted Droid unit. To use this deed, use the READY DROID UNIT option, and your droid will be generated and the deed used up."
+77,power_advanced_basic_deed,"This is a deed for a custom-crafted Droid unit. To use this deed, use the READY DROID UNIT option, and your droid will be generated and the deed used up."
+78,probot_advanced_basic_deed,"This is a deed for a custom-crafted Droid unit. To use this deed, use the READY DROID UNIT option, and your droid will be generated and the deed used up."
+79,probot_basic_deed,"This is a deed for a custom-crafted Droid unit. To use this deed, use the READY DROID UNIT option, and your droid will be generated and the deed used up."
+80,r2_advanced_basic_deed,"This is a deed for a custom-crafted Droid unit. To use this deed, use the READY DROID UNIT option, and your droid will be generated and the deed used up."
+81,r2_basic_deed,"This is a deed for a custom-crafted Droid unit. To use this deed, use the READY DROID UNIT option, and your droid will be generated and the deed used up."
+82,r3_advanced_basic_deed,"This is a deed for a custom-crafted Droid unit. To use this deed, use the READY DROID UNIT option, and your droid will be generated and the deed used up."
+83,r4_advanced_basic_deed,"This is a deed for a custom-crafted Droid unit. To use this deed, use the READY DROID UNIT option, and your droid will be generated and the deed used up."
+84,r4_basic_deed,"This is a deed for a custom-crafted Droid unit. To use this deed, use the READY DROID UNIT option, and your droid will be generated and the deed used up."
+85,r5_advanced_basic_deed,"This is a deed for a custom-crafted Droid unit. To use this deed, use the READY DROID UNIT option, and your droid will be generated and the deed used up."
+86,surgical_advanced_basic_deed,"This is a deed for a custom-crafted Droid unit. To use this deed, use the READY DROID UNIT option, and your droid will be generated and the deed used up."
+87,surgical_basic_deed,"This is a deed for a custom-crafted Droid unit. To use this deed, use the READY DROID UNIT option, and your droid will be generated and the deed used up."
+88,treadwell_advanced_basic_deed,"This is a deed for a custom-crafted Droid unit. To use this deed, use the READY DROID UNIT option, and your droid will be generated and the deed used up."
+89,p0_advanced_basic_deed,"This is a deed for a custom-crafted Droid unit. To use this deed, use the READY DROID UNIT option, and your droid will be generated and the deed used up."
+90,p0_basic_deed,"This is a deed for a custom-crafted Droid unit. To use this deed, use the READY DROID UNIT option, and your droid will be generated and the deed used up."
+91,dz70_advanced_basic_deed,"This is a deed for a custom-crafted Droid unit. To use this deed, use the READY DROID UNIT option, and your droid will be generated and the deed used up."
+92,mse_advanced_basic_deed,"This is a deed for a custom-crafted Droid unit. To use this deed, use the READY DROID UNIT option, and your droid will be generated and the deed used up."
+93,power_basic_deed,"This is a deed for a custom-crafted Droid unit. To use this deed, use the READY DROID UNIT option, and your droid will be generated and the deed used up."
+94,r3_basic_deed,"This is a deed for a custom-crafted Droid unit. To use this deed, use the READY DROID UNIT option, and your droid will be generated and the deed used up."
+95,r5_basic_deed,"This is a deed for a custom-crafted Droid unit. To use this deed, use the READY DROID UNIT option, and your droid will be generated and the deed used up."
+96,merchant_tent,A small tent for Merchants to sell their wares.  This structure is a cooperative crafting project between Tailors and Architects.  Tailors supply the raw materials for the covering and Architects bind the components to a metal frame and foundation.
+97,hq_s01_pvp,A deed for a S.F. factional forward outpost.
+98,hq_s02_pvp,A deed for a S.F. factional field hospital.
+99,hq_s03_pvp,A deed for a S.F. factional tactical center.
+100,hq_s04_pvp,A deed for a S.F. factional detachment headquarts.
+101,hq_s05_pvp,A deed for a S.F. factional strategic base.

@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F6177FA5-7785-4191-80EE-EAF92EFB2040}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SWGEmuAPI</RootNamespace>
+    <AssemblyName>SWGEmu-API</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Google.ProtocolBuffers, Version=2.4.1.473, Culture=neutral, PublicKeyToken=55f7125234beb589, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\RCFProto-win32-0.9.0.6\RCFProto-win32-0.9.0.6\csharp\bin\Google.ProtocolBuffers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MySql.Data.6.8.3\lib\net40\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="RCFProto">
+      <HintPath>..\..\..\..\..\Downloads\RCFProto-src-0.9.0.6\csharp\demo\vs2008\RCFProto\bin\Debug\RCFProto.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack, Version=3.9.71.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.3.9.71\lib\net35\ServiceStack.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common, Version=3.9.71.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.Common.3.9.71\lib\net35\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.Common.3.9.71\lib\net35\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite, Version=3.9.71.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.OrmLite.SqlServer.3.9.71\lib\net35\ServiceStack.OrmLite.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Razor">
+      <HintPath>..\packages\ServiceStack.Razor.3.9.71\lib\net40\ServiceStack.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Redis, Version=3.9.71.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.Redis.3.9.71\lib\net35\ServiceStack.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.ServiceInterface, Version=3.9.71.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.3.9.71\lib\net35\ServiceStack.ServiceInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=3.9.71.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.Text.3.9.71\lib\net35\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="App_Data\StringDetails\crafting_detail.csv" />
+    <Content Include="App_Data\StringDetails\craft_chemical_ingredients_d.csv" />
+    <Content Include="App_Data\StringDetails\craft_clothing_ingredients_d.csv" />
+    <Content Include="App_Data\StringDetails\craft_creature_ingredients_d.csv" />
+    <Content Include="App_Data\StringDetails\craft_dna_components_d.csv" />
+    <Content Include="App_Data\StringDetails\craft_droid_ingredients_d.csv" />
+    <Content Include="App_Data\StringDetails\craft_food_ingredients_d.csv" />
+    <Content Include="App_Data\StringDetails\craft_furniture_ingredients_d.csv" />
+    <Content Include="App_Data\StringDetails\craft_item_ingredients_d.csv" />
+    <Content Include="App_Data\StringDetails\craft_munition_ingredients_d.csv" />
+    <Content Include="App_Data\StringDetails\craft_structure_ingredients_d.csv" />
+    <Content Include="App_Data\StringDetails\craft_tissue_ingredients_d.csv" />
+    <Content Include="App_Data\StringDetails\craft_weapon_ingredients_d.csv" />
+    <Content Include="App_Data\StringDetails\deed_detail.csv" />
+    <Content Include="App_Data\StringDetails\droid_detail.csv" />
+    <Content Include="App_Data\StringDetails\event_perk_detail.csv" />
+    <Content Include="App_Data\StringDetails\exp_d.csv" />
+    <Content Include="App_Data\StringDetails\faction_perk_d.csv" />
+    <Content Include="App_Data\StringDetails\factory_d.csv" />
+    <Content Include="App_Data\StringDetails\firework_d.csv" />
+    <Content Include="App_Data\StringDetails\fish_d.csv" />
+    <Content Include="App_Data\StringDetails\food_d.csv" />
+    <Content Include="App_Data\StringDetails\food_detail.csv" />
+    <Content Include="App_Data\StringDetails\frn_d.csv" />
+    <Content Include="App_Data\StringDetails\hair_detail.csv" />
+    <Content Include="App_Data\StringDetails\hyperspace_points_d.csv" />
+    <Content Include="App_Data\StringDetails\item_d.csv" />
+    <Content Include="App_Data\StringDetails\lair_d.csv" />
+    <Content Include="App_Data\StringDetails\loc_d.csv" />
+    <Content Include="App_Data\StringDetails\loot_corl_d.csv" />
+    <Content Include="App_Data\StringDetails\loot_d.csv" />
+    <Content Include="App_Data\StringDetails\loot_dath_d.csv" />
+    <Content Include="App_Data\StringDetails\loot_endr_d.csv" />
+    <Content Include="App_Data\StringDetails\loot_nboo_d.csv" />
+    <Content Include="App_Data\StringDetails\loot_rori_d.csv" />
+    <Content Include="App_Data\StringDetails\loot_tals_d.csv" />
+    <Content Include="App_Data\StringDetails\loot_tato_d.csv" />
+    <Content Include="App_Data\StringDetails\loot_yavn_d.csv" />
+    <Content Include="App_Data\StringDetails\medicine_detail.csv" />
+    <Content Include="App_Data\StringDetails\monster_detail.csv" />
+    <Content Include="App_Data\StringDetails\npc_detail.csv" />
+    <Content Include="App_Data\StringDetails\obj_d.csv" />
+    <Content Include="App_Data\StringDetails\powerup_d.csv" />
+    <Content Include="App_Data\StringDetails\quest_item_d.csv" />
+    <Content Include="App_Data\StringDetails\resource_container_d.csv" />
+    <Content Include="App_Data\StringDetails\ship_slot_compatabilities_d.csv" />
+    <Content Include="App_Data\StringDetails\skill_buff_d.csv" />
+    <Content Include="App_Data\StringDetails\skl_d.csv" />
+    <Content Include="App_Data\StringDetails\space_crafting_d.csv" />
+    <Content Include="App_Data\StringDetails\space_item_d.csv" />
+    <Content Include="App_Data\StringDetails\state_d.csv" />
+    <Content Include="App_Data\StringDetails\stat_d.csv" />
+    <Content Include="App_Data\StringDetails\terminal_detail.csv" />
+    <Content Include="App_Data\StringDetails\theme_park_detail.csv" />
+    <Content Include="App_Data\StringDetails\warren_item_d.csv" />
+    <Content Include="App_Data\StringDetails\weapon_detail.csv" />
+    <Content Include="App_Data\StringDetails\wearables_detail.csv" />
+    <Content Include="App_Data\StringDetails\wpn_d.csv" />
+    <Content Include="App_Data\StringDetails\building_name.csv" />
+    <Content Include="App_Data\StringDetails\installation_n.csv" />
+    <None Include="Properties\PublishProfiles\swgemuapi.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="protogen\proto\AccountRequest.proto" />
+    <Content Include="protogen\proto\CharacterDetails.proto" />
+    <Content Include="protogen\proto\InventoryItem.proto" />
+    <Content Include="protogen\proto\StructureDetails.proto" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppHost.cs" />
+    <Compile Include="Extensions\CharacterInventoryItemExtensions.cs" />
+    <Compile Include="Extensions\PlatformExtension.cs" />
+    <Compile Include="Extensions\StructureItemDetailsExtension.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AccountModel.cs" />
+    <Compile Include="Model\CharacterModel.cs" />
+    <Compile Include="Model\StringDetailsModel.cs" />
+    <Compile Include="Model\StructureModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="protogen\AccountRequest.cs" />
+    <Compile Include="protogen\CharacterDetails.cs" />
+    <Compile Include="protogen\InventoryItem.cs" />
+    <Compile Include="protogen\StructureDetails.cs" />
+    <Compile Include="Service\AccountService.cs" />
+    <Compile Include="Service\CharacterService.cs" />
+    <Compile Include="Service\StrucutreService.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\SWGEmuAPI.Models\SWGEmuAPI.Models.csproj">
+      <Project>{6cc02968-9346-4f9d-81a7-e4845b903b55}</Project>
+      <Name>SWGEmuAPI.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59841</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59798/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

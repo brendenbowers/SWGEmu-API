@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SWGEmuAPI.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DetailsFilePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/var/mono-www/App_Data/StringDetails</Value>
+    </Setting>
+    <Setting Name="DetailsBak" Type="System.String" Scope="Application">
+      <Value Profile="(Default)"> C:\Users\Brenden\Documents\details</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

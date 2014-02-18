@@ -1,0 +1,46 @@
+1,base_terminal,Base Terminal
+2,door_security_terminal,Door Security Panel
+3,keypad,A pushbutton keypad for entering security codes.
+4,terminal_ballot_box,Ballot Box Terminal
+5,terminal_bank,Banking Terminal
+6,terminal_bazaar,Bazaar Terminal
+7,terminal_bestine_01,"A terminal used to store personal, or business-related, documents and information."
+8,terminal_bestine_02,"A terminal used to store personal, or business-related, documents and information."
+9,terminal_bestine_03,A tiny flicker of life can still be seen in this terminal regardless of its condition. Desert sand covers its interface which slightly glows despite its dirty surface. Perhaps some sort of history can be found within its database...
+10,terminal_bounty_droid,Bounty Hunter Droid Vendor
+11,terminal_character_builder,A testing terminal provided to test out various new systems and potential implementations of new content.  Please be aware terminal configuration can change without notice based on what is currently being tested and there may be stages of testing where we do not desire for all configurations to be available.
+12,terminal_cloning,Cloning Terminal
+13,terminal_dark_enclave_challenge,A terminal used to challenge for right to move to a higher rank
+14,terminal_dark_enclave_voting,A terminal used to vote on various decisions within the council
+15,terminal_elevator,Elevator Terminal
+16,terminal_food,Food Terminal
+17,terminal_free_s1,This is a terminal.  It could be used for many functions.
+18,terminal_gas_valve,Gas Valve Shutoff
+19,terminal_general_switch,Electronic Switch Box
+20,terminal_geo_bunker,Keypad Terminal
+21,terminal_guild,Guild Management Terminal
+22,terminal_hq_imperial,Imperial HQ Terminal
+23,terminal_hq_rebel,Rebel HQ Terminal
+24,terminal_imagedesign,This Image Design Terminal is used to speed up design sessions. Its effects can be felt anywhere within the salon automatically. No manual adjustments to the terminal are necessary.
+25,terminal_insurance,Insurance Terminal
+26,terminal_light_enclave_voting,A terminal used to vote on various decisions within the council
+27,terminal_medicine,Medical Terminal
+28,terminal_mission,Mission Terminal
+29,terminal_mission_artisan,Artisan Mission Terminal
+30,terminal_mission_bounty,Bounty Hunter Mission Terminal
+31,terminal_mission_entertainer,Entertainer Mission Terminal
+32,terminal_mission_imperial,Imperial Mission Terminal
+33,terminal_mission_rebel,Rebellion Mission Terminal
+34,terminal_mission_scout,Explorer Mission Terminal
+35,terminal_player_structure,"The Structure Management Terminal allows the owner of the structure to set permissions for various levels of access to the house, in addition to allowing other basic house-keeping duties."
+36,terminal_pm_register,Planetary Map Activation Terminal
+37,terminal_power_switch,Power Switch
+38,terminal_resource,Resource Terminal
+39,terminal_shipping,Shipping Terminal
+40,terminal_space,Use this starship terminal to launch your ship. The starship terminal also allows pilots to access ships parked at this starport facility. Pilots can direct the configuration of starship components using this terminal. Droids will quickly reconfigure a pilot's ship while it remains in the hangar.
+41,terminal_travel,Ticket Terminal
+42,terminal_water_pressure,This terminal controls the flow of water into the one of the large pipes in the middle of the room.
+43,terminal_wound,Wound Terminal
+44,terminal_xp,Experience Dispenser
+45,vendor_terminal,Vendor Terminal
+46,terminal_light_enclave_challenge,A terminal used to managed no-confidence challenge votes.

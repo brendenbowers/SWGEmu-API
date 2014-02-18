@@ -1,0 +1,184 @@
+
+package swgemurpcserver.rpc;
+
+
+message CharacterInventoryItem {
+	
+	required fixed64 object_id = 1;
+	required string appearance_file_name = 2;
+	required string object_name = 3;
+	required string display_name = 4;
+	required string description = 5;
+	required string crafter_name = 6;
+	required string serial_number = 7;
+	
+	
+	optional int32 max_condition = 8;
+	optional int32 condition = 9;
+	optional fixed32 containment_location = 10;
+	optional string template_file_name = 11;
+	optional string portals_file_name = 12;
+	
+	
+	optional ArmorItem armor_details = 13;
+	optional WeaponItem weapon_details = 14;
+	optional ResourceContainerItem resource_details = 15;
+	optional FactoryCrateItem factory_crate_details = 16;
+	optional PharmaceuticalItem pharmaceutical_details = 17;
+	optional CraftingComponentItem crafting_component_details = 18;
+	optional ManufacturingSchematicItem mfg_schem_details = 19;
+}
+
+message ArmorItem {
+	
+	required float kinetic = 1;
+	required float energy = 2;
+	required float electricity = 3;
+	required float stun = 4;
+	required float blast = 5;
+	required float heat = 6;
+	required float cold = 7;
+	required float acid = 8;
+	required float lighsaber = 9;
+	required int32 health_encumberance = 10;
+	required int32 action_encumberance = 11;
+	required int32 mind_encumberance = 12;
+	required int32 rating = 13;
+	repeated int32 hit_location = 14 [packed=true];
+}
+
+message WeaponItem {
+	required int32 point_blank_accuracy = 1;
+	required int32 point_blank_range = 2;
+	required int32 ideal_range = 3;
+	required int32 max_range = 4;
+	required int32 ideal_accuracy = 5;
+	required int32 max_range_accuracy = 6;
+	required int32 armor_piercing = 7;
+	required float attack_speed = 8;
+	required float max_damage = 9;
+	required float min_damage = 10;
+	required float wound_ratio = 11;
+	required float damage_radius = 12;
+	required int32 health_attack_cost = 13;
+	required int32 action_attack_cost = 14;
+	required int32 mind_attack_cost = 15;
+	required int32 force_attack_cost = 16;
+	required int32 damage_type = 17;
+	required string weapon_type = 18;
+}
+
+message ResourceContainerItem {
+	required string name = 1;
+	required string type = 2;
+	required fixed64 resource_id = 3;
+	required int32 count = 4;
+	
+	repeated ResourceSpawnClass classes = 5;
+	repeated ResourceAttribute attributes = 6;
+}
+
+message ResourceAttribute {
+	required string name = 1;
+	required int32 value = 2;
+}
+
+message ResourceSpawnClass {
+	required string class_name = 1;
+	required string stf_class = 2;
+}
+
+message FactoryCrateItem {
+	required int32 count = 1;
+	required int32 max_items = 2;
+	required CharacterInventoryItem contained_items = 3;
+}
+
+message PharmaceuticalItem {
+	enum PharmaceuticalItemType {
+		UNKNOWN = -1;
+		CUREPACK = 0;
+		DOTPACK = 1;
+		ENHANCEPACK = 2;
+		RANGEDSTIMPACK = 3;
+		REVIVIEPACK = 4;
+		STIMPACK = 5;
+		WOUNDPACK = 6;
+	}
+	required PharmaceuticalItemType pharma_type = 1;
+	required float effectiveness = 2;
+	required float area = 3;
+	required int32 medicine_required = 4;
+	required int32 use_count = 5;
+	
+	optional RangedStimPackItem ranged_stim_details = 6;
+	optional DotPackItem dot_pack_details = 7;
+	optional EnhancePackItem enhance_pack_details = 8;
+	optional RevivePackItem revivie_pack_details = 9;
+	optional WoundPackItem wound_pack_details = 10;
+}
+
+message RangedStimPackItem {
+	required float range_mod = 1;
+}
+
+message DotPackItem {
+	required float potency = 1;
+	required fixed32 duration = 2;
+	required string pool = 3;
+	required fixed32 dot_type = 4;
+	required bool poison_unit = 5;
+	required bool disease_unit = 6;
+}
+
+message EnhancePackItem {
+	required float duration = 1;
+	required string attribute = 2;
+}
+
+message RevivePackItem {
+	required float health_wound_healed = 1;
+	required float health_healed = 2;
+	required float action_wound_healed = 3;
+	required float action_healed = 4;
+	required float mind_wound_healed = 5;
+	required float mind_healed = 6;
+}
+
+message WoundPackItem {
+	required string attribute = 1;
+}
+
+message CraftingComponentItem {
+	repeated CraftingComponentAttribute attributes = 1;
+}
+
+message CraftingComponentAttribute {
+	required string id = 1;
+	required string tite = 2;
+	required int32 precision = 3;
+	required float value = 4;
+	required bool hidden = 5;
+}
+
+message ManufacturingSchematicItem {
+	required int32 manufacture_limit = 1;
+	required CharacterInventoryItem prototype_details = 2;
+	repeated BlueprintEntryItem blueprint_entries = 3;
+	repeated IngredientItem ingredients = 4;
+}
+
+message IngredientItem {
+	required int32 required_quantity = 1;
+	required bool identical = 2;
+	required string ingredient_slot_name = 3;
+	required CharacterInventoryItem ingredient = 4;
+}
+message BlueprintEntryItem {
+	required string type = 1;
+	required string key = 2;
+	required string serial = 3;
+	required string display_name = 4;
+	required int32 quantity = 5;
+	required bool identical = 6;
+}

@@ -1,0 +1,64 @@
+import "InventoryItem.proto";
+
+package swgemurpcserver.rpc;
+
+message SWGEmuStructureItemDetails {
+	required fixed64 object_id = 1;
+	required string appearance_file_name = 2;
+	required string object_name = 3;
+	required string display_name = 4;
+	required string owner_display_name = 5;
+	optional float world_x = 6;
+	optional float world_y = 7;
+	optional float world_z = 8;
+	optional string zone = 9;
+	optional int32 power = 10;
+	optional int32 maintenance = 11;
+	optional int32 decay_percent=	12;
+	optional int32 lot_size = 13;
+	optional string template_file_name = 14;
+	optional string portals_file_name = 15;
+	
+	optional BuildingItemDetails building_details = 20;
+	optional InstallationItemDetails installation_details = 21;
+	
+}
+
+message BuildingItemDetails {
+	repeated CharacterInventoryItem contained_items = 1;
+}
+
+message InstallationItemDetails {
+	required bool operating = 1;
+	required float actual_rate = 2;
+	required float max_hopper_size = 3;
+	
+	optional HarvesterItemDetails harvester_details = 4;
+	optional FactoryItemDetails factory_details = 5;
+	
+	repeated CharacterInventoryItem hopper_items = 10;
+}
+
+message HarvesterItemDetails {
+	required float extraction_rate = 1;
+}
+
+message FactoryItemDetails {
+	optional CharacterInventoryItem schematic = 1;
+	repeated CharacterInventoryItem ingredient_items = 10;
+}
+
+message GetStructureItemDetailsRequest {
+	required fixed64 object_id = 1;
+	optional fixed64 owner_object_id = 2;
+}
+
+message GetStructureItemDetailsResponse {
+	repeated SWGEmuStructureItemDetails structures = 1;
+}
+
+option cc_generic_services = true;
+
+service SWGEmuStructureItemDetailsService {
+	rpc GetStructureItemDetails (GetStructureItemDetailsRequest) returns (GetStructureItemDetailsResponse);
+}

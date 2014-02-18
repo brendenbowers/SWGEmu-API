@@ -1,0 +1,20 @@
+1,obj_bandfill,A Bandfill.  
+2,obj_fanfar,A Fanfar.
+3,obj_fizz,A Fizzz.
+4,obj_chidinkalu_horn,A Chidinkalu Horn
+5,obj_nalargon,A Nalargon.
+6,obj_kloo_horn,A Kloo Horn.
+7,obj_mandoviol,A Mandoviol.
+8,obj_ommni_box,An Ommni Box.
+9,obj_slitherhorn,A Slitherhorn.
+10,obj_traz,A Traz.
+11,droid_battery,"A Droid Battery, used to recharge pet droids."
+12,chemical_reactor,"A chemical reactor, putting chemicals in it will change the make up of an experiment."
+13,poison_gas_cloud,A cloud of poisonous or toxic gas.
+14,poison_stabilizer,A poison stabilizing agent.  It mixes with toxic fumes to convert them into breathable air.
+15,trash_container,A pile of trash.  There may be something hidden beneath or inside it...
+16,computer_desktop,"A desktop monitor and keyboard, connected to a computer network of some kind."
+17,corvette_bootdisk_4,A bootdisk for the internal systems of a Corellian Corvette class ship.  This one is marked #4.
+18,computer_mainframe,"A large computer, used for various purposes."
+19,corvette_droid_maint_module,This module is used to regulate the maintenance functions of astromech droids.  It appears to be in working condition.
+20,coal_bin,A large container used for holding solid resources such as coal or ore.

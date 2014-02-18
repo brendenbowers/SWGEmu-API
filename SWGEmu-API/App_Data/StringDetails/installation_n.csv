@@ -1,0 +1,25 @@
+1,item_factory,Equipment Factory
+2,structure_factory,Structure Factory
+3,food_factory,Food and Chemical Factory
+4,gas_mine,Natural Gas Processor
+5,fusion_generator,Fusion-Ion Generator
+6,photobio_generator,Photo/Bio Generator
+7,solar_generator,Solar Generator
+8,wind_generator,Wind Generator
+9,liquid_mine,Personal Chemical Extractor
+10,moisture_mine,Personal Moisture Vaporator
+11,ore_mine,Mineral Mining Installation
+12,heavy_ore_mine,Heavy Mineral Mining Installation
+13,organic_harvester,Organic Resource Harvester
+14,flora_farm_small,Micro Flora Farm
+15,creature_farm,Creature Farm
+16,clothing_factory,Wearables Factory
+17,small_ore_mine,Personal Mineral Extractor
+18,flora_farm,Automated Flora Farm
+19,flora_farm_heavy,High Capacity Flora Farm
+20,gas_mine_small,Personal Natural Gas Processor
+21,gas_mine_heavy,Heavy Natural Gas Processor
+22,moisture_mine_medium,Moisture Vaporator
+23,moisture_mine_heavy,High Efficiency Moisture Vaporator
+24,liquid_mine_medium,Chemical Extractor
+25,liquid_mine_heavy,Deep Crust Chemical Extractor

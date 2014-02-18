@@ -1,0 +1,218 @@
+1,accarragm,A strong Wookiee beverage made from fungus and alcohol stock.
+2,accarragm_eff,"Grants enhanced action, quickness, and stamina."
+3,ahrisa,A spicy food commonly found in cafes on Coruscant.
+4,ahrisa_eff,Grants enhanced focus.
+5,air_cake,A simple Corellian dessert cake.
+6,aitha,A protein drink consumed by spacers to keep their bodies healthy during long runs.  Best served hot.
+7,alcohol,Basic alcohol stock made from some kind of cereal resource.
+8,ale,"A bottle of thick, foaming ale."
+9,almond_kwevvu_crisp_munchies,A small pastry eaten by the handful.
+10,aludium_pu36,"A very pure and strong alcoholic stock popular during the Old Republic.  Aludium pu36 has a secret radioactive ingredient, but is safe enough for humanoid consumption."
+11,angerian_fishak_surprise,"A strong mixed, alcoholic drink."
+12,antakarian_fire_dancer,"A thick, potent ale made from alcoholic stock filtered through igneous rock and flavored with crushed gemstone.  This drink is popular with rough and tough types."
+13,avian_strips,Delicious Avian Strips
+14,bantha_blaster,A cantina favorite.  Drink with caution.
+15,bantha_butter,Butter made from a Bantha's milk.
+16,bespin_port,A sweet form of port native to Bespin.
+17,bio_down,You are under the effect of a negative biological effect.
+18,bio_kliknik_fortitude_boost,"An extract from the Kliknik immune system, this chemical coats the users organs with an ultra thin protective layer that insulates them during heavy exertion.  Can cause severe nausea when the body attempts to remove the coating."
+19,bio_kwi_adrenal_boost,A gland which secretes a fluid into the kwi bloodstream which increases their base regeneration in response to an attack.  Can cause burnout after the boost has run its course.
+20,bio_up,You are under the effect of a positive biological effect.
+21,birthday_cake,A scrumptuous birthday cake!
+22,bivoli_tempari,A very expensive and sweet dish that features toughened meat in a syrupy sauce.
+23,blap_biscuit,A gooey biscuit served drenched in carbosyrup.
+24,blob_candy,A popular candy made from a filled blob of carbosyrup.
+25,blob_candy_eff,Grants enhanced action.
+26,blood_chowder,A healthy meal made of soypro cooked in purified animal blood.
+27,blue_milk,A protein enhanced milk beverage that has healing qualities.
+28,bofa_treat,"A sweet, dried, fruit based snackfood."
+29,bofa_treat_eff,Grants enhanced health.
+30,booster_blue,"An out-of-use industrial dye employed in starship manufacturing that when consumed, enhances the user's physical reaction time."
+31,boullion,A cube of boullion.
+32,braised_canron,A jellied meat carefully braised and seasoned.
+33,bread,A chunk of bread.
+34,bread_loaf_full_s1,a Loaf of Bread
+35,breath_of_heaven,The Galaxy's most potent fire water: this stuff is as strong as it comes.
+36,breath_of_heaven_eff,"Grants enhanced strength, quickness, and focus."
+37,caf,A stimulating beverage flavoured with grains or bean extract.
+38,caf_eff,Grants enhanced willpower.
+39,casserole,A steaming casserole.
+40,cavaellin_creams,Delicious spiced candies.
+41,chandad,A popular snack food filled with rice and fruit.
+42,charde,A refreshing beverage flavored with some unidentifiable organic substance.  Best served cold.
+43,cho_nor_hoola,A vile smelling stew favored by members of the Hutt race.  Only those with willpower can stand to eat a full serving of Cho-Nor-Hoola.
+44,citros_snow_cake,A delicious pastry made with light fruits and sweet cake mix.
+45,cold_cuts,Scrumptious slices of cold Meat.
+46,corellian_ale,Probably the most common alcoholic beverage in the galaxy.  Corellian Ale has a sweet flavor and a medium weight body.
+47,corellian_brandy,There is no brandy more flavorful and savory than Corellian Brandy.  Must be made with real Corellian fruits...otherwise it's just brandy.
+48,corellian_double_brandy,A bottle of Corellian Double Brandy.
+49,corellian_fried_icecream,Fried icecream with berry topping.
+50,corellian_rum,A bottle of Corellian Rum.
+51,corellian_spiced_ale,A bottle of Corellian Spiced Ale.
+52,corellian_twister,A bottle of Corellian Twister.
+53,corellian_whiskey,A bottle of Corellian Whiskey.
+54,cortyg,A strong alcohol produced by Wookiees.
+55,crash_n_burn,"A rare chemical mix of stimulant and depressive, Crash n' Burn heightens the user's awareness while at the same time increasing latent psychodepressive tendencies."
+56,crispic,A fried snack roll...commonly found in cantinas.
+57,deneelian_fizz_pudding,A rare pudding treat that crackles and pops as you eat it.
+58,deuterium_pyro,"A favorite drink of ruffians, due to its terrible flavor and strong aftertaste.  You have to be tough to put down a Deuterium-pyro."
+59,double_dip_outer_rim_rumdrop,"Native to the Spirited Spirits shop on Cularin, this strong mixed drink is made from a wide range of alcohol stocks."
+60,dough,A heap of soft dough.
+61,drink,A drink.
+62,drink_nectar,"A delicious blend of exotic plant nectars, fruit juices and mineral waters."
+63,droid_lube,"Zypolene Droid Lubricant was once used as a very common homemade joint and servo lubricant for robot servants.  After medical studies suggested the substance was the cause of cellular decay among various races, the use of zypolene decreased.  It has a burning, stimulating effect when rubbed across open skin."
+64,durindfire,A rare alcoholic beverage that lights up with a phosphorescent glow when exposed to oxygen.
+65,dustcrepe,A light crepe native to Tatooine.
+66,dweezel,A gooey pastry common to Mos Espa.  Invented by the culinary genius Professor Umlaut.
+67,edible_berries,Jar of Foraged Berries
+68,edible_bugs,Jar of Foraged Bugs
+69,edible_fungus,Jar of Foraged Fungus
+70,edible_funk,Jar of Foraged Grubs
+71,edible_livers,Jar of Foraged Livers
+72,elshandruu_pica_thundercloud,This drink is probably the strongest in the galaxy.  Highly dangerous.
+73,exo_protein_wafers,Enhanced protein wafers used by space farers during long trips.
+74,felbar,A baked dessert made with flower fruit.
+75,fire_stew,A spicy stew flavored with puk and desert flowers.
+76,flameout,A strange reactive beverage.  It burns the tongue while at the same time freezes the throat.
+77,food_additive_heavy,A heavy food additive.  This can only be used in a Heavy additive slot during food crafting.
+78,food_additive_light,"A light food additive.  This can be used in a Light, Medium, or Heavy additive slot during food crafting."
+79,food_additive_medium,A medium food additive.  This can be used in a Medium or Heavy additive slot during food crafting.
+80,food_basket,A basket of fruits and other food.
+81,foraged_fruit_1,Maroj Melon
+82,foraged_fruit_2,Wild Snaff
+83,foraged_fruit_3,Alever Tweth'pek
+84,foraged_fruit_4,Ko-Do Fruit
+85,foraged_fruit_5,Sijjo Sewi
+86,foraged_vegetable_1,Schule Nef
+87,foraged_vegetable_2,Flurr-Cle Onion
+88,foraged_vegetable_3,Etost'Ew Zann
+89,foraged_vegetable_4,Sosi Hodor
+90,force_melon,"This fruit was picked from the Aurilian plant, a notoriously fickle and difficult plant to grow to fruition. The nectar from this fruit provides a vitalizing rush to those that consume it."
+91,fried_endwa,A tasty fried meal common on Corellia.
+92,fruit,A juicy portion of fruit.
+93,fruit_melon,a Melon
+94,garrmorl,Another rough Wookiee beverage made from dried bone and hide mixed with alcohol stock.
+95,garrmorl_eff,"Grants enhanced health, strength, and constitution."
+96,giggledust,An all natural dust that is inhaled to create a sense of euphoria and alertness.
+97,glazed_glucose_pate,An extremely dense sugar pate.
+98,gorrnar,A frozen dessert favored by Wookiees.
+99,gourd,A plain gourd.
+100,gralinyn_juice,A fermented Wookiee beverage.  Light by Wookiee standards.
+101,grey_gabaki,"A plant named for its drab color when dried, Grey Gabaki gives off a light and relaxing smoke when burned.  It is commonly used in cantinas, but some merchants also burn it to make store fronts a more relaxing environment for customers."
+102,ground_meat,A handful of ground meat.
+103,gruuvan_shaal,A traditional Twi'lek meal.
+104,gruuvan_shaal_eff,Grants enhanced strength.
+105,gunjack,A highly concentrated methylpenatox and glucose based chemical cocktail that grants the user intense physical strength while decreasing fine motor control and the ability to reason.
+106,havla,A spiced toast popular with nobility.
+107,ice_blaster,A warming alcoholic beverage made from Sullustan Gin.
+108,ithorian_mist,A type of whiskey favored by the Ithorian race.
+109,jaar,"A sweet drink of fermented milk and fruit, favored by Wookiees."
+110,jawa_beer,A rough travel beer brewed from fermented grains and bantha hide.
+111,jerky,"Some meaty Jerky, dried to last longer but remaining very tasty."
+112,kanali_wafers,A sugary pastry pressed flat and served chilled.
+113,kanali_wafers_eff,Grants enhanced constitution.
+114,karkan_ribenes,Slow cooked meat ribs.
+115,kiwik_clusjo_swirl,"An unusual mixture of fruits, served creamed."
+116,kiwik_clusjo_swirl_eff,Grants enhanced quickness and stamina.
+117,kylessian_fruit_distillate,"An alcohol stock distilled from fruits.  This can be used as a component in any recipe requiring alcohol.  In general, Kylessian Fruit Distillate has a higher quality than Sullustan Gin."
+118,large_avian,A large chunk of avian meat.
+119,large_fish,A large fish.
+120,large_sausage,A large sausage.
+121,lollipop,This lollipop looks deliciously sweet.
+122,mandalorian_wine,"A strong, bitter wine. This drink was made popular in the years following the Mandalorian Wars."
+123,marinade,"A mixture of vinegar, oil, spices and herbs."
+124,meat_kabob,Meat Kabob
+125,meat_loaf,A generous cut of meat loaf.
+126,meat_skewer,"A juicy skewer of meat, vegetables, and fruit."
+127,meatlump,A processed and compressed meat hunk used in space station food stores.
+128,meaty_nuggets,"Dried nuggets of meat, cooked to perfection, and made as an snack food."
+129,melon,A nice round melon.
+130,milk,Some milk.
+131,muon_gold,A subatomic reactant that results in intense mental clarity and focus.  Banned by Imperial authorities due to its degenerative effect on neural pathways.
+132,nanana_twist,A candy made with inert gas and berry fruit.
+133,neutron_pixey,"A calming hallucinogen of unknown alien origin, Neutron Pixie is usually ingested with a light fruit flavoring to increase palatability."
+134,ormachek,A healthy wrapped meal favored by Mon Calamari for its memory enhancing properties.
+135,para_roll,A fruity wheat based pastry.
+136,parwan_nutricake,A healthy bread-like dessert.
+137,pastebread,A thin pastry bread.
+138,patot_panak,A type of flatbread served with meat and seasoning.
+139,pie,A freshly baked pie.
+140,pikatta_pie,A rich and thick pie thought to have been invented by Baron Hodor of Teyr.
+141,pizza,"A steaming hot pizza, topped with fresh cheese, baked meats, and assorted toppings."
+142,pkneb,A sweet meat rolled in crushed bone and caramelized.
+143,prepared_meat,Some prepared meat.
+144,protato,A protein enhanced synthetic vegetable.
+145,puffcake,A small dessert pastry popular with children.
+146,puk,A vegetable commonly grown in private hydroponics bays.
+147,pyollian_cake,Extra sweet gooey cake made with carbosyrup.
+148,pyrepenol,A concentrated pyrepenol pill.  When consumed it results in heightened physical strength.
+149,rack_of_meat,A rack of meat.
+150,rakririan_burnout_sauce,An extremely spicy sauce!  Be careful!
+151,ramorrean_capanata,A popular pasta that tastes best when served with seafood.
+152,rations,Military quality rations often found on large starliners.
+153,ribs,A section of ribs.
+154,ruby_bliel,A non-alcoholic fruit drink favored by children.
+155,ryshcate,A dark brown Corellian sweetbread served on birthdays.
+156,sandwich,A delicious sandwich.
+157,sausage_links,A string of sausage links.
+158,scramjet,"""Scramjet"" is the rough street name for a body building food additive.  Due to its distorting and potentially harmful effects on humanoid biology, scramjet has been outlawed on Imperial worlds."
+159,scrimpi,A meat dish common to cantina menus.
+160,scrimpi_eff,Grants enhanced quickness.
+161,sedative_h4b,A medical sedative used on battle fields to treat traumatic injuries.  H4b's strong depressive properties result in it often being used for recreational purposes.
+162,shadowpaw,"Shadowpaw is the name of the powder that remains when the Edorian Itassi root is ground up.  This powder was originally used by the native Ewok race in spiritual ceremonies via a long bone pipe, but has since found a place in various cantinas and criminal dives."
+163,shot,"A shot, filled to the brim."
+164,skannbult_likker,A rare beverage distilled from special types of corn and wheat.
+165,slice_of_cake,A slice of cake.
+166,sliced_meats,A platter of sliced meats.
+167,small_avian,A small chunk of avian meat.
+168,smugglers_delight,A sweet pastry with a hollow center.
+169,soup,A hot bowl of soup.
+170,soypro,A protein fortified meat substitute.
+171,spice,A vial of spice.
+172,spice_down,You are suffering from the downer effects of the spice.
+173,spice_up,You are enhanced by the positive effects of the spice.
+174,spiced_tea,A beverage consisting of water flavored by strong spices.
+175,spiced_tea_eff,Grants enhanced mind.
+176,starshine_surprise,A strong alcoholic beverage infused with reactive gas.  Often lit on fire before consumed.
+177,stewed_gwouch,A highly nutritional food...the flavor leaves something to be desired.
+178,stuffing,Some hearty stuffing.
+179,sullustan_gin,A common form of gin distilled by the Sullustan race.  This gin has a light flavor and may be used as a base for other recipes requiring alcohol.
+180,sweesonberry_rolls,"A sticky, sweet pastry."
+181,sweet_cake_mix,A special pre-sweetened cake mix.
+182,sweetblossom,A thick fluid made from the Sweetblossom with strong sedative properties.  Sometimes used as a field anaesthetic or truth serum.
+183,synthsteak,A tasty fortified steak substitute designed to withstand long space travel.
+184,tatooine_sunburn,"Native to the Mos Eisley Cantina, Tatooine Sunburn is a rough drink that will put you under the table quick...which is exactly where most thieves want you."
+185,tea,A glass of spiced tea.
+186,telteir_noodles_eff,Grants enhanced stamina.
+187,teltier_noodles,A vegetable and noodle dish served lukewarm.  The noodles are usually mushy and only slightly cooked.
+188,terratta,A dish made from hide strips smothered in oil and milk.
+189,thakitillo,A curdled dish known for the tangy explosion of flavor experienced when mashed against the roof of the mouth.
+190,thruster_head,"Thruster Head is the street name for an intense synaptic enhancement stim.  When injected Thruster Head multiplies the user's mental capabilities ten fold, at the cost of increased anxiety and extreme nausea."
+191,tilla_tiil,A sparkling Twi'lek wine notable for the triple carbonation and filtering process used in its creation.
+192,tranna_nougat_cream,A sweet candy that is extremely difficult to make.  It is favored by the rich and powerful.
+193,travel_biscuits,Hearty biscuits full of nutrients for long trips.
+194,tray_of_cookies,"A tray of soft, fresh cookies."
+195,tray_of_pastries,An assortment of soft pastries on a tray.
+196,trimpian,Sliced meat served in a seasoned miasra sauce.
+197,triple_meat_wrap,"A tasty Triple Meat Wrap, three meats wrapped in a thin bit of leathery hide."
+198,tssolok,"T'ssolok is an intense Twi'lek liquor that is always served in a decorative decanter.  While the standing flavor of T'ssolok is not particularly good, the aftertaste is delicious."
+199,vagnerian_canape,A sweet pastry often served at formal dinners.
+200,vagnerian_canape_eff,Grants enhanced focus and willpower.
+201,vasarian_brandy,A rare brandy made from the fruit and berries of Talus.
+202,vasarian_brandy_eff,"Grants enhanced mind, focus, and willpower."
+203,vayerbok,A vegetable based beer that is as thick as it is green.
+204,vegeparsine,A high quality version of veghash favored by the rich.
+205,vegetable,"A nice, ripe vegetable."
+206,vegetarian_dish,"A no-meat approach to nutrition, this vegetarian dish looks delicious."
+207,veghash,A vegetable mush often served as a side dish in cantinas.
+208,vercupti,An unidentifiable dish popularized by Dexter Jettster in the years following the Battle of Naboo.
+209,vercupti_eff,"Grants enhanced health, action, and mind."
+210,veronian_berry_wine,A sweet berry wine with light flavors.  A great dessert wine.
+211,wastril_bread,A crumbly bread with fruit flavorings common on Corellia.
+212,water,A glass of water
+213,wedding_cake,A magnificent cake to celebrate the occasion of marriage.
+214,wheel_of_cheese,A soft wheel of fresh cheese.
+215,won_won,A greasy dinner pastry common to the Wookiee diet.
+216,won_won_eff,Grants enhanced strength and constitution.
+217,xermaauc,A type of meatloaf.
+218,yarrock,A root derived spice with strong mind enhancing properties.

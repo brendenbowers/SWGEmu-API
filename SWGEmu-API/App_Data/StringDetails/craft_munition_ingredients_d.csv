@@ -1,0 +1,71 @@
+1,warhead_fusing,Responsible for detonating the grenade's explosive charge.
+
+2,magnetic_grapple,Allows the grenade to be easily and securely stowed stowed in specially equipped pockets and equipment racks.
+
+3,timed_dial,Controls the countdown till detonation.
+
+4,fragmentation_sleeve,"A fitting of pre-scored metal that fits over a grenade casing, giving it a fragmentation effect.
+"
+5,body_shell,The outer casing for the grenade.
+
+6,warhead_assembly,Gives the grenade its explosive power.
+
+7,warhead_booster,Serves to increase the explosive yield of the grenade.
+
+8,warhead_enhancement,Serves to shape the detonation shockwave in an effort to increase its effect.
+
+9,fragmentation_enhancement,Increases the fragmentation effect of the grenade
+
+10,ammo_projectile,Basic ammunition used in projectile weapons.
+11,ammo_projectile_entanglement,Ammunition used in entanglement projectile weapons.
+12,munition_enhancer,Enhances the effectiveness of munitions.
+13,enhanced_charge_composition,This is an explosive charge composition with an enhanced effect.
+14,enhanced_charge_shaping,This is an explosive charge shaping with an enhanced effect.
+15,enhanced_destructive_pulse_channeling,This is a destructive pulse channeling with an enhanced effect.
+16,enhanced_fragmentation_sleeve,This is a fragmentation sleeve with an enhanced effect.
+17,warhead_chemical,This warhead is designed to disperse lethal chemicals.
+18,warhead_fusing_mechanism,This is responsible for the warhead fuse's ignition.
+19,warhead_heavy,This warhead is designed for a massive explosion.
+20,warhead_light,This warhead is designed for minimum collateral damage.
+21,warhead_medium,This warhead is designed for a powerful explosion.
+22,warhead_stabilizer,This device is necessary to keep the warhead's payload stable during motion and launch.
+23,charge_environ_seal,A charge environ seal.
+24,charge_neutralization_agent,A charge-neutralization agent.
+25,chem_jet_assembly,Chemical spray-jet assembly.
+26,charge_booster,A charge booster.
+27,charge_catalyst,A charge catalyst.
+28,charge_composition_spacer_cap,A charge composition spacer cap.
+29,charge_spacer,A charge spacer.
+30,charge_spacer_mount,A charge spacer mount.
+31,frag_sleeve_binder,A fragmentation sleeve binder.
+32,frag_sleeve_core,A fragmentation sleeve's core.
+33,frag_sleeve_booster,A fragmentation sleeve booster.
+34,charge_routing_vanes,Some charge routing vanes.
+35,pulse_conduit_media,Pulse conduit media.
+36,chemical_containment,A chemical containment canister.
+37,containment_field_coil,A containment field coil is necessary to maintain the integrity of chemical containment devices.
+38,trigger_pulse_prism,A trigger pulse prism.
+39,chemical_payload,This extremely hazardous chemical payload must be installed into a chemical warhead with great caution.
+40,thermal_insulation,Thermal insulation helps to maintain a constant temperature.
+41,interdiction_coil_substrate,"This interdiction coil substrate helps contribute to a stable environment inside of a warhead, even during launch."
+42,field_interdiction_coil,"An interdiction field coil is required to help stabilize warhead payloads during transport, installation, and launch."
+43,fuse_warhead_interface,A warhead fuse's interface.
+44,containment_preventor,A containment preventor acts to release a warhead payload from its containment unit upon detonation.
+45,module_casing,A module casing.
+46,shell,A hollow shell.
+47,thumb_trigger,"A thumb trigger, used in many grenade styles."
+48,activation_indicator,An activation indicator generally consists of blinking lights (and sometimes a loud beep or chirp) that lets a grenadier know that their grenade is now armed.  One benefit of this is the intimidation factor this can have by arming a grenade in a crowded room 
+49,null_field_generator,A null field generator is helpful at keeping grenades and detonators from exploding in their user's hand.
+50,igniter_charge,"An igniter charge is used to set off certain reactions, generally explosions."
+51,ignition_pulse_generator,An ignition pulse generator is used to ignite a rocket or missile.
+52,launch_tube,A launch tube both holds a rocket or missile in addition to acting as an aiming device.
+53,launch_tubes,A launch tube both holds a rocket or missile in addition to acting as an aiming device.
+54,schell_handling_unit,This shell handling unit is used to load and unload shells during action.
+55,shell_handling_unit,"A shell handling unit is used to load, unload, and sometimes store additional shells."
+56,warheads,A bundle of warheads.
+57,schell_expulsion_unit,A shell expulsion unit propels shells out of a rocket or missile launcher's tube.
+58,shell_expulsion_unit,A shell expulsion unit propels shells out of a rocket or missile launcher's tube.
+59,target_tracker,"A target tracker is used to help line up a shot, and increases a rocket or missile launcher's accuracy."
+60,warhead_insulator,"This insulates the warhead and helps maintain temperature stability, particularly during launch and delivery."
+61,kliknick_gland,This Kliknik gland could be used to enhance the power of a munition.
+62,acklay_venom,"Venom from the deadly Acklay creature, this can be used to make dangerous weapons."

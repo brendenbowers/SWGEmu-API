@@ -1,0 +1,98 @@
+1,droid_brain,"The droid's version of a brain, this module gives a droid the ability to process the information it senses and react appropriately."
+2,droid_motive_system,"This system is responsible for a droid's ability to move, navigate, and follow."
+3,manipulator_arm,The manipulator arm allows a droid to directly interact with its environment as needed.
+4,sensor_package_droid,"A droid processes audio, visual, and comlink messages through its sensor package.  Some advanced models have radar and infrared capabilities, as well."
+5,storage_unit,A droid can store extraneous items with this module.
+6,processing_units,"This ingredient slot only accepts multiple components from a crate of electronics, produced by a factory."
+7,memory_circuits,"This ingredient slot only accepts multiple components from a crate of electronics, produced by a factory."
+8,base_chassis,This ingredient slot accepts a previously built droid ready to be rebuilt to the ADVANCED droid standard. IMPORTANT: Any enhancements built into the droid that is to be used as a base chassis to satisfy this ingredient slot will be LOST during the refurbishing process.
+9,personality_module_stupid,This module will allow you to create a droid with a stupid personality type.
+10,personality_module_sarcastic,This module will allow you to create a droid with a sarcastic personality type.
+11,personality_module_prissy,This module will allow you to create a droid with a prissy personality type.
+12,personality_module_worshipful,This module will allow you to create a droid with a worshipful personality type.
+13,personality_module_slang,"This module will allow you to create a droid with a ""slang"" personality type."
+14,repair_module,"This module is what allows droids to repair ""wounds"" on themselves and on other objects."
+15,manipulator_arm_package_set,The manipulator arm allows a droid to directly interact with its environment.
+16,droid_motive_system_advanced,This advanced droid motive system allows for more efficient mobility over flat and semi-flat surfaces.
+17,advanced_droid_frame,This advanced droid frame is sturdier than the standard frame.
+18,intellex_iv_computer,The Intellex IV computer features over seven hundred different spacecraft configurations.
+19,droid_brain_advanced,The advanced version of the droid brain allows faster processing power and thinking ability.
+20,socket_bank,This is an array that can fit a variety of droid sockets.
+21,personality_module_geeky,This module will allow you to create a droid with a geeky personality type.
+22,armor_module_1,"This armor module is used to help protect a droid from bangs, falls, and weak blaster fire."
+23,armor_module_2,"This armor module is used to help protect a droid from bangs, falls, and weak blaster fire."
+24,armor_module_6,"This armor module is used to help protect a droid from bangs, falls, and weak blaster fire."
+25,armor_module_3,"This armor module is used to help protect a droid from bangs, falls, and weak blaster fire."
+26,armor_module_4,"This armor module is used to help protect a droid from bangs, falls, and weak blaster fire."
+27,armor_module_5,"This armor module is used to help protect a droid from bangs, falls, and weak blaster fire."
+28,data_storage_module_1,This module is used to grant the droid the ability to store data objects for their owner.
+29,data_storage_module_2,This module is used to grant the droid the ability to store data objects for their owner.
+30,data_storage_module_3,This module is used to grant the droid the ability to store data objects for their owner.
+31,data_storage_module_4,This module is used to grant the droid the ability to store data objects for their owner.
+32,data_storage_module_5,This module is used to grant the droid the ability to store data objects for their owner.
+33,droid_storage_compartment,This is a small storage compartment utilized by the device it is mounted within as a workspace for various inherent functions.
+34,item_storage_module_1,This module is used to grant the droid the ability to store objects for their owner.
+35,item_storage_module_2,This module is used to grant the droid the ability to store objects for their owner.
+36,item_storage_module_3,This module is used to grant the droid the ability to store objects for their owner.
+37,item_storage_module_4,This module is used to grant the droid the ability to store objects for their owner.
+38,item_storage_module_5,This module is used to grant the droid the ability to store objects for their owner.
+39,item_storage_module_6,This module is used to grant the droid the ability to store objects for their owner.
+40,medic_module_1,This module is used to grant the droid the ability to enable its owner to perform some enhanced physical healing procedures.
+41,medic_module_2,This module is used to grant the droid the ability to enable its owner to perform some enhanced physical healing procedures.
+42,medic_module_3,This module is used to grant the droid the ability to enable its owner to perform some enhanced physical healing procedures.
+43,medic_module_4,This module is used to grant the droid the ability to enable its owner to perform some enhanced physical healing procedures.
+44,medic_module_5,This module is used to grant the droid the ability to enable its owner to perform some enhanced physical healing procedures.
+45,medic_module_6,This module is used to grant the droid the ability to enable its owner to perform some enhanced physical healing procedures.
+46,personality_module_geek,This personality module works to alter any verbal responses that the droid might give.
+52,r2_droid_chassis,This is a specialized droid chassis component used during the construction of an advanced version of a particular droid.
+53,r3_droid_chassis,This is a specialized droid chassis component used during the construction of an advanced version of a particular droid.
+54,binary_load_lifter_droid_chassis,This is a specialized droid chassis component used during the construction of an advanced version of a particular droid.
+55,le_repair_droid_chassis,This is a specialized droid chassis component used during the construction of an advanced version of a particular droid.
+56,probot_droid_chassis,This is a specialized droid chassis component used during the construction of an advanced version of a particular droid.
+57,surgical_droid_chassis,This is a specialized droid chassis component used during the construction of an advanced version of a particular droid.
+58,r4_droid_chassis,This is a specialized droid chassis component used during the construction of an advanced version of a particular droid.
+59,p0_droid_chassis,This is a specialized droid chassis component used during the construction of an advanced version of a particular droid.
+60,data_storage_module_6,This module is used to grant the droid the ability to store data objects for their owner.
+61,defensive_module_base,This wiring harness accepts any of the droid defensive component modules that can be crafted separately. Droid armor modules are an example of the kind of component you might put in this ingredient slot.
+62,droid_module_base,This wiring harness accepts any of the droid general service component modules that can be crafted separately. Droid medic and repair modules are an example of the kind of components you might put in this ingredient slot.
+63,crafting_module_base,This is the base object whose attributes all other crafting droid modules inherit from.
+64,crafting_module_food,This module is used to grant the droid the ability to function as a private food crafting station. Adding more than crafting module of the same type has no additional effect.
+65,crafting_module_weapon,This module is used to grant the droid the ability to function as a private weapon crafting station. Adding more than crafting module of the same type has no additional effect.
+66,crafting_module_structure,This module is used to grant the droid the ability to function as a private structure crafting station. Adding more than crafting module of the same type has no additional effect.
+67,crafting_module_clothing,This module is used to grant the droid the ability to function as a private clothing crafting station. Adding more than crafting module of the same type has no additional effect.
+68,crafting_tools,Crafting tools used for droid creation.
+69,inventory_caching_unit,An inventory caching unit.
+70,droid_brain_anakin,"Old modified droid brain. On the side of it is a metal tag with the inscription ""Modified prototype, C3PN. -A.S"""
+71,combat_socket_bank,"This is an array that can fit a variety of droid sockets. Unlike the normal droid socket bank, this one can accept not only crafting station and other general droid modules, but also droid combat modules."
+72,charge_suppression,Errant Charge Suppression System.
+73,combat_module,"This module is used to grant a combat-capable droid chassis the ability to engage in limited combat through melee and ranged methods, depending on the underlying chassis."
+74,droid_combat_module_base,This wiring harness accepts any of the droid general service component modules that can be crafted separately. Droid medic and repair modules are an example of the kind of components you might put in this ingredient slot. This particular module is capable of interfacing with Droid Combat Modules as well as the other types.
+75,repair_unit_casing,This metal casing is made to hold the components necessary to perform reconstruction and routine maintenance on droids.
+76,repair_unit_casing_advanced,This metal casing is large and lightweight. It is made to hold the components necessary to perform reconstruction and routine maintenance on droids.
+77,diagnostic_circuit,"This circuit board holds blueprints, instructions, and data necessary for performing repairs on most standard types of droids."
+78,diagnostic_circuit_advanced,"This advanced circuit board provides high-speed access to the blueprints, instructions, and data that it contains, which is necessary for performing repairs on almost all types of droids."
+79,capacitor_low_discharge,"This capacitor discharge device is designed to hold and release a small electric charge, used to facilitate quick droid repairs."
+80,capacitor_high_discharge,"This advanced capacitor discharge device is designed to hold and release a large electric charge, used to facilitate quick droid repairs."
+81,power_supply_redundant,"This droid power supply is used mainly in droid reconstruction, when it sometimes becomes necessary to provide a backup power source while maintenance is being performed."
+82,power_supply_redundant_advanced,"This high capacity power supply is fashioned for use as both a secondary and if required, a tertiary source of energy. Devices such as this are mainly used in droid reconstruction, when it sometimes becomes necessary to provide a backup power source while maintenance is being performed."
+83,unit_delivery_cartridge,A small metal cartridge used to hold materials necessary for deploying emergency droid repair while in the field.
+84,unit_delivery_cartridge_advanced,"A large, yet lightweight metal cartridge used to hold materials necessary for deploying emergency droid repair while in the field."
+85,merchant_barker,This modules enables a droid to play back a recorded message and give out waypoints by request.  The module can only be programmed by a merchant with Advertising IV.
+86,detonation_module,This module turns a droid into a moving bomb.  The module is activated using the /detonateDroid command.  Be warned that the droid will not survive this action!
+87,stimpack_dispensor,This module allows the droid to store level A stimpacks.  The droid's master or members of the master's party may then receive healing from it using /requestStimpack.
+88,struct_maint_module_1,This module is used to grant the droid the ability to perform maintenance tasks on structures.
+89,struct_maint_module_2,This module is used to grant the droid the ability to perform maintenance tasks on structures.
+90,struct_maint_module_3,This module is used to grant the droid the ability to perform maintenance tasks on structures.
+91,auto_repair_module,"This module allows the droid to repair itself as well all friendly, nearby droids.  Using this module consumes extra power, so it is best to keep it off until needed."
+92,playback_module,"This module allows a musician to record and play back a musical track. A droid equipped with such a module can be used as backup or accompaniment in a band performance.
+
+Using multiple playback modules will allow multiple tracks to be stored on the same droid, but only one track can be played at a time."
+93,performer_effects_a,This module enables the droid to project effects for Dancers and Musicians.
+94,performer_effects_b,This module enables the droid to project effects for Dancers and Musicians.
+95,performer_effects_c,This module enables the droid to project effects for Dancers and Musicians.
+96,performer_effects_d,This module enables the droid to project effects for Dancers and Musicians.
+97,performer_effects_e,This module enables the droid to project effects for Dancers and Musicians.
+98,harvest_module,This module will allow a scout to program a droid that can harvest from creatures that the player has killed.
+99,trap_module,The Scout Trap Projectile Unit breaks down a scout or ranger level trap into a projectile capable of being fired from a small compression unit.  Some effectiveness is lost in the conversion.
+100,performer_effects_aa,This module enables the droid to project effects for Dancers and Musicians.
+101,crafting_module_space,This module is used to grant the droid the ability to function as a private ship component crafting station. Adding more than one crafting module of the same type has no additional effect.

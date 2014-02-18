@@ -1,0 +1,21 @@
+115,rct_0,The main starship reactor provides power for all internal components.
+116,eng_0,The engine system provides the starship with thrust to maneuver in space.
+117,shd_0,Shield generators create a protective energy field around your starship which dissipates when hit by enemy weapons.
+118,arm_0,Armor absorbs weapon fire and protects fragile ship components.
+119,cap_0,The capacitor draws power from the main reactor and stores it for the operation of starship weaponry.
+120,bst_0,Boosters are rechargeable ion engine over-drivers that enhance speed when they are engaged.
+121,ddi_0,This interface provides a hardware link between your droid and your internal starship systems.
+122,wpn_0,"Starship weapons encompass energy-based blasters, ion cannons, and projectile weapons such as slug-throwers."
+123,wpn_1,Ordnance launchers can fire missile weapon types at locked targets.
+124,cms_0,Countermeasure launchers fire special anti-tracking ordnance to confuse incoming guided missiles.
+125,bdg_0,Bridge
+126,hgr_0,Hangar
+127,tst_0,Targeting Station
+128,rct_basic,The main starship reactor provides power for all internal components.
+129,eng_basic,The engine system provides the starship with thrust to maneuver in space.
+130,shd_basic,Shield generators create a protective energy field around your starship which dissipates when hit by enemy weapons.
+131,arm_basic,Armor absorbs weapon fire and protects fragile ship components.
+132,cap_basic,The capacitor draws power from the main reactor and stores it for the operation of starship weaponry.
+133,bst_basic,Boosters are rechargeable ion engine over-drivers that enhance speed when they are engaged.
+134,ddi_basic,This interface provides a hardware link between your droid and your internal starship systems.
+135,wpn_basic,"Starship weapons encompass energy-based blasters, ion cannons, and projectile weapons such as slug-throwers."

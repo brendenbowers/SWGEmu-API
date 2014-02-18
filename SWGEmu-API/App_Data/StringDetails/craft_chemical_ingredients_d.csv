@@ -1,0 +1,49 @@
+1,bio_effect_controller,A biological effect controller allows for a more focused application of medical techniques.
+2,chemistry_base_component,Basic chemistry component.
+3,dye_clothing,A quantity of cloth dye.
+4,dye_hair,A quantity of hair dye.
+5,liquid_suspension,This liquid suspension solution appears to be extremely viscous.
+6,release_mech_duration,This is a chemical release duration mechanism.
+7,solid_delivery_shell,This is a solid delivery shell.
+8,body_shell,A body shell.
+9,body,Body.
+10,binding_and_hardware,Binding and hardware.
+11,colorizable_cloth_panel,A colorizable cloth panel.
+12,casing,A casing.
+13,delivery_medium,A delivery medium.
+14,drug_duration_compound,A compound that determines the duration of a drug.
+15,drug_strength_compound,A compound that determines the strength of a drug.
+16,hair_color,Hair coloring.
+17,hardware,Some hardware.
+18,inorganic_element,An inorganic element.
+19,organic_element,An organic element.
+20,purified_organic_suspension,Some purified organic suspension fluid.
+21,suspension_base,A suspension base.
+22,drug_strength_compound_2,A slightly advanced compound that determines the duration of a drug.
+23,drug_strenth_compound_2,A slightly advanced compound that determines the duration of a drug.
+24,purified_organic_element,A purified organic element.
+25,dispersal_mechanism_advanced,This advanced dispersal mechanism is more adept at discharging its chemical ingredients to the specified place.
+26,infection_amplifier_advanced,This advanced infection amplifier increases the efficiency of offensive chemical agents.
+27,resilience_compound_advanced,This advanced resilience compound has a potent resilience effect.
+28,dispersal_mechanism,This dispersal mechanism allows a controlled discharge of chemicals.
+29,infection_amplifier,This infection amplifier increases the effect of chemical attacks.
+30,resilience_compound,This resilience compound creates an active resistance to certain maladies.
+31,bio_effect_controller_advanced,This advanced biological effect controller allows for greater focused application of medical techniques.
+32,release_mech_duration_advanced,This is an advanced chemical release duration mechanism.
+33,solid_delivery_shell_advanced,This is an advanced solid delivery shell.
+34,liquid_suspension_advanced,This advanced liquid suspension solution appears to be extremely viscous.
+35,fungus,A sample of fungus.
+36,nebula_orchid,A Nebula orchid.
+37,pika,A pika.
+38,funnel,A funnel is used to direct fluid from one container to another.
+39,mushroom,"A spore organism, mushrooms have many different applications in science, cooking, and medicine."
+40,rancor_bile,This rancor bile could be used in place of a medical dispersal mechanism.
+41,janta_blood,This Janta blood could be used as  a biological effect controller.
+42,infection_amplifier_donkuwah,This Donkuwah poison would make an effective infection amplifier.
+43,liquid_suspension_quest,This enhanced liquid suspension solution appears to be extremely viscous.
+44,dispersal_mechanism_quest,This dispersal mechanism has been modified to discharge its chemical ingredients over a wider area from a longer range.
+45,spider_venom,This spider venom appears as if it would make an effective infection amplifier.
+46,first_organic_element,An organic element.
+47,second_organic_element,An organic element.
+48,first_inorganic_element,An inorganic element.
+49,second_inorganic_element,An inorganic element.

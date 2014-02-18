@@ -1,0 +1,331 @@
+1,air_car_attendant,air car attendant
+
+2,aqualish_base_female,aqualish base female
+
+3,aqualish_base_male,aqualish base male
+
+4,arcona_base_base_female,arcona base base female
+
+5,arcona_base_base_male,arcona base base male
+
+6,askajian_base_female,askajian base female
+
+7,askajian_base_male,askajian base male
+
+8,banker,banker
+
+9,bartender,bartender
+
+10,base_npc,base npc
+
+11,beggar,beggar
+
+12,bellboy,bellboy
+
+13,bith_base_female,bith base female
+
+14,bith_base_male,bith base male
+
+15,bothan_base_female,bothan base female
+
+16,bothan_base_male,bothan base male
+
+17,chadra_fan_base_female,chadra fan base female
+
+18,chadra_fan_base_male,chadra fan base male
+
+19,cloning_attendant,cloning attendant
+
+20,concierge,concierge
+
+21,dancer,dancer
+
+22,dantari_base_male,dantari base male
+
+23,devaronian_base_female,devaronian base female
+
+24,devaronian_base_male,devaronian base male
+
+25,doctor,doctor
+
+26,drall_base_female,drall base female
+
+27,drall_base_male,drall base male
+
+28,drunk,drunk
+
+29,dug_base_female,dug base female
+
+30,dug_base_male,dug base male
+
+31,dulok_base_female,dulok base female
+
+32,dulok_base_male,dulok base male
+
+33,duros_base_female,duros base female
+
+34,duros_base_male,duros base male
+
+35,ewok_base_female,ewok base female
+
+36,ewok_base_male,ewok base male
+
+37,farmer,farmer
+
+38,gamorrean_base_female,gamorrean base female
+
+39,gamorrean_base_male,gamorrean base male
+
+40,garage_attendant,garage attendant
+
+41,generic_aqualish_female,generic aqualish female
+
+42,generic_aqualish_male,generic aqualish male
+
+43,generic_bith_female,generic bith female
+
+44,generic_bith_male,generic bith male
+
+45,generic_bothan_female,generic bothan female
+
+46,generic_bothan_male,generic bothan male
+
+47,generic_devaronian_female,generic devaronian female
+
+48,generic_devaronian_male,generic devaronian male
+
+49,generic_gran_female,generic gran female
+
+50,generic_gran_male,generic gran male
+
+51,generic_human_female,generic human female
+
+52,generic_human_male,generic human male
+
+53,generic_ishi_tib_female,generic ishi tib female
+
+54,generic_ishi_tib_male,generic ishi tib male
+
+55,generic_jawa_female,generic jawa female
+
+56,generic_jawa_male,generic jawa male
+
+57,generic_moncal_female,generic moncal female
+
+58,generic_moncal_male,generic moncal male
+
+59,generic_npc,generic npc
+
+60,generic_rodian_female,generic rodian female
+
+61,generic_rodian_male,generic rodian male
+
+62,generic_trandoshan_female,generic trandoshan female
+
+63,generic_trandoshan_male,generic trandoshan male
+
+64,generic_tusken_raider_female,generic tusken raider female
+
+65,generic_tusken_raider_male,generic tusken raider male
+
+66,generic_twilek_female,generic twilek female
+
+67,generic_twilek_male,generic twilek male
+
+68,generic_wookiee_female,generic wookiee female
+
+69,generic_wookiee_male,generic wookiee male
+
+70,generic_zabrak_female,generic zabrak female
+
+71,generic_zabrak_male,generic zabrak male
+
+72,gethzerion,gethzerion
+
+73,gorax_base_female,gorax base female
+
+74,gorax_base_male,gorax base male
+
+75,gotal_base_female,gotal base female
+
+76,gotal_base_male,gotal base male
+
+77,gran_base_female,gran base female
+
+78,gran_base_male,gran base male
+
+79,guard,guard
+
+80,gungan_base_female,gungan base female
+
+81,gungan_base_male,gungan base male
+
+82,gupin_base_female,gupin base female
+
+83,gupin_base_male,gupin base male
+
+84,hospital_patient,hospital patient
+
+85,human_base_female,human base female
+
+86,human_base_male,human base male
+
+87,hutt_base_female,hutt base female
+
+88,hutt_base_male,hutt base male
+
+89,hutt_thug,hutt thug
+
+90,imperial_military,imperial military
+
+91,ishi_tib_base_female,ishi tib base female
+
+92,ishi_tib_base_male,ishi tib base male
+
+93,ithorian_base_female,ithorian base female
+
+94,ithorian_base_male,ithorian base male
+
+95,jawa_base_female,jawa base female
+
+96,jawa_base_male,jawa base male
+
+97,jinda_base_female,jinda base female
+
+98,jinda_base_male,jinda base male
+
+99,kitonak_base_female,kitonak base female
+
+100,kitonak_base_male,kitonak base male
+
+101,klatooinian_base_female,klatooinian base female
+
+102,klatooinian_base_male,klatooinian base male
+
+103,kowakian_monkey_lizard_base_female,kowakian monkey lizard base female
+
+104,kowakian_monkey_lizard_base_male,kowakian monkey lizard base male
+
+105,kubaz_base_female,kubaz base female
+
+106,kubaz_base_male,kubaz base male
+
+107,marauder_base_female,marauder base female
+
+108,marauder_base_male,marauder base male
+
+109,merchant,merchant
+
+110,moncal_base_female,moncal base female
+
+111,moncal_base_male,moncal base male
+
+112,musician,musician
+
+113,nikto_base_female,nikto base female
+
+114,nikto_base_male,nikto base male
+
+115,nurse,nurse
+
+116,ortolan_base_female,ortolan base female
+
+117,ortolan_base_male,ortolan base male
+
+118,phlog_base_female,phlog base female
+
+119,phlog_base_male,phlog base male
+
+120,pirate,pirate
+
+121,police_officer,police officer
+
+122,prison_warden,prison warden
+
+123,prisoner,prisoner
+
+124,quarren_base_female,quarren base female
+
+125,quarren_base_male,quarren base male
+
+126,rebel_military,rebel military
+
+127,refugee,refugee
+
+128,rodian_base_female,rodian base female
+
+129,rodian_base_male,rodian base male
+
+130,selonian_base_female,selonian base female
+
+131,selonian_base_male,selonian base male
+
+132,shistavanen_base_female,shistavanen base female
+
+133,shistavanen_base_male,shistavanen base male
+
+134,shop_customer,shop customer
+
+135,skill_trainer,skill trainer
+
+136,smuggler,smuggler
+
+137,stormtrooper,stormtrooper
+138,sullustan_base_female,sullustan base female
+
+139,sullustan_base_male,sullustan base male
+
+140,talz_base_female,talz base female
+
+141,talz_base_male,talz base male
+
+142,teek_base_female,teek base female
+
+143,teek_base_male,teek base male
+
+144,thief,thief
+
+145,toydarian_base_female,toydarian base female
+
+146,toydarian_base_male,toydarian base male
+
+147,trandoshan_base_female,trandoshan base female
+
+148,trandoshan_base_male,trandoshan base male
+
+149,tulgah_base_female,tulgah base female
+
+150,tulgah_base_male,tulgah base male
+
+151,tusken_raider_base_female,tusken raider base female
+152,tusken_raider_base_male,tusken raider base male
+153,twilek_base_female,twilek base female
+
+154,twilek_base_male,twilek base male
+
+155,waitress,waitress
+
+156,weequay_base_female,weequay base female
+
+157,weequay_base_male,weequay base male
+
+158,wistie_base_female,wistie base female
+
+159,wistie_base_male,wistie base male
+
+160,wookiee_base_female,wookiee base female
+
+161,wookiee_base_male,wookiee base male
+
+162,yuzzum_base_female,yuzzum base female
+
+163,yuzzum_base_male,yuzzum base male
+
+164,zabrak_base_female,zabrak base female
+
+165,zabrak_base_male,zabrak base male
+
+166,dark_trooper,A Dark Trooper
+167,scout_trooper,scout trooper
+168,storm_commando,storm commando
+169,stormtrooper_black_hole,black hole stormtrooper

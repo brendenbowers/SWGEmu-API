@@ -1,0 +1,45 @@
+1,rug,A rug.
+2,filling,Some filling.
+3,envelope,An envelope.
+4,frame,A frame.
+5,shelves,A few shelves.
+6,panelling,Some panelling.
+7,cushions,Some soft cushions.
+8,upholstery,A large swath of generic upholstery.
+9,pot,A pot.
+10,tree,A tree.
+11,greenery,Some assorted greenery.
+12,torch_module,"A torch module, the most basic unit of a torch."
+13,lighting_module,"A lighting module, a basic unit of torch or light creation."
+14,table_top,A table top.
+15,seat,A seat for a chair.
+16,roller_mechanism,A roller mechanism.
+17,panels,Some panels.
+18,doors,Some doors.
+19,lamp_body,A lamp's body.
+20,lamp_assembly,An assembly for a lamp.
+21,shade,"A shade, used in making lamps."
+22,housing,A housing.
+23,neck,"A neck, used in crafting items such as lamps."
+24,recliner_mechanism,A recliner mechanism.
+25,mattress,A mattress.
+26,memory_module,A memory module.
+27,processing_module,A processing module.
+28,load_bearing_truss,A strong load-bearing truss.
+29,valving,"Some valving, generally used in creating instruments."
+30,painting_schematic_blumbush,A document containing the information necessary to reproduce a painting of a blumbush.
+31,painting_schematic_blueleaf_temple,A document containing the information necessary to reproduce a painting of the Blue Leaf temple.
+32,painting_schematic_boffa,A document containing the information necessary to reproduce a painting of a boffa plant.
+33,painting_schematic_golden_flower_01,A document containing the information necessary to reproduce an abstract painting of golden petals - first in the series.
+34,painting_schematic_golden_flower_02,A document containing the information necessary to reproduce an abstract painting of golden petals - second in the series.
+35,painting_schematic_golden_flower_03,A document containing the information necessary to reproduce an abstract painting of golden petals - third in the series.
+36,painting_schematic_house,A document containing the information necessary to reproduce a painting of a residential house.
+37,painting_schematic_krayt_skeleton,A document containing the information necessary to reproduce a painting of a krayt dragon skeleton.
+38,painting_schematic_lucky_despot,A document containing the information necessary to reproduce a painting of the Lucky Despot wreckage.
+39,painting_schematic_mattberry,A document containing the information necessary to reproduce a painting of mattberry plant.
+40,painting_schematic_rainbow_berry_bush,A document containing the information necessary to reproduce a painting of a rainbow berry bush.
+41,painting_schematic_moncal_eye_01,A document containing the information necessary to reproduce a painting of a Mon Calamari eye - first in the series.
+42,painting_schematic_moncal_eye_02,A document containing the information necessary to reproduce a painting of a Mon Calamari eye - second in the series.
+43,painting_schematic_ronka,A document containing the information necessary to reproduce a painting of a ronka plant.
+44,painting_schematic_raventhorn,A document containing the information necessary to reproduce a painting of a raventhorn plant.
+45,dual_wave_synthesizer,This device is adequately capable of reproducing the sound of almost any musical instrument.

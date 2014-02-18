@@ -1,0 +1,57 @@
+1,apprenticeship,This experience is gained purely from teaching other player's skills.
+2,bio_engineer_dna_harvesting,This experience is earned by sampling DNA from creatures.
+3,bountyhunter,This experience is gained by completing bounty hunter missions.
+4,camp,This experience is gained from setting up and maintaining camps in the wilderness.
+5,combat,Description of Combat experience type.
+6,combat_general,This experience is gained by engaging in combat.
+7,combat_meleespecialize_onehand,This experience is gained by engaging in one handed melee combat.
+8,combat_meleespecialize_onehandlightsaber,This experience is gained by engaging in one handed lightsaber melee combat.
+9,combat_meleespecialize_polearm,This experience is gained by engaging in polearm combat.
+10,combat_meleespecialize_polearmlightsaber,This experience is gained by engaging in polearm lightsaber melee combat.
+11,combat_meleespecialize_twohand,This experience is gained by engaging in two handed melee combat.
+12,combat_meleespecialize_twohandlightsaber,This experience is gained by engaging in two handed lightsaber melee combat.
+13,combat_meleespecialize_unarmed,This experience is gained by engaging in unarmed melee combat.
+14,combat_rangedspecialize_carbine,This experience is gained by engaging in combat with a carbine.
+15,combat_rangedspecialize_heavy,This experience is gained by engaging in combat with heavy weapons.
+16,combat_rangedspecialize_pistol,This experience is gained by engaging in combat with a pistol.
+17,combat_rangedspecialize_rifle,This experience is gained from killing NPCs and creatures with a rifle.
+18,crafting_bio_engineer_creature,This experience is earned by crafting Bio-Engineered components and creatures.
+19,crafting_cloth_armor,This experience is gained from crafting armor.
+20,crafting_clothing_armor,This experience is gained from crafting armor.
+21,crafting_clothing_general,This experience is granted by making clothes.
+22,crafting_droid_general,This experience is gained by crafting droids.
+23,crafting_food_general,This experience is gained by crafting foods.
+24,crafting_general,General crafting experience; not one of the specialized 'elite' professions.
+25,crafting_medicine_general,"This experience is gained by crafting medical items.  Doctors, Medics, and Combat Medics benefit from this type of experience."
+26,crafting_spice,This experience is gained by crafting spices.
+27,crafting_structure_general,This experience is gained by crafting structures.
+28,crafting_weapons_general,This experience is gained by crafting weapons.
+29,creaturehandler,"This experience is gained from taming creatures, training creatures commands, and when creatures do well in combat."
+30,dance,This experience is gained by performing dances.
+31,entertainer_healing,This experience is gained by healing Battle Fatigue and Mind Wounds through performance techniques.
+32,force_rank_xp,This experience is a measure of your standing with your Jedi Enclave.  It can be gained by defeating Enclave enemies in battle.  It can be lost by being killed in combat as well as not fulfilling Enclave duties.
+33,fs_combat,This experience is gained through conversion of standard combat experience types.
+34,fs_crafting,This experience is gained through conversion of standard crafting experience types.
+35,fs_reflex,This experience is gained through conversion of standard combat experience types.
+36,fs_senses,"This experience is gained through conversion of senses related experience types such as entertainer, scout, and medical."
+37,imagedesigner,This experience is gained by changing other players' appearances.
+38,jedi,This experience is gained from following the ways of the Force.
+39,jedi_general,This experience is gained from following the ways of the Force.
+40,medical,"This experience is gained from healing people, with commands and with medpacks and stimpacks."
+41,merchant,This experience is gained from having a vendor and from having people use that vendor.  This can accrue offline.
+42,music,This experience is gained by playing music.
+43,pilot_general,This experience is gained by engaging in starship combat.
+44,pilot_imperial,This experience is gained through service to the Empire.
+45,pilot_rebel,This experience is gained by aiding the Rebel Alliance.
+46,political,Political experience is earned by participating in the weekly mayoral votes held in player cities.
+47,prestige_imperial,This experience represents your status within the Empire.
+48,prestige_pilot,This experience represents your status within the Pilot's Guild.
+49,pretige_rebel,This experience represents your status within the Rebellion.
+50,resource_harvesting_inorganic,This experience is gained from sampling resources.
+51,scout,This experience is gained from harvesting and other Scout activities.
+52,slicing,"This experience is gained by successfully slicing weapons, armor, terminals, and by unlocking chests."
+53,space_combat_general,This experience is gained by engaging in starship combat.
+54,squadleader,This experience is gained by a Squad Leader's group performing well in combat.  Only the Squad Leader gets this type of experience.
+55,trapping,This experience is gained from successfully trapping creatures in the wilderness.
+56,unobtainable,This experience is unobtainable.
+57,shipwright,This experience is gained by crafting ship components and chassis.

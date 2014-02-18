@@ -1,0 +1,328 @@
+1,absorption_bleeding,This skill mod decreases the damage taken from bleeding.
+2,absorption_disease,This skill mod reduces the damage taken from disease.
+3,absorption_fire,This skill mod reduces the damage taken from fire.
+4,absorption_poison,This skill mod reduces the the damage taken from poison.
+5,advanced_assembly,This skill mod affects the crafting of advanced starship systems.
+6,advertising,This is being removed for now.
+7,aim,This mod increases the efficacy of your aim command.
+8,alert,"The Alert skill offers a chance to defend against a surprise shot from a covered sniper.  The higher the skill, the better the chance to successfully defend against this type of attack."
+9,anti_shock,This skill mod determines your resistance to shock.
+10,armor_assembly,This skill mod determines the chance of succeeding when crafting armor.
+11,armor_customization,This skill mod determines the extent of modification you can perform on armor items in the crafting process.
+12,armor_experimentation,This skill mod directly affects how many experimentation points you receive when creating armor.
+13,armor_repair,This skill mod determines how effective you are at repairing armor.
+14,berserk,This mod improves your chance of succesfully entering the berserk state.
+15,bio_engineer_assembly,This skill mod governs the Bio-Engineer's ability to craft creatures and tissue samples.
+16,bio_engineer_experimentation,This skill mod governs the Bio-Engineer's ability to experiment on crafted creatures and tissue samples.
+17,blind_defense,This mod will protect you from being blinded.
+18,block,This mod increases the chance of succesfully blocking an attack. 
+19,body,"This skill mod determines how adept the Image Designer is at modifying a character's body.  This is used to change height, weight, muscle, and other customizations."
+20,booster_assembly,This skill mod affects the crafting of boosters for starfighters.
+21,bounty_mission_level,Every point in this mod will allow access to more lucrative and difficult Bounty Hunter missions.
+22,burst_run,The burst run efficiency skill mod is a direct percentage decrease to the cost of using the /burstrun command.
+23,camouflage,A higher camouflage skill means the Ranger's conceal ability will last longer and be more effective on himself and others.
+24,camp,A higher camping skill enables the use of increasingly complex camp kits.
+25,carbine_accuracy,"As the Carbine Accuracy skill mod increases, the chance to hit an enemy with a carbine ranged attack also increases."
+26,carbine_aim,"The Carbine Aiming skill modifier directly amplifies the effectiveness of the Aim command. A high skill in this can drastically increase your odds of Aiming, particularly if multiple Aims are used consecutively in the course of one attack."
+27,carbine_hit_while_moving,This mod improves your chace of hitting while moving with a carbine.
+28,carbine_speed,This mod improves your attack speed with carbines.
+29,center_of_being_duration_onehandmelee,This skill mod controls the duration o fthe center of being command when fighting with a one-handed melee weapon.
+30,center_of_being_duration_polearm,This skill mod controls the duration o fthe center of being command when fighting with a polearm.
+31,center_of_being_duration_twohandmelee,This skill mod controls the duration o fthe center of being command when fighting with a two-handed melee weapon.
+32,center_of_being_duration_unarmed,This skill mod controls the duration of the Center Of Being command when fighting unarmed.
+33,chassis_assembly,This skill mod affects crafting and experimentation of starfighter chassis.
+34,clothing_assembly,This skill mod increases the chance of succeeding when crafting clothing items.
+35,clothing_customization,This skill mod determines the extent of modification you can perform on clothing items in the crafting process.
+36,clothing_experimentation,This skill mod directly affects how many experimentation points you receive when crafting Combat Medic medicines and medical items.
+37,clothing_repair,This skill mod determines how effective you are at repairing clothing.
+38,combat_equillibrium,This mod increases the chance of automatically recovering from a forced posture change.
+39,combat_haste,This mod impoves your speed for all combat actions.
+40,combat_healing_ability,"This skill mod determines the range and sophistication of your combat medical techniques and medicines.  The higher the number, the higher the effectiveness of these techniques and medicines."
+41,combat_medic_effectiveness,This skill mod determines how effective you are at performing Combat Medic techniques.
+42,combat_medicine_assembly,This skill mod increases the chances of succeeding when crafting Combat Medic medicines.
+43,combat_medicine_experimentation,This skill mod directly affects how many experimentation points you receive when crafting Combat Medic medicines and medical items.
+44,counterattack,This mod controls your chance of responding to an aggressive attack with an unblockable counterattack.
+45,cover,The Cover skill mod determines how safe you are from enemy notice and attack while in a covered state.
+46,crafting_repair,This skill mod determines how effective you are at general repair of crafted items.
+47,creature_assembly,This skill mod determines the chance at success when assembling creatures as a Bio-Engineer.
+48,creature_experimentation,This skill mod directly affects how many experimentation points you receive while assembling creatures as a Bio-Engineer.
+49,creature_harvesting,This skill mod is used to determine the quantity of resources harvested from a creature.
+50,creature_hit_bonus,Skilled scouts and rangers have gained the ability to strike creatures more effectively.  This raw to-hit bonus only applies to normal ranged attacks.
+51,creature_knowledge,"When a player with creature knowledge examines a creature, they learn additional information about the creature's abilities.  The higher this skill mod, the more information displayed."
+52,dissipation_bleeding,This skill mod reduces the duration of bleeding.
+53,dissipation_disease,This skill mod reduces the duration of disease.
+54,dissipation_fire,This skill mod reduces the duration of fire.
+55,dissipation_poison,This skill mod reduces the duration of poison.
+56,dizzy_defense,This mod improves your chance to avoid being dizzied. 
+57,dna_harvesting,This skill allows a Bio-Engineer to sample higher quality DNA from creatures with less trauma to their system.
+58,dodge,This mod increases your chance to dodge incoming attacks. 
+59,droid_assembly,This skill modifier value affects the Droid Engineer's success rate when it comes to assembling droids and droid-related objects.
+60,droid_complexity,This is an erroneous value.
+61,droid_customization,This skill modifier value affects the Droid Engineer's success rate and capabilities when it comes to colorizing and customizing droids and droid-related objects.
+62,droid_experimentation,This skill mod directly affects how many experimentation points you receive when creating droids.
+63,droid_find_chance,This skill modifier value affects the Bounty Hunter player's success rate when it comes to utilizing a Bounty Hunter's droid 'find' feature.
+64,droid_find_speed,This skill modifier value affects the Bounty Hunter player's speed when it comes to utilizing a Bounty Hunter's droid 'find' feature.
+65,droid_track_chance,This skill modifier value affects the Bounty Hunter player's success rate when it comes to utilizing a Bounty Hunter's droid 'track' feature.
+66,droid_track_speed,This skill modifier value affects the Bounty Hunter player's speed when it comes to utilizing a Bounty Hunter's droid 'track' feature.
+67,droid_tracks,This skill modifier value affects the Bounty Hunter player's number of possible 'tracks' when it comes to utilizing a Bounty Hunter's droid 'find' feature.
+68,engine_assembly,This skill mod affects crafting of starfighter engines.
+69,face,"This skill mod determines how adept the Image Designer is at modifying the facial attributes of a character. This is used to change eye color, eye size, nose width, and all other facial options."
+70,feign_death,"As this ability improves,  so does the player's chance of successfully performing feign death in combat."
+71,flora_harvester_efficiency,This skill mod determines how efficiently your flora harvesters operate.
+72,flora_harvester_maintenance,This skill mod affects the maintenance rate of flora harvesters.
+73,flora_harvester_speed,This skill mod determines how fast your flora harvesters are at general extraction.
+74,food_assembly,This skill mod determines the chance of succeeding when crafting food.
+75,food_experimentation,This skill mod directly affects how many experimentation points you receive when crafting food.
+76,foraging,"The foraging skill mod improves the quality of the /forage command.  As this skill mod increases, the chance of successfully foraging improves."
+77,force_absorb,This mod indicates the amount of Force power you will absorb when attacked.
+78,force_armor,This mod increase the amount of normal damage your Force Armor blocks.
+79,force_assembly,This skill mod enhances your ability to succeed when crafting any object.
+80,force_choke,This mod represents the duration of your Force Chokes.
+81,force_control_dark,This skill mod increases the strength of any healing or enhancement effects.
+82,force_control_light,This skill mod increases the strength of any healing or enhancement effects.
+83,force_defense,This skill mod affects your ability to defend yourself from Force attacks.
+84,force_experimentation,This skill mod directly increases your chance at receiving an amazing success when crafting any object.
+85,force_failure_reduction,This skill mod decreases the chances of failing when crafting an item.
+86,force_feedback,This mod indicates the amount of feedback that a Force attack will cause.
+87,force_luck,"You seem to be lucky, and this skill mod is an indication of just how lucky.  This will affect things like the amount of money you find on defeated foes."
+88,force_manipulation_dark,This skill mod increases the efficiency of any Force ability.
+89,force_manipulation_light,This skill mod increases the efficiency of any Force ability.
+90,force_persuade,"This skill mod allows you to use a minor Jedi mind trick, getting you better prices for some goods, like skill training from skill trainers."
+91,force_power_dark,This skill mod increases the strength of any offensive Force attack.
+92,force_power_light,This skill mod increases the strength of any offensive Force attack.
+93,force_repair_bonus,This skill mod directly affects your chances of repairing a damaged or broken item.
+94,force_run,The Force run skill mod is a direct multiplier to the movement speed of the Jedi.
+95,force_shield,This mod increase the amount of Force damage your Force Shield blocks.
+96,force_vehicle_control,"This skill mod gives you better control over a vehicle that you are piloting, giving it a better maximum turn rate and better turning abilities overall."
+97,force_vehicle_speed,"This skill mod affects your acceleration and deceleration abilities with a vehicle that you are piloting, allowing you to achieve your maximum speed more quickly, and making your ability to stop more effective."
+98,forceintimidate_accuracy,This skill mod improves your chance to intimidate enemies with the Force.
+99,forceknockdown_accuracy,This skill mod improves your chance to knock down enemies with the Force.
+100,forcelightning_accuracy,This skill mod improves your chance to successfully hit your enemies with Force lightning.
+101,forcethrow_accuracy,This skill mod improves your chance to hit enemies with small objects thrown with the Force.
+102,forceweaken_accuracy,This skill mod improves your chance to successfully debilitate your enemies with the Force.
+103,general_assembly,This skill mod increases the chance of succeeding when crafting general items.
+104,general_experimentation,This skill mod directly affects how many experimentation points you receive when crafting general items.
+105,grenade_assembly,the Grenade Assembly skill mod helps to determine success in grenade assembly.
+106,grenade_experimentation,The Grenade Experimentation skill mod directly affects how many Experimentation points you receive when crafting grenades.
+107,group_burst_run,The group burst run efficiency skill mod is a direct percentage decrease to the cost of using the /burstrun command for all members of your group.
+108,group_melee_defense,The group melee defense skill mod grants everyone in the Squad Leader's party the ability to defend against melee attacks more effectively.
+109,group_ranged_defense,The group ranged defense skill mod grants everyone in the Squad Leader's party the ability to defend against ranged attacks more effectively.
+110,group_slope_move,"This skill mod determines how fast members of a Squad Leader's group can move through sloped terrain conditions.  The higher the number, the easier group members can move over hills."
+111,hair,"This skill mod determines how adept the Image Designer is at modifying a character's hairstyle. This is used to trim or color facial hair, as well as to sculpt hairstyles and modify hair color."
+112,healing_ability,"This skill mod determines the level of medication that you have access to use to heal patients with.  The higher the number, the more advanced your medicine selection is."
+113,healing_dance_ability,"This skill mod determines the number of dances that you know.  The higher the number, the more dances you are likely to know."
+114,healing_dance_mind,This skill mod determines how effective you are at healing the Mind injuries of players that are watching you dance.
+115,healing_dance_shock,This skill mod determines how effective you are at healing the Battle Fatigue of players that are watching you dance.
+116,healing_dance_wound,This skill mod determines how effective you are at healing the Mind/Focus/Willpower wounds of players that are watching you dance.
+117,healing_injury_speed,This skill mod helps to lower the duration between healing injuries.  A higher number means that you can heal injuries more often.
+118,healing_injury_treatment,This skill mod provides a direct bonus to the number of injuries you can heal at once.  A bonus of 50 would equal 50% more injury points healed per treatment.  This also changes the effects of enhancement medication.
+119,healing_music_ability,"This skill mod determines what songs you can play and what instruments you can use.  The higher the number, the wider the variety of both songs and instruments."
+120,healing_music_mind,This skill mod determines how effective you are at healing the Mind injuries of players that are listening to you play music.
+121,healing_music_shock,This skill mod determines how effective you are at healing the Battle Fatigue of players that are listening to you play music.
+122,healing_music_wound,This skill mod determines how effective you are at healing the Mind/Focus/Willpower wounds of players that are listening to you play music.
+123,healing_range,"This Combat Medic skill mod is used to help extend the range of effective ranged healing.  The higher the number, the further your healing target can be from you and still be healed."
+124,healing_range_speed,This skill mod helps to lower the duration time between ranged healings.  A higher number means that you can perform ranged heals more often.
+125,healing_wound_speed,This skill mod helps to lower the duration time between healing wounds.  A higher number means that you can heal wounds more often.
+126,healing_wound_treatment,This skill mod provides a direct bonus to the amount of wounds you can heal at once.  A bonus of 50 would equal 50% more wounds healed per treatment.  This also changes the effects of enhancement medication.
+127,heavy_acid_beam_accuracy,This mod improves your accuracy with Heavy Acid Beam weapons.
+128,heavy_acid_beam_speed,This mod improves your attack speed with Heavy Acid Beam weapons.
+129,heavy_acid_rifle_accuracy,"As the Heavy Acid Rifle skill mod increases, the chance to hit an enemy with a Heavy Acid Rifle increases."
+130,heavy_acid_rifle_speed,This mod improves your attack speed with Heavy Acid Rifles.
+131,heavy_flame_thrower_accuracy,"As the Flamethrower Accuracy skill mod increases, the chance to hit an enemy with a Flamethrower increases."
+132,heavy_flame_thrower_speed,This mod improves your attack speed with Flamethrowers.
+133,heavy_lighting_rifle_accuracy,"As the Light Lightning Cannon Accuracy skill mod increases, the chance to hit an enemy with a Light Lightning Cannon weapon also increases."
+134,heavy_lightning_beam_accuracy,"As the Heavy Lightning Beam Accuracy skill mod increases, the chance to hit an enemy with a Lightning Beam weapon increases."
+135,heavy_lightning_beam_speed,This mod improves your attack speed with Heavy Lightning Beam weapons.
+136,heavy_lightning_rifle_accuracy,"As the Light Lightning Cannon Accuracy skill mod increases, the chance to hit an enemy with a Light Lightning Cannon weapon also increases."
+137,heavy_particle_beam_accuracy,"As the Heavy Particle Beam Accuracy skill mod increases, the chance to hit an enemy with a Heavy Particle Beam weapon also increases."
+138,heavy_particle_beam_speed,This mod improves your attack speed with Heavy Particle Beam weapons.
+139,heavy_rifle_acid_accuracy,"As the Heavy Acid Rifle skill mod increases, the chance to hit an enemy with a Heavy Acid Rifle increases."
+140,heavy_rifle_acid_speed,This mod improves your attack speed with Heavy Acid Rifles.
+141,heavy_rifle_lighting_accuracy,"As the Light Lightning Cannon Accuracy skill mod increases, the chance to hit an enemy with a Light Lightning Cannon weapon also increases."
+142,heavy_rifle_lightning_accuracy,"As the Light Lightning Cannon Accuracy skill mod increases, the chance to hit an enemy with a Light Lightning Cannon weapon also increases."
+143,heavy_rifle_lightning_speed,This mod improves your attack speed with Light Lightning Cannons.
+144,heavy_rocket_launcher_accuracy,"As the Heavy Rocket Launcher skill mod increases, the chance to hit an enemy with a Heavy Rocket Launcher also increases."
+145,heavy_rocket_launcher_speed,This mod improves your attack speed with Heavy Rocket Launchers.
+146,heavyweapon_accuracy,The Heavy Weapon Accuracy skill mod changes how often you tend to hit with heavy weapons.
+147,heavyweapon_speed,The Heavy Weapon Speed skill mod changes how often you can fire your weapon.
+148,hiring,"As your hiring skill mod increases, the variety of vendors you can place improves.  A high hiring skill mod gives the player access to new types of terminal, droid, and NPC vendors."
+149,instrument_assembly,This skill mod increases the chances of succeeding when crafting instruments.
+150,intimidate,This mod increases the chance of terrifying your target and putting them into the intimidated state. 
+151,intimidate_defense,This mod decreases the chance of becoming intimidated. 
+152,jedi_force_power_max,This mod represents the total Force power that is able to be wielded.
+153,jedi_force_power_regen,This mod represents the rate at which your Force power regenerates in points per 10 seconds.
+154,jedi_saber_assembly,This mod determines your chance of successfully assembling a lightsaber.
+155,jedi_saber_experimentation,This mod directly affects the extent to which you are able to customize and experiment when crafting a lightsaber.
+156,jedi_state_defense,This skill mod increases a Jedi's natural resistance to all states
+157,jedi_toughness,This skill mod increases a Jedi's natural resistance to all damage types except lightsaber
+158,keep_creature,This skill mod represents how many active pets you can have under your control at one time.
+159,knockdown_defense,This mod will protect you from being knocked down.
+160,language_all_comprehend,With this ability a character can understand most languages spoken in the known galaxy.  (The player can understand any spoken language without special skills.)
+161,language_basic_comprehend,This skill mod determines how well you can comprehend Basic as spoken by other players.
+162,language_basic_comprehension,This skill mod determines how well you can comprehend Basic as spoken by other players.
+163,language_basic_speak,This skill mod determines how well you can speak Basic to other players.
+164,language_bothan_comprehend,This skill mod determines how well you can comprehend Bothese as spoken by other players.
+165,language_bothan_comprehension,This skill mod determines how well you can comprehend Bothese as spoken by other players.
+166,language_bothan_speak,This skill mod determines how well you can speak Bothese to other players.
+167,language_lekku_comprehend,This skill mod determines how well you can comprehend the language of Lekku as displayed by Twi'leks.
+168,language_lekku_comprehension,This skill mod determines how well you can comprehend the language of Lekku as displayed by Twi'leks.
+169,language_lekku_speak,This skill mod determines how well you can communicate in Lekku to other players.
+170,language_moncalamari_comprehend,This skill mod determines how well you can comprehend Mon Calamari as spoken by other players.
+171,language_moncalamari_comprehension,This skill mod determines how well you can comprehend Mon Calamarian as spoken by other players.
+172,language_moncalamari_speak,This skill mod determines how well you can speak Mon Calamarian to other players.
+173,language_rodian_comprehend,This skill mod determines how well you can comprehend Rodese as spoken by other players.
+174,language_rodian_comprehension,This skill mod determines how well you can comprehend Rodese as spoken by other players.
+175,language_rodian_speak,This skill mod determines how well you can speak Rodese to other players.
+176,language_trandoshan_comprehend,This skill mod determines how well you can comprehend Dosh as spoken by other players.
+177,language_trandoshan_comprehension,This skill mod determines how well you can comprehend Dosh as spoken by other players.
+178,language_trandoshan_speak,This skill mod determines how well you can speak Dosh to other players.
+179,language_twilek_comprehend,This skill mod determines how well you can comprehend Ryl as spoken by other players.
+180,language_twilek_comprehension,This skill mod determines how well you can comprehend Ryl as spoken by other players.
+181,language_twilek_speak,This skill mod determines how well you can speak Ryl to other players.
+182,language_wookiee_comprehend,This skill mod determines how well you can comprehend Shyriiwook as spoken by Wookiees.
+183,language_wookiee_comprehension,This skill mod determines how well you can comprehend Shyriiwook as spoken by Wookiees.
+184,language_wookiee_speak,This skill mod determines how well you can speak Shyriiwook to other players.
+185,language_zabrak_comprehend,This skill mod determines how well you can comprehend Zabrak as spoken by other players.
+186,language_zabrak_comprehension,This skill mod determines how well you can comprehend Zabrak as spoken by other players.
+187,language_zabrak_speak,This skill mod determines how well you can speak Zabrak to other players.
+188,leadership,This skill mod affects different Squad Leader abilities.
+189,light_lightning_cannon_accuracy,"As the Light Lightning Cannon Accuracy skill mod increases, the chance to hit an enemy with a Light Lightning Cannon weapon also increases."
+190,light_lightning_cannon_speed,This mod improves your attack speed with Light Lightning Cannons.
+191,lightsaber_toughness,This skill mod decreases the amount of melee damage taken when wielding a lightsaber.
+192,manage_vendor,"For each point of Manage Vendor, the player may place a vendor in a structure."
+193,markings,"This skill mod determines how adept the Image Designer is at modifying the body markings of a character. This is used to change such things as  tattoos, Lekku markings, and Mon Calamarian spot patterns."
+194,mask_scent,"The higher your mask scent skill mod, the more effective you will be at hiding from aggressive and stalking creatures while /maskscent is enabled.  As this skill mod increases, the delay until you can use /maskscent again when detected is reduced and the duration of your scent mask increases."
+195,medical_foraging,This skill mod determines how easy it is for you to successfully Medical Forage.
+196,medicine_assembly,This skill mod increases the chance of succeeding when crafting medicine and medical items.
+197,medicine_experimentation,This skill mod directly affects how many experimentation points you receive when crafting medicine and medical items.
+198,meditate,"As this skill modifier increases, the effects of the /meditate command become more potent."
+199,melee_accuracy,This skill mod will improve your accuracy with all melee weapons.
+200,melee_defense,This mod improves your defense against melee attacks.
+201,melee_speed,This skill mod will improve your speed with all melee weapons.
+202,mindblast_accuracy,This skill mod improves your chance to successfully invade and cause discord in the mind of an enemy.
+203,missile_launching,"This skill mod aids in controlling how well a missile shot is set up, how well the missile is locked onto its target, and other factors affecting a successful missile attack."
+204,morale_management,This skill mod affects the morale of a Squad Leader's group.
+205,mountedcreature,Current carrying a rider.
+206,offensive_strategy,This skill mod affects the efficiency of various tactics.
+207,onehandlightsaber_accuracy,This skill mod improves your accuracy with one-handed lightsabers.
+208,onehandlightsaber_speed,This skill mod improves your attack speed with one-handed lightsabers.
+209,onehandlightsaber_toughness,This skill mod decreases the amount of damage taken while wielding one-handed lightsabers.
+210,onehandmelee_accuracy,This mod will improve your accuracy with one-handed melee weapons.
+211,onehandmelee_center_of_being_efficacy,This skill mod controls the efficacy of Center Of Being when wielding a one-handed melee weapon.
+212,onehandmelee_damage,This mod will increase your damage with one-handed melee weapons.
+213,onehandmelee_speed,This mod will improve your speed with one-handed melee weapons.
+214,onehandmelee_toughness,This mod will decrease the melee damage taken by you while using a one-handed melee weapon. 
+215,onehandmeleeaccuracy,This mod will improve your accuracy with one-handed melee weapons.
+216,pistol_accuracy,"As the Pistol Accuracy skill mod increases, the chance to hit an enemy with a pistol ranged attack also increases."
+217,pistol_accuracy_while_standing,This improves your pistol accuracy while standing.
+218,pistol_aim,"The Pistol Aiming skill modifier directly amplifies the effectiveness of the Aim command. A high skill in this can drastically increase your odds of Aiming, particularly if multiple Aims are used consecutively in the course of one attack."
+219,pistol_hit_while_moving,This improves your ability to hit while moving and using a pistol.
+220,pistol_speed,This mod improves your attack speed with pistols.
+221,polearm_accuracy,This improves your accuracy with polearms.
+222,polearm_center_of_being_efficacy,This skill mod controls the efficacy of Center Of Being when wielding a polearm.
+223,polearm_speed,This mod improves your speed with polearms.
+224,polearm_toughness,This mod decreases the melee damage you will take when wielding a polearm.
+225,polearmlightsaber_accuracy,This skill mod improves your accuracy with double-bladed lightsabers.
+226,polearmlightsaber_speed,This skill mod improves your attack speed with double-bladed lightsabers.
+227,polearmlightsaber_toughness,This skill mod decreases the amound of damage taken while wielding double-bladed lightsabers.
+228,posture_change_down_defense,This mod will protect you from posture changing attacks.
+229,posture_change_up_defense,This mod will protect you from posture changing attacks.
+230,power_systems,This skill mod affects the crafting of reactors and power systems for starfighters.
+231,ranged_accuracy,This skill mod will improve your accuracy with all ranged weapons.
+232,ranged_defense,This mod will make you harder to hit with ranged weapons.
+233,ranged_speed,This skill mod will improve your speed with all ranged weapons.
+234,rescue,This modifier will increase your chance of successfully using the Ranger profession's rescue command.
+235,resistance_bleeding,This skill mod increases the chance to resist bleeding.
+236,resistance_disease,This skill mod increases the chance to resist the effects of disease.
+237,resistance_fire,This skill mod increases the chance to resist fire.
+238,resistance_poison,This skill mod increases the chance to resist poison.
+239,resistance_states,This skill mod increases the chance to resist the effects of state attacks.
+240,reverse_engineering,This skill mod affects analysis and construction of reverse engineered spaceship parts.
+241,ridingmount,Currently riding on a vehicle or creature.
+242,rifle_accuracy,"As the Rifle Accuracy skill mod increases, the chance to hit an enemy with a rifle ranged attack also increases."
+243,rifle_aim,"The Rifle Aiming skill modifier directly amplifies the effectiveness of the Aim command. A high skill in this can drastically increase your odds of Aiming, particularly if multiple Aims are used consecutively in the course of one attack."
+244,rifle_concealment_chance,This mod allows you to attack a mobile without attracting the attention from other mobiles nearby. You must be far enough away from the mobile for this ability to work properly.
+245,rifle_crawl,The Rifle Crawl Speed skill modifier influences how fast players can crawl while using a rifle.
+246,rifle_hit_while_moving,This mod will make you more accurate with a rifle while moving.
+247,rifle_speed,This mod will increase your attack speed with a rifle.
+248,saber_block,This skill mod determines your chance to block ranged attacks with your lightsaber.
+249,sales,This skill mod determines how effective a vendor is at sales.
+250,shields_assembly,This skill mod affects the crafting of starfighter deflector shields.
+251,shop_sign,This skill mod governs which shop signs are accessible to merchants.
+252,slope_move,"Terrain negotiation affects the player's ability to move in rough terrain.  From 0 to 50, this skill increases the player's ability to move up slopes quickly.  From 50 to 100, this skill increases the player's ability to move fast while prone."
+253,spice_assembly,This skill mod governs the effectiveness of spice crafting.
+254,spice_experimentation,This skill mod controls the quality of results in a spice experimentation session.
+255,steadyaim,This skill mod determines the effectiveness of a Squad Leader's /steadyaim command.
+256,stored_pets,This is the number of pets you may have stored at any time.
+257,structure_assembly,This skill mod determines the chance of succeeding when crafting structures.
+258,structure_complexity,This skill mod determines the level of complexity you have at your disposal when creating structures.
+259,structure_experimentation,This skill mod directly affects how many experimentation points you receive when creating structures.
+260,stun_defense,This mod will decrease your chance of being stunned.
+261,survey_flora_structural,"A higher Flora Surveying skill allows players to obtain samples more efficiently. Resources will start to become extractable at lower percentages, and more resources may be found on a successful sample.  However, this skill mod does not necessarily increase the chances of getting a successful sample. Prospecting has always been something of a hit-or-miss vocation."
+262,survey_flora_structural_range,The Flora Surveying Range skill determines the range at which surveying is possible. A high Flora Surveying Range skill means that one can either modify the range at which surveying is seen. The result is that it is possible to get more accurate readings by reducing the surveying range one is looking at. This requires a surveying tool that supports range modification.
+263,survey_flora_structural_resolution,"A higher Flora Surveying Resolution tool gives prospecting players the ability to increase the number of resource marks seen on their survey screen. The result is that players with a higher skill in this will be much more efficient at expediently tracking down high resource deposits, as compared to a novice Artisan."
+264,survey_gas,"A higher Gas Surveying skill allows players to obtain samples more efficiently. Resources will start to become extractable at lower percentages, and more resources may be found on a successful sample.  However, this skill mod does not necessarily increase the chances of getting a successful sample. Prospecting has always been something of a hit-or-miss vocation."
+265,survey_gas_range,The Gas Surveying Range skill determines the range at which surveying is possible. A high Gas Surveying Range skill means that one can either modify the range at which surveying is seen. The result is that it is possible to get more accurate readings by reducing the surveying range one is looking at. This requires a surveying tool that supports range modification.
+266,survey_gas_resolution,"A higher Gas Surveying Resolution tool gives prospecting players the ability to increase the number of resource marks seen on their survey screen. The result is that players with a higher skill in this will be much more efficient at expediently tracking down high resource deposits, as compared to a novice Artisan."
+267,survey_liquid,"A higher Liquid Surveying skill allows players to obtain samples more efficiently. Resources will start to become extractable at lower percentages, and more resources may be found on a successful sample.  However, this skill mod does not necessarily increase the chances of getting a successful sample. Prospecting has always been something of a hit-or-miss vocation."
+268,survey_liquid_range,The Liquid Surveying Range skill determines the range at which surveying is possible. A high Liquid Surveying Range skill means that one can either modify the range at which surveying is seen. The result is that it is possible to get more accurate readings by reducing the surveying range one is looking at. This requires a surveying tool that supports range modification.
+269,survey_liquid_resolution,"A higher Liquid Surveying Resolution tool gives prospecting players the ability to increase the number of resource marks seen on their survey screen. The result is that players with a higher skill in this will be much more efficient at expediently tracking down high resource deposits, as compared to a novice Artisan."
+270,survey_solid,"A higher Mineral Surveying skill allows players to obtain samples more efficiently. Resources will start to become extractable at lower percentages, and more resources may be found on a successful sample.  However, this skill mod does not necessarily increase the chances of getting a successful sample. Prospecting has always been something of a hit-or-miss vocation."
+271,survey_solid_range,The Mineral Surveying Range skill determines the range at which surveying is possible. A high Mineral Surveying Range skill means that one can either modify the range at which surveying is seen. The result is that it is possible to get more accurate readings by reducing the surveying range one is looking at. This requires a surveying tool that supports range modification.
+272,survey_solid_resolution,"A higher Mineral Surveying Resolution tool gives prospecting players the ability to increase the number of resource marks seen on their survey screen. The result is that players with a higher skill in this will be much more efficient at expediently tracking down high resource deposits, as compared to a novice Artisan."
+273,surveying,"As your surveying skill increases, you gain the ability to scan for resources over a greater distance.  You also gain a higher chance of successfully harvesting resources and yet a higher yield per successful sample attempt."
+274,take_cover,This modifier will increase your chance of succesfully taking cover in ranged combat.
+275,tame_aggro,This skill represents the Creature Handler's ability to tame aggressive creature types.
+276,tame_bonus,This skill mod assists in the taming of wild creatures.
+277,tame_level,"This skill mod increases the maximum level of pet that that you can tame, and the maximum number of pet levels you may have active at any one time.  For example, a total of 20 means that you can tame creatures that are of up to level 20.  You could call a level 20 creature, or two level 10 creatures.  Note that you must also have sufficient 'Additional Pets' skill to call multiple pets regardless of level."
+278,tame_non_aggro,This skill represents the Creature Handler's ability to tame non-aggressive creature types.
+279,taunt,This modifier will increase your chance of succesfully taunting a creature as a Brawler.
+280,thrown_accuracy,The Thrown Weapon Accuracy skill mod changes how often you tend to hit with thrown weapons.
+281,thrown_speed,This mod improves your speed with thrown weapons.
+282,tissue_assembly,This skill mod determines the chance of succeeding when assembling tissue as a Bio-Engineer.
+283,tissue_experimentation,This skill mod directly affects how many experimentation points you receive when assembling tissue as a Bio-Engineer.
+284,trapping,"The trapping skill mod represents a Ranger or Scout's ability to use traps effectively.  As this skill mod increases, the player gains the ability to use more complex traps.  The player also becomes better at hitting increasingly stronger creatures with traps."
+285,twohandlightsaber_accuracy,This skill mod improves your accuracy with two-handed lightsabers.
+286,twohandlightsaber_speed,This skill mod improves your attack speed with two-handed lightsabers.
+287,twohandlightsaber_toughness,This skill mod decreases the amount of damage taken while wielding two-handed lightsabers.
+288,twohandmelee_accuracy,This mod improves your accuracy with two-handed melee weapons.
+289,twohandmelee_center_of_being_efficacy,This skill mod controls the efficacy of Center Of Being when wielding a two-handed melee weapon.
+290,twohandmelee_speed,This mod improves your speed with two-handed melee weapons.
+291,twohandmelee_toughness,This mod decreases the amount of melee damage you will take when using a two-handed melee weapon.
+292,unarmed_accuracy,This mod improves your accuracy when fighting unarmed.
+293,unarmed_center_of_being_efficacy,This skill mod controls the efficacy of Center Of Being when fighting unarmed.
+294,unarmed_damage,This mod improves your damage when fighting unarmed.
+295,unarmed_passive_defense,"This modifier improves your chances of reacting to a succesful hit with a dodge, counterattack or block."
+296,unarmed_speed,This mod improves your speed when fighting unarmed.
+297,unarmed_toughness,This mod will decrease the amount of melee damage you take when fighting unarmed.
+298,vendor_item_limit,This skill mod determines how many items a merchant may sell on each vendor. 
+299,volley,This mod improves your chance of successfully launching volley fire.
+300,warcry,This modifier increases the chance of succesfully executing the Brawler profession's warcry command.
+301,weapon_assembly,This skill mod determines the chance of succeeding when crafting weapons.
+302,weapon_experimentation,This skill mod directly affects how many experimentation points you receive when creating weapons.
+303,weapon_repair,This skill mod determines how effective you are at repairing weapons.
+304,weapon_systems,This skill mod affects crafting of starfighter weapon systems.
+305,advanced_ship_experimentation,This skill mod affects experimentation of advanced ship components.
+306,booster_experimentation,This skill mod affects experimentation of ship boosters.
+307,chassis_experimentation,This skill mod affects experimentation of ship chassis.
+308,engine_experimentation,This skill mod affects the experimentation of engine components.
+309,power_systems_experimentation,This skill mod affects the experimentation of ship power systems.
+310,shields_experimentation,This skill mod affects the experimentation of ship shield systems.
+311,weapon_systems_experimentation,This skill mod affects the experimentation of ship weapon systems.
+312,pilot_special_tactics,This skill mod reflects the pilot's level of general knowledge and increasing ability in executing the various pilot command tricks of the trade that they learn.
+313,systems_reverse,This number represents the highest level of reverse engineering you can accomplish.
+314,defense_reverse,This number represents the highest level of reverse engineering you can accomplish.
+315,propulsion_reverse,This number represents the highest level of reverse engineering you can accomplish.
+316,engineering_reverse,This number represents the highest level of reverse engineering you can accomplish.
+317,language_ithorian_speak,This skill mod determines how well you can speak Ithorian to other players.
+318,language_ithorian_comprehend,This skill mod determines how well you can comprehend Ithorian as spoken by other players.
+319,language_ithorian_comprehension,This skill mod determines how well you can comprehend Ithorian as spoken by other players.
+320,language_sullustan_speak,This skill mod determines how well you can speak Sullustan to other players.
+321,language_sullustan_comprehend,This skill mod determines how well you can comprehend Sullustan as spoken by other players.
+322,language_sullustan_comprehension,This skill mod determines how well you can comprehend Sullustan as spoken by other players.
+323,frs_light_vigilance,Vigilance modifies Jedi special attacks so that they damage Force power.
+324,frs_light_wisdom,Wisdom modifies Jedi special attacks so that they drain the attribute pools of a non-Jedi (or Jedi depleted of Force power) and transfer them to the wielder.
+325,frs_light_serenity,Serenity temporarily weakens the attributes of those who attack the Jedi.
+326,frs_dark_envy,Envy modifies Jedi special attacks so that they damage Force power and return some of it to the wielder.
+327,frs_dark_suffering,Suffering modifies Jedi special attacks so that they weaken the attributes of a non-Jedi (or Jedi depleted of Force power) for a short period of time.
+328,frs_dark_vengeance,Vengeance inflicts wounds upon those who attack the Jedi.

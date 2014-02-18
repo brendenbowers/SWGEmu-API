@@ -1,0 +1,34 @@
+1,aiming,Aiming increases the chances of successfully hitting a target.
+2,alert,A meditative state used to focus powerful inner energies.
+3,berserk,"When someone is berserk, they hit harder but get hit more often."
+4,bleeding,Bleeding can adversely affect various stat pools.  It can be stopped if a medic successfully applies First Aid.
+5,blinded,"While blinded, combat accuracy falls dramatically."
+6,blocking,Blocking - Cut - Please bug report this string if seen in game.
+7,combat,"This displays if a player, NPC, or creature is in combat."
+8,cover,Cover gives a defensive bonus and allows the use of Surprise Shot.  It makes its benefactor immobile unless they have Sneak.
+9,diseased,"Disease can cause wounds to various attributes, and generally causes these wounds slowly.  It can be cured if a doctor successfully uses Cure Disease medicines."
+10,dizzy,Being dizzy makes it possible to fall down when changing postures.
+11,driving,Driving a vehicle limits what additional actions you can attempt.
+12,feigndeath,A feigned death can trick enemies into believing that their target is really dead.
+13,frozen,"When one is frozen, they are unable to run or walk."
+14,immobilized,"When one is immobilized, they are unable to run or walk."
+15,intimidated,Those who are intimidated do not hit as often.
+16,maskscent,A masked scent may prevent aggressive creatures from attacking players who approach them.
+17,meditate,Meditate
+18,mountedcreature,Currently carrying a rider.
+19,onfire,Fire!!  This quickly damages stat pools while also creating wound damage.
+20,peace,Peace shows that somebody has ceased hostilities towards their combat target.
+21,pilotingship,Piloting a ship allows space travel and combat.
+22,poisoned,"Poison can adversely affect various stat pools, and causes its damage rather quickly.  It can be cured if a doctor successfully uses Cure Poison medicine."
+23,rallied,Rallied is a group-wide bonus to hit percentage.
+24,ridingmount,Riding a mount limits what additional actions you can attempt.
+25,sittingonchair,Sitting on a chair.
+26,sneaking,Sneaking allows you to slowly move around while Taking Cover.
+27,stunned,The stunned state takes away a round of combat and temporarily lowers some stats.
+28,swimming,Swimming allows you to wade through deep water.
+29,tef,A Temporary Enemy Flag is acquired when you perform an action which temporarily makes you an enemy of some faction.
+30,tumbling,Tumbling gives a defensive bonus to whoever is in that state.
+31,shipinterior,Inside a starship interior.
+32,shipgunner,Manning a weapon on a starship.
+33,pilotingpobship,Piloting a ship allows space travel and combat.
+34,shipoperations,"While using the Ship Operations station, a pilot can execute special abilities and droid programs."

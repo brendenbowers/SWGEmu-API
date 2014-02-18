@@ -1,0 +1,856 @@
+1,angler,angler
+2,angler_jungle_large,greater jungle angler
+3,angler_jungle_medium,jungle angler
+4,angler_jungle_small,lesser jungle angler
+5,angler_swamp_large,greater swamp angler
+6,angler_swamp_medium,swamp angler
+7,angler_swamp_small,lesser swamp angler
+8,angler_underwater_large,greater aquatic angler
+9,angler_underwater_medium,aquatic angler
+10,angler_underwater_small,lesser aquatic angler
+11,bageraset,bageraset
+12,bageraset_forest_large,greater forest bageraset
+13,bageraset_forest_medium,forest bageraset
+14,bageraset_forest_small,lesser forest bageraset
+15,bantha,bantha
+16,bantha_desert_large,greater desert bantha
+17,bantha_desert_medium,desert bantha
+18,bantha_desert_small,lesser desert bantha
+19,bantha_dune_large,greater dune bantha
+20,bantha_dune_medium,dune bantha
+21,bantha_dune_small,lesser dune bantha
+22,bantha_wasteland_large,greater wasteland bantha
+23,bantha_wasteland_medium,wasteland bantha
+24,bantha_wasteland_small,lesser wasteland bantha
+25,bark_mite,bark mite
+26,bark_mite_grassland_large,greater grassland bark mite
+27,bark_mite_grassland_medium,grassland bark mite
+28,bark_mite_grassland_small,lesser grassland bark mite
+29,bark_mite_hills_large,greater hills bark mite
+30,bark_mite_hills_medium,hills bark mite
+31,bark_mite_hills_small,lesser hills bark mite
+32,baz_nitch,baz nitch
+33,baz_nitch_forest_large,greater forest baz nitch
+34,baz_nitch_forest_medium,forest baz nitch
+35,baz_nitch_forest_small,lesser forest baz nitch
+36,baz_nitch_mountain_large,greater mountain baz nitch
+37,baz_nitch_mountain_medium,mountain baz nitch
+38,baz_nitch_mountain_small,lesser mountain baz nitch
+39,bearded_jax,bearded jax
+40,bearded_jax_grassland_large,greater grassland bearded jax
+41,bearded_jax_grassland_medium,grassland bearded jax
+42,bearded_jax_grassland_small,lesser grassland bearded jax
+43,binjinphant,binjinphant
+44,binjinphant_forest_large,greater forest binjinphant
+45,binjinphant_forest_medium,forest binjinphant
+46,binjinphant_forest_small,lesser forest binjinphant
+47,blackfish,blackfish
+48,blackfish_underwater_large,greater underwater blackfish
+49,blackfish_underwater_medium,underwater blackfish
+50,blackfish_underwater_small,lesser underwater blackfish
+51,blistmok,blistmok
+52,blistmok_mountain_large,greater mountain blistmok
+53,blistmok_mountain_medium,mountain blistmok
+54,blistmok_mountain_small,lesser mountain blistmok
+55,blistmok_wasteland_large,greater wasteland blistmok
+56,blistmok_wasteland_medium,wasteland blistmok
+57,blistmok_wasteland_small,lesser wasteland blistmok
+58,bluefish,bluefish
+59,bluefish_underwater_large,greater underwater bluefish
+60,bluefish_underwater_medium,underwater bluefish
+61,bluefish_underwater_small,lesser underwater bluefish
+62,blurrg,blurrg
+63,blurrg_forest_large,greater forest blurrg
+64,blurrg_forest_medium,forest blurrg
+65,blurrg_forest_small,lesser forest blurrg
+66,blurrg_mountain_large,greater mountain blurrg
+67,blurrg_mountain_medium,mountain blurrg
+68,blurrg_mountain_small,lesser mountain blurrg
+69,boar_wolf,boar wolf
+70,boar_wolf_mountain_large,greater mountain boar wolf
+71,boar_wolf_mountain_medium,mountain boar wolf
+72,boar_wolf_mountain_small,lesser mountain boar wolf
+73,bocatt,bocatt
+74,bocatt_grassland_large,greater grassland bocatt
+75,bocatt_grassland_medium,grassland bocatt
+76,bocatt_grassland_small,lesser grassland bocatt
+77,bocatt_hills_large,greater hills bocatt
+78,bocatt_hills_medium,hills bocatt
+79,bocatt_hills_small,lesser hills bocatt
+80,bol,bol
+81,bol_grassland_large,greater grassland bol
+82,bol_grassland_medium,grassland bol
+83,bol_grassland_small,lesser grassland bol
+84,bolle_bol,bolle bol
+85,bolle_bol_grassland_large,greater grassland bolle bol
+86,bolle_bol_grassland_medium,grassland bolle bol
+87,bolle_bol_grassland_small,lesser grassland bolle bol
+88,bolma,bolma
+89,bolma_desert_large,greater desert bolma
+90,bolma_desert_medium,desert bolma
+91,bolma_desert_small,lesser desert bolma
+92,bolma_dune_large,greater dune bolma
+93,bolma_dune_medium,dune bolma
+94,bolma_dune_small,lesser dune bolma
+95,bolma_mountain_large,greater mountain bolma
+96,bolma_mountain_medium,mountain bolma
+97,bolma_mountain_small,lesser mountain bolma
+98,bordok,bordok
+99,bordok_mountain_large,greater mountain bordok
+100,bordok_mountain_medium,mountain bordok
+101,bordok_mountain_small,lesser mountain bordok
+102,borgle,borgle
+103,borgle_jungle_large,greater jungle borgle
+104,borgle_jungle_medium,jungle borgle
+105,borgle_jungle_small,lesser jungle borgle
+106,brackaset,brackaset
+107,brackaset_desert_large,greater desert brackaset
+108,brackaset_desert_medium,desert brackaset
+109,brackaset_desert_small,lesser desert brackaset
+110,capper_spineflap,spineflap capper
+111,capper_spineflap_forest_large,greater forest capper spineflap
+112,capper_spineflap_forest_medium,forest capper spineflap
+113,capper_spineflap_forest_small,lesser forest capper spineflap
+114,carrion_spat,spat carrion
+115,carrion_spat_grassland_large,greater grassland carrion spat
+116,carrion_spat_grassland_medium,grassland carrion spat
+117,carrion_spat_grassland_small,lesser grassland carrion spat
+118,choku,choku
+119,choku_jungle_large,greater jungle choku
+120,choku_jungle_medium,jungle choku
+121,choku_jungle_small,lesser jungle choku
+122,chuba,chuba
+123,chuba_forest_large,greater forest chuba
+124,chuba_forest_medium,forest chuba
+125,chuba_forest_small,lesser forest chuba
+126,chuba_swamp_large,greater swamp chuba
+127,chuba_swamp_medium,swamp chuba
+128,chuba_swamp_small,lesser swamp chuba
+129,colo_claw_fish,colo claw fish
+130,colo_claw_fish_underwater_large,greater colo claw fish
+131,colo_claw_fish_underwater_medium,colo claw fish
+132,colo_claw_fish_underwater_small,lesser colo claw fish
+133,condor_dragon,condor dragon
+134,condor_dragon_forest_large,greater forest condor dragon
+135,condor_dragon_forest_medium,forest condor dragon
+136,condor_dragon_forest_small,lesser forest condor dragon
+137,condor_dragon_mountain_large,greater mountain condor dragon
+138,condor_dragon_mountain_medium,mountain condor dragon
+139,condor_dragon_mountain_small,lesser mountain condor dragon
+140,corellian_butterfly,corellian butterfly
+141,corellian_butterfly_forest_large,greater forest Corellian butterfly
+142,corellian_butterfly_forest_medium,forest Corellian butterfly
+143,corellian_butterfly_forest_small,lesser forest Corellian butterfly
+144,corellian_butterfly_mountain_large,greater mountain Corellian butterfly
+145,corellian_butterfly_mountain_medium,mountain Corellian butterfly
+146,corellian_butterfly_mountain_small,lesser mountain Corellian butterfly
+147,corellian_sand_panther,Corellian sand panther
+148,corellian_sand_panther_grassland_large,greater grassland Corellian sand panther
+149,corellian_sand_panther_grassland_medium,grassland Corellian sand panther
+150,corellian_sand_panther_grassland_small,lesser grassland Corellian sand panther
+151,corellian_slice_hound,Corellian slice hound
+152,corellian_slice_hound_forest_large,greater forest Corellian slice hound
+153,corellian_slice_hound_forest_medium,forest Corellian slice hound
+154,corellian_slice_hound_forest_small,lesser forest Corellian slice hound
+155,corellian_slice_hound_grassland_large,greater grassland Corellian slice hound
+156,corellian_slice_hound_grassland_medium,grassland Corellian slice hound
+157,corellian_slice_hound_grassland_small,lesser grassland Corellian slice hound
+158,crowned_rasp,crowned rasp
+159,crowned_rasp_grassland_large,greater grassland crowned rasp
+160,crowned_rasp_grassland_medium,grassland crowned rasp
+161,crowned_rasp_grassland_small,lesser grassland crowned rasp
+162,crowned_rasp_mountain_large,greater mountain crowned rasp
+163,crowned_rasp_mountain_medium,mountain crowned rasp
+164,crowned_rasp_mountain_small,lesser mountain crowned rasp
+165,crystal_snake,crystal snake
+166,crystal_snake_jungle_large,greater jungle crystal snake
+167,crystal_snake_jungle_medium,jungle crystal snake
+168,crystal_snake_jungle_small,lesser jungle crystal snake
+169,crystal_snake_swamp_large,greater swamp crystal snake
+170,crystal_snake_swamp_medium,swamp crystal snake
+171,crystal_snake_swamp_small,lesser swamp crystal snake
+172,crystal_snake_underwater_large,greater underwater crystal snake
+173,crystal_snake_underwater_medium,underwater crystal snake
+174,crystal_snake_underwater_small,lesser underwater crystal snake
+175,cu_pa,cu-pa
+176,cu_pa_dune_large,greater dune cu-pa
+177,cu_pa_dune_medium,dune cu-pa
+178,cu_pa_dune_small,lesser dune cu-pa
+179,cu_pa_mountain_large,greater mountain cu-pa
+180,cu_pa_mountain_medium,mountain cu-pa
+181,cu_pa_mountain_small,lesser mountain cu-pa
+182,cu_pa_wasteland_large,greater wasteland cu-pa
+183,cu_pa_wasteland_medium,wasteland cu-pa
+184,cu_pa_wasteland_small,lesser wasteland cu-pa
+185,dalyrake,dalyrake
+186,dalyrake_forest_large,greater forest dalyrake
+187,dalyrake_forest_medium,forest dalyrake
+188,dalyrake_forest_small,lesser forest dalyrake
+189,dewback,dewback
+190,dewback_desert_large,greater desert dewback
+191,dewback_desert_medium,desert dewback
+192,dewback_desert_small,lesser desert dewback
+193,dune_lizard,dune lizard
+194,dune_lizard_desert_large,greater desert dune lizard
+195,dune_lizard_desert_medium,desert dune lizard
+196,dune_lizard_desert_small,lesser desert dune lizard
+197,durni,durni
+198,durni_grassland_large,greater grassland durni
+199,durni_grassland_medium,grassland durni
+200,durni_grassland_small,lesser grassland durni
+201,durni_mountain_large,greater mountain durni
+202,durni_mountain_medium,mountain durni
+203,durni_mountain_small,lesser mountain durni
+204,dwarf_nuna,dwarf nuna
+205,dwarf_nuna_forest_large,greater forest dwarf nuna
+206,dwarf_nuna_forest_medium,forest dwarf nuna
+207,dwarf_nuna_forest_small,lesser forest dwarf nuna
+208,dwarf_nuna_swamp_large,greater swamp dwarf nuna
+209,dwarf_nuna_swamp_medium,swamp dwarf nuna
+210,dwarf_nuna_swamp_small,lesser swamp dwarf nuna
+211,eopie,eopie
+212,eopie_desert_large,greater desert eopie
+213,eopie_desert_medium,desert eopie
+214,eopie_desert_small,lesser desert eopie
+215,eopie_dune_large,greater dune eopie
+216,eopie_dune_medium,dune eopie
+217,eopie_dune_small,lesser dune eopie
+218,eopie_mountain_large,greater mountain eopie
+219,eopie_mountain_medium,mountain eopie
+220,eopie_mountain_small,lesser mountain eopie
+221,eopie_wasteland_large,greater wasteland eopie
+222,eopie_wasteland_medium,wasteland eopie
+223,eopie_wasteland_small,lesser wasteland eopie
+224,faa,faa
+225,faa_underwater_large,greater underwater faa
+226,faa_underwater_medium,underwater faa
+227,faa_underwater_small,lesser underwater faa
+228,falumpaset,falumpaset
+229,falumpaset_forest_large,greater forest falumpaset
+230,falumpaset_forest_medium,forest falumpaset
+231,falumpaset_forest_small,lesser forest falumpaset
+232,falumpaset_grassland_large,greater grassland falumpaset
+233,falumpaset_grassland_medium,grassland falumpaset
+234,falumpaset_grassland_small,lesser grassland falumpaset
+235,falumpaset_swamp_large,greater swamp falumpaset
+236,falumpaset_swamp_medium,swamp falumpaset
+237,falumpaset_swamp_small,lesser swamp falumpaset
+238,fambaa,fambaa
+239,fambaa_swamp_large,greater swamp fambaa
+240,fambaa_swamp_medium,swamp fambaa
+241,fambaa_swamp_small,lesser swamp fambaa
+242,fanned_rawl,fanned rawl
+243,fanned_rawl_swamp_large,greater swamp fanned rawl
+244,fanned_rawl_swamp_medium,swamp fanned rawl
+245,fanned_rawl_swamp_small,lesser swamp fanned rawl
+246,flewt,flewt
+247,flewt_forest_large,greater forest flewt
+248,flewt_forest_medium,forest flewt
+249,flewt_forest_small,lesser forest flewt
+250,flewt_grassland_large,greater grassland flewt
+251,flewt_grassland_medium,grassland flewt
+252,flewt_grassland_small,lesser grassland flewt
+253,flit,flit
+254,flit_forest_large,greater forest flit
+255,flit_forest_medium,forest flit
+256,flit_forest_small,lesser forest flit
+257,flit_mountain_large,greater mountain flit
+258,flit_mountain_medium,mountain flit
+259,flit_mountain_small,lesser mountain flit
+260,flite_rasp,flite rasp
+261,flite_rasp_grassland_large,greater grassland flite rasp
+262,flite_rasp_grassland_medium,grassland flite rasp
+263,flite_rasp_grassland_small,lesser grassland flite rasp
+264,flite_rasp_hill_large,greater hill flite rasp
+265,flite_rasp_hill_medium,hill flite rasp
+266,flite_rasp_hill_small,lesser hill flite rasp
+267,fynock,fynock
+268,fynock_forest_large,greater forest fynock
+269,fynock_forest_medium,forest fynock
+270,fynock_forest_small,lesser forest fynock
+271,gackle_bat,gackle bat
+272,gackle_bat_jungle_large,greater jungle gackle bat
+273,gackle_bat_jungle_medium,jungle gackle bat
+274,gackle_bat_jungle_small,lesser jungle gackle bat
+275,gackle_bat_swamp_large,greater swamp gackle bat
+276,gackle_bat_swamp_medium,swamp gackle bat
+277,gackle_bat_swamp_small,lesser swamp gackle bat
+278,gaping_spider,gaping spider
+279,gaping_spider_forest_large,greater forest gaping spider
+280,gaping_spider_forest_medium,forest gaping spider
+281,gaping_spider_forest_small,lesser forest gaping spider
+282,gekk,gekk
+283,gekk_forest_large,greater forest gekk
+284,gekk_forest_medium,forest gekk
+285,gekk_forest_small,lesser forest gekk
+286,gnort,gnort
+287,gnort_grassland_large,greater grassland gnort
+288,gnort_grassland_medium,grassland gnort
+289,gnort_grassland_small,lesser grassland gnort
+290,gnort_mountain_large,greater mountain gnort
+291,gnort_mountain_medium,mountain gnort
+292,gnort_mountain_small,lesser mountain gnort
+293,graul,graul
+294,graul_jungle_large,greater jungle graul
+295,graul_jungle_medium,jungle graul
+296,graul_jungle_small,lesser jungle graul
+297,gronda,gronda
+298,gronda_grassland_large,greater grassland gronda
+299,gronda_grassland_medium,grassland gronda
+300,gronda_grassland_small,lesser grassland gronda
+301,gualama,gualama
+302,gualama_grassland_large,greater grassland gualama
+303,gualama_grassland_medium,grassland gualama
+304,gualama_grassland_small,lesser grassland gualama
+305,gubbur,gubbur
+306,gubbur_underwater_large,greater underwater gubbur
+307,gubbur_underwater_medium,underwater gubbur
+308,gubbur_underwater_small,lesser underwater gubbur
+309,guf_drolg,guf drolg
+310,guf_drolg_grassland_large,greater grassland guf drolg
+311,guf_drolg_grassland_medium,grassland guf drolg
+312,guf_drolg_grassland_small,lesser grassland guf drolg
+313,guf_drolg_jungle_large,greater jungle guf drolg
+314,guf_drolg_jungle_medium,jungle guf drolg
+315,guf_drolg_jungle_small,lesser jungle guf drolg
+316,gulginaw,gulginaw
+317,gulginaw_forest_large,greater forest gulginaw
+318,gulginaw_forest_medium,forest gulginaw
+319,gulginaw_forest_small,lesser forest gulginaw
+320,gurk,gurk
+321,gurk_mountain_large,greater mountain gurk
+322,gurk_mountain_medium,mountain gurk
+323,gurk_mountain_small,lesser mountain gurk
+324,gurk_wasteland_large,greater wasteland gurk
+325,gurk_wasteland_medium,wasteland gurk
+326,gurk_wasteland_small,lesser wasteland gurk
+327,gurnaset,gurnaset
+328,gurnaset_grassland_large,greater grassland gurnaset
+329,gurnaset_grassland_medium,grassland gurnaset
+330,gurnaset_grassland_small,lesser grassland gurnaset
+331,gurnaset_mountain_large,greater mountain gurnaset
+332,gurnaset_mountain_medium,mountain gurnaset
+333,gurnaset_mountain_small,lesser mountain gurnaset
+334,gurreck,gurreck
+335,gurreck_mountain_large,greater mountain gurreck
+336,gurreck_mountain_medium,mountain gurreck
+337,gurreck_mountain_small,lesser mountain gurreck
+338,hanadak,hanadak
+339,hanadak_mountain_large,greater mountain hanadak
+340,hanadak_mountain_medium,mountain hanadak
+341,hanadak_mountain_small,lesser mountain hanadak
+342,hermit_spider,hermit spider
+343,hermit_spider_mountain_large,greater mountain hermit spider
+344,hermit_spider_mountain_medium,mountain hermit spider
+345,hermit_spider_mountain_small,lesser mountain hermit spider
+346,hermit_spider_wasteland_large,greater wasteland hermit spider
+347,hermit_spider_wasteland_medium,wasteland hermit spider
+348,hermit_spider_wasteland_small,lesser wasteland hermit spider
+349,horned_krevol,horned krevol
+350,horned_krevol_desert_large,greater desert horned krevol
+351,horned_krevol_desert_medium,desert horned krevol
+352,horned_krevol_desert_small,lesser desert horned krevol
+353,horned_krevol_forest_large,greater forest horned krevol
+354,horned_krevol_forest_medium,forest horned krevol
+355,horned_krevol_forest_small,lesser forest horned krevol
+356,horned_krevol_mountain_large,greater mountain horned krevol
+357,horned_krevol_mountain_medium,mountain horned krevol
+358,horned_krevol_mountain_small,lesser mountain horned krevol
+359,horned_rasp,horned rasp
+360,horned_rasp_grassland_large,greater grassland horned rasp
+361,horned_rasp_grassland_medium,grassland horned rasp
+362,horned_rasp_grassland_small,lesser grassland horned rasp
+363,horned_rasp_jungle_large,greater jungle horned rasp
+364,horned_rasp_jungle_medium,jungle horned rasp
+365,horned_rasp_jungle_small,lesser jungle horned rasp
+366,huf_dun,huf dun
+367,huf_dun_grassland_large,greater grassland huf dun
+368,huf_dun_grassland_medium,grassland huf dun
+369,huf_dun_grassland_small,lesser grassland huf dun
+370,huf_dun_hill_large,greater hill huf dun
+371,huf_dun_hill_medium,hill huf dun
+372,huf_dun_hill_small,lesser hill huf dun
+373,huurton,huurton
+374,huurton_grassland_large,greater grassland huurton
+375,huurton_grassland_medium,grassland huurton
+376,huurton_grassland_small,lesser grassland huurton
+377,ikopi,ikopi
+378,ikopi_grassland_large,greater grassland ikopi
+379,ikopi_grassland_medium,grassland ikopi
+380,ikopi_grassland_small,lesser grassland ikopi
+381,jellyfish,jellyfish
+382,jellyfish_underwater_large,greater underwater jellyfish
+383,jellyfish_underwater_medium,underwater jellyfish
+384,jellyfish_underwater_small,lesser underwater jellyfish
+385,kaadu,kaadu
+386,kaadu_forest_large,greater forest kaadu
+387,kaadu_forest_medium,forest kaadu
+388,kaadu_forest_small,lesser forest kaadu
+389,kaadu_grassland_large,greater grassland kaadu
+390,kaadu_grassland_medium,grassland kaadu
+391,kaadu_grassland_small,lesser grassland kaadu
+392,kaadu_swamp_large,greater swamp kaadu
+393,kaadu_swamp_medium,swamp kaadu
+394,kaadu_swamp_small,lesser swamp kaadu
+395,kaitok,kaitok
+396,kaitok_mountain_large,greater mountain kaitok
+397,kaitok_mountain_medium,mountain kaitok
+398,kaitok_mountain_small,lesser mountain kaitok
+399,kaitok_wasteland_large,greater wasteland kaitok
+400,kaitok_wasteland_medium,wasteland kaitok
+401,kaitok_wasteland_small,lesser wasteland kaitok
+402,kima,kima
+403,kima_grassland_large,greater grassland kima
+404,kima_grassland_medium,grassland kima
+405,kima_grassland_small,lesser grassland kima
+406,kima_mountain_large,greater mountain kima
+407,kima_mountain_medium,mountain kima
+408,kima_mountain_small,lesser mountain kima
+409,kimogila,kimogila
+410,kimogila_grassland_large,greater grassland kimogila
+411,kimogila_grassland_medium,grassland kimogila
+412,kimogila_grassland_small,lesser grassland kimogila
+413,kimogila_mountain_large,greater mountain kimogila
+414,kimogila_mountain_medium,mountain kimogila
+415,kimogila_mountain_small,lesser mountain kimogila
+416,kittle,kittle
+417,kittle_forest_large,greater forest kittle
+418,kittle_forest_medium,forest kittle
+419,kittle_forest_small,lesser forest kittle
+420,kittle_grassland_large,greater grassland kittle
+421,kittle_grassland_medium,grassland kittle
+422,kittle_grassland_small,lesser grassland kittle
+423,kliknik,kliknik
+424,kliknik_forest_large,greater forest kliknik
+425,kliknik_forest_medium,forest kliknik
+426,kliknik_forest_small,lesser forest kliknik
+427,krahbu,krahbu
+428,krahbu_grassland_large,greater grassland krahbu
+429,krahbu_grassland_medium,grassland krahbu
+430,krahbu_grassland_small,lesser grassland krahbu
+431,krayt_dragon,krayt dragon
+432,krayt_dragon_desert_large,greater desert krayt dragon
+433,krayt_dragon_desert_medium,desert krayt dragon
+434,krayt_dragon_desert_small,lesser desert krayt dragon
+435,krayt_dragon_wasteland_large,greater wasteland krayt dragon
+436,krayt_dragon_wasteland_medium,wasteland krayt dragon
+437,krayt_dragon_wasteland_small,lesser wasteland krayt dragon
+438,kupernug,kupernug
+439,kupernug_mountain_large,greater mountain kupernug
+440,kupernug_mountain_medium,mountain kupernug
+441,kupernug_mountain_small,lesser mountain kupernug
+442,kupernug_wasteland_large,greater wasteland kupernug
+443,kupernug_wasteland_medium,wasteland kupernug
+444,kupernug_wasteland_small,lesser wasteland kupernug
+445,kusak,kusak
+446,kusak_wasteland_large,greater wasteland kusak
+447,kusak_wasteland_medium,wasteland kusak
+448,kusak_wasteland_small,lesser wasteland kusak
+449,kwi,kwi
+450,kwi_desert_large,greater desert kwi
+451,kwi_desert_medium,desert kwi
+452,kwi_desert_small,lesser desert kwi
+453,kwi_forest_large,greater forest kwi
+454,kwi_forest_medium,forest kwi
+455,kwi_forest_small,lesser forest kwi
+456,kwi_mountain_large,greater mountain kwi
+457,kwi_mountain_medium,mountain kwi
+458,kwi_mountain_small,lesser mountain kwi
+459,laa,laa
+460,laa_underwater_large,greater underwater laa
+461,laa_underwater_medium,underwater laa
+462,laa_underwater_small,lesser underwater laa
+463,langlatch,langlatch
+464,langlatch_forest_large,greater forest langlatch
+465,langlatch_forest_medium,forest langlatch
+466,langlatch_forest_small,lesser forest langlatch
+467,langlatch_mountain_large,greater mountain langlatch
+468,langlatch_mountain_medium,mountain langlatch
+469,langlatch_mountain_small,lesser mountain langlatch
+470,langlatch_wasteland_large,greater wasteland langlatch
+471,langlatch_wasteland_medium,wasteland langlatch
+472,langlatch_wasteland_small,lesser wasteland langlatch
+473,lantern_bird,lantern bird
+474,lantern_bird_forest_large,greater forest lantern bird
+475,lantern_bird_forest_medium,forest lantern bird
+476,lantern_bird_forest_small,lesser forest lantern bird
+477,malkloc,malkloc
+478,malkloc_desert_large,greater desert malkloc
+479,malkloc_desert_medium,desert malkloc
+480,malkloc_desert_small,lesser desert malkloc
+481,malkloc_forest_large,greater forest malkloc
+482,malkloc_forest_medium,forest malkloc
+483,malkloc_forest_small,lesser forest malkloc
+484,malkloc_mountain_large,greater mountain malkloc
+485,malkloc_mountain_medium,mountain malkloc
+486,malkloc_mountain_small,lesser mountain malkloc
+487,mamien,mamien
+488,mamien_jungle_large,greater jungle mamien
+489,mamien_jungle_medium,jungle mamien
+490,mamien_jungle_small,lesser jungle mamien
+491,mawgax,mawgax
+492,mawgax_grassland_large,greater grassland mawgax
+493,mawgax_grassland_medium,grassland mawgax
+494,mawgax_grassland_small,lesser grassland mawgax
+495,mawgax_mountain_large,greater mountain mawgax
+496,mawgax_mountain_medium,mountain mawgax
+497,mawgax_mountain_small,lesser mountain mawgax
+498,merek,merek
+499,merek_jungle_large,greater jungle merek
+500,merek_jungle_medium,jungle merek
+501,merek_jungle_small,lesser jungle merek
+502,merek_swamp_large,greater swamp merek
+503,merek_swamp_medium,swamp merek
+504,merek_swamp_small,lesser swamp merek
+505,mott,mott
+506,mott_grassland_large,greater grassland mott
+507,mott_grassland_medium,grassland mott
+508,mott_grassland_small,lesser grassland mott
+509,murra,murra
+510,murra_grassland_large,greater grassland murra
+511,murra_grassland_medium,grassland murra
+512,murra_grassland_small,lesser grassland murra
+513,murra_mountain_large,greater mountain murra
+514,murra_mountain_medium,mountain murra
+515,murra_mountain_small,lesser mountain murra
+516,mynock,mynock
+517,mynock_large,greater mynock
+518,mynock_medium,mynock
+519,mynock_small,lesser mynock
+520,narglatch,narglatch
+521,narglatch_swamp_large,greater swamp narglatch
+522,narglatch_swamp_medium,swamp narglatch
+523,narglatch_swamp_small,lesser swamp narglatch
+524,nerf,nerf
+525,nerf_grassland_large,greater grassland nerf
+526,nerf_grassland_medium,grassland nerf
+527,nerf_grassland_small,lesser grassland nerf
+528,nuna,nuna
+529,nuna_forest_large,greater forest nuna
+530,nuna_forest_medium,forest nuna
+531,nuna_forest_small,lesser forest nuna
+532,nuna_grassland_large,greater grassland nuna
+533,nuna_grassland_medium,grassland nuna
+534,nuna_grassland_small,lesser grassland nuna
+535,nuna_swamp_large,greater swamp nuna
+536,nuna_swamp_medium,swamp nuna
+537,nuna_swamp_small,lesser swamp nuna
+538,opee_sea_killer,opee sea killer
+539,opee_sea_killer_underwater_large,greater opee sea killer
+540,opee_sea_killer_underwater_medium,opee sea killer
+541,opee_sea_killer_underwater_small,lesser opee sea killer
+542,peko_peko,peko-peko
+543,peko_peko_forest_large,greater forest peko-peko
+544,peko_peko_forest_medium,forest peko-peko
+545,peko_peko_forest_small,lesser forest peko-peko
+546,peko_peko_grassland_large,greater grassland peko-peko
+547,peko_peko_grassland_medium,grassland peko-peko
+548,peko_peko_grassland_small,lesser grassland peko-peko
+549,peko_peko_swamp_large,greater swamp peko-peko
+550,peko_peko_swamp_medium,swamp peko-peko
+551,peko_peko_swamp_small,lesser swamp peko-peko
+552,perlek,perlek
+553,perlek_grassland_large,greater grassland perlek
+554,perlek_grassland_medium,grassland perlek
+555,perlek_grassland_small,lesser grassland perlek
+556,perlek_jungle_large,greater jungle perlek
+557,perlek_jungle_medium,jungle perlek
+558,perlek_jungle_small,lesser jungle perlek
+559,pharple,pharple
+560,pharple_wasteland_large,greater wasteland pharple
+561,pharple_wasteland_medium,wasteland pharple
+562,pharple_wasteland_small,lesser wasteland pharple
+563,piket,piket
+564,piket_grassland_large,greater grassland piket
+565,piket_grassland_medium,grassland piket
+566,piket_grassland_small,lesser grassland piket
+567,plumed_rasp,plumed rasp
+568,plumed_rasp_forest_large,greater forest plumed rasp
+569,plumed_rasp_forest_medium,forest plumed rasp
+570,plumed_rasp_forest_small,lesser forest plumed rasp
+571,plumed_rasp_mountain_large,greater mountain plumed rasp
+572,plumed_rasp_mountain_medium,mountain plumed rasp
+573,plumed_rasp_mountain_small,lesser mountain plumed rasp
+574,pufferfish,pufferfish
+575,pufferfish_underwater_large,greater underwater pufferfish
+576,pufferfish_underwater_medium,underwater pufferfish
+577,pufferfish_underwater_small,lesser underwater pufferfish
+578,pugoriss,pugoriss
+579,pugoriss_grassland_large,greater grassland pugoriss
+580,pugoriss_grassland_medium,grassland pugoriss
+581,pugoriss_grassland_small,lesser grassland pugoriss
+582,purbole,purbole
+583,purbole_forest_large,greater forest purbole
+584,purbole_forest_medium,forest purbole
+585,purbole_forest_small,lesser forest purbole
+586,quenker,quenker
+587,quenker_grassland_large,greater grassland quenker
+588,quenker_grassland_medium,grassland quenker
+589,quenker_grassland_small,lesser grassland quenker
+590,qurvel,qurvel
+591,qurvel_forest_large,greater forest qurvel
+592,qurvel_forest_medium,forest qurvel
+593,qurvel_forest_small,lesser forest qurvel
+594,qurvel_mountain_large,greater mountain qurvel
+595,qurvel_mountain_medium,mountain qurvel
+596,qurvel_mountain_small,lesser mountain qurvel
+597,rancor,rancor
+598,rancor_desert_large,greater desert rancor
+599,rancor_desert_medium,desert rancor
+600,rancor_desert_small,lesser desert rancor
+601,rancor_mountain_large,greater mountain rancor
+602,rancor_mountain_medium,mountain rancor
+603,rancor_mountain_small,lesser mountain rancor
+604,ray,ray
+605,ray_underwater_large,greater underwater ray
+606,ray_underwater_medium,underwater ray
+607,ray_underwater_small,lesser underwater ray
+608,remmer,remmer
+609,remmer_grassland_large,greater grassland remmer
+610,remmer_grassland_medium,grassland remmer
+611,remmer_grassland_small,lesser grassland remmer
+612,remmer_jungle_large,greater jungle remmer
+613,remmer_jungle_medium,jungle remmer
+614,remmer_jungle_small,lesser jungle remmer
+615,reptilian_flyer,reptilian flyer
+616,reptilian_flyer_forest_large,greater forest reptilian flyer
+617,reptilian_flyer_forest_medium,forest reptilian flyer
+618,reptilian_flyer_forest_small,lesser forest reptilian flyer
+619,reptilian_flyer_mountain_large,greater mountain reptilian flyer
+620,reptilian_flyer_mountain_medium,mountain reptilian flyer
+621,reptilian_flyer_mountain_small,lesser mountain reptilian flyer
+622,roba,roba
+623,roba_grassland_large,greater grassland roba
+624,roba_grassland_medium,grassland roba
+625,roba_grassland_small,lesser grassland roba
+626,roba_hill_large,greater hill roba
+627,roba_hill_medium,hill roba
+628,roba_hill_small,lesser hill roba
+629,rock_mite,rock mite
+630,rock_mite_desert_large,greater desert rock mite
+631,rock_mite_desert_medium,desert rock mite
+632,rock_mite_desert_small,lesser desert rock mite
+633,rock_mite_mountain_large,greater mountain rock mite
+634,rock_mite_mountain_medium,mountain rock mite
+635,rock_mite_mountain_small,lesser mountain rock mite
+636,rock_mite_wasteland_large,greater wasteland rock mite
+637,rock_mite_wasteland_medium,wasteland rock mite
+638,rock_mite_wasteland_small,lesser wasteland rock mite
+639,ronto,ronto
+640,ronto_desert_large,greater desert ronto
+641,ronto_desert_medium,desert ronto
+642,ronto_desert_small,lesser desert ronto
+643,ronto_dune_large,greater dune ronto
+644,ronto_dune_medium,dune ronto
+645,ronto_dune_small,lesser dune ronto
+646,salt_mynock,salt mynock
+647,salt_mynock_mountain_large,greater mountain salt mynock
+648,salt_mynock_mountain_medium,mountain salt mynock
+649,salt_mynock_mountain_small,lesser mountain salt mynock
+650,salt_mynock_wasteland_large,greater wasteland salt mynock
+651,salt_mynock_wasteland_medium,wasteland salt mynock
+652,salt_mynock_wasteland_small,lesser wasteland salt mynock
+653,sarlacc,sarlacc
+654,sarlacc_desert_large,greater desert sarlacc
+655,sarlacc_desert_medium,desert sarlacc
+656,sarlacc_desert_small,lesser desert sarlacc
+657,scurrier,scurrier
+658,scurrier_desert_large,greater desert scurrier
+659,scurrier_desert_medium,desert scurrier
+660,scurrier_desert_small,lesser desert scurrier
+661,scurrier_dune_large,greater dune scurrier
+662,scurrier_dune_medium,dune scurrier
+663,scurrier_dune_small,lesser dune scurrier
+664,scurrier_mountain_large,greater mountain scurrier
+665,scurrier_mountain_medium,mountain scurrier
+666,scurrier_mountain_small,lesser mountain scurrier
+667,scurrier_wasteland_large,greater wasteland scurrier
+668,scurrier_wasteland_medium,wasteland scurrier
+669,scurrier_wasteland_small,lesser wasteland scurrier
+670,sharnaff,sharnaff
+671,sharnaff_forest_large,greater forest sharnaff
+672,sharnaff_forest_medium,forest sharnaff
+673,sharnaff_forest_small,lesser forest sharnaff
+674,sharnaff_grassland_large,greater grassland sharnaff
+675,sharnaff_grassland_medium,grassland sharnaff
+676,sharnaff_grassland_small,lesser grassland sharnaff
+677,shaupaut,shaupaut
+678,shaupaut_forest_large,greater forest shaupaut
+679,shaupaut_forest_medium,forest shaupaut
+680,shaupaut_forest_small,lesser forest shaupaut
+681,shaupaut_swamp_large,greater swamp shaupaut
+682,shaupaut_swamp_medium,swamp shaupaut
+683,shaupaut_swamp_small,lesser swamp shaupaut
+684,shear_mite,shear mite
+685,shear_mite_forest_large,greater forest shear mite
+686,shear_mite_forest_medium,forest shear mite
+687,shear_mite_forest_small,lesser forest shear mite
+688,shear_mite_mountain_large,greater mountain shear mite
+689,shear_mite_mountain_medium,mountain shear mite
+690,shear_mite_mountain_small,lesser mountain shear mite
+691,skreeg,skreeg
+692,skreeg_jungle_large,greater jungle skreeg
+693,skreeg_jungle_medium,jungle skreeg
+694,skreeg_jungle_small,lesser jungle skreeg
+695,skreeg_swamp_large,greater swamp skreeg
+696,skreeg_swamp_medium,swamp skreeg
+697,skreeg_swamp_small,lesser swamp skreeg
+698,snorbal,snorbal
+699,snorbal_grassland_large,greater grassland snorbal
+700,snorbal_grassland_medium,grassland snorbal
+701,snorbal_grassland_small,lesser grassland snorbal
+702,snorbal_hill_large,greater hill snorbal
+703,snorbal_hill_medium,hill snorbal
+704,snorbal_hill_small,lesser hill snorbal
+705,spined_puc,spined puc
+706,spined_puc_underwater_large,greater underwater spined puc
+707,spined_puc_underwater_medium,underwater spined puc
+708,spined_puc_underwater_small,lesser underwater spined puc
+709,spined_snake,spined snake
+710,spined_snake_mountain_large,greater mountain spined snake
+711,spined_snake_mountain_medium,mountain spined snake
+712,spined_snake_mountain_small,lesser mountain spined snake
+713,spined_snake_wasteland_large,greater wasteland spined snake
+714,spined_snake_wasteland_medium,wasteland spined snake
+715,spined_snake_wasteland_small,lesser wasteland spined snake
+716,squall,squall
+717,squall_grassland_large,greater grassland squall
+718,squall_grassland_medium,grassland squall
+719,squall_grassland_small,lesser grassland squall
+720,squill,squill
+721,squill_desert_large,greater desert squill
+722,squill_desert_medium,desert squill
+723,squill_desert_small,lesser desert squill
+724,stintaril,stintaril
+725,stintaril_jungle_large,greater jungle stintaril
+726,stintaril_jungle_medium,jungle stintaril
+727,stintaril_jungle_small,lesser jungle stintaril
+728,stintaril_swamp_large,greater swamp stintaril
+729,stintaril_swamp_medium,swamp stintaril
+730,stintaril_swamp_small,lesser swamp stintaril
+731,striped_fish,striped fish
+732,striped_fish_underwater_large,greater underwater striped fish
+733,striped_fish_underwater_medium,underwater striped fish
+734,striped_fish_underwater_small,lesser underwater striped fish
+735,swirl_prong,swirl prong
+736,swirl_prong_grassland_large,greater grassland swirl prong
+737,swirl_prong_grassland_medium,grassland swirl prong
+738,swirl_prong_grassland_small,lesser grassland swirl prong
+739,tanc_mite,tanc mite
+740,tanc_mite_mountain_large,greater mountain tanc mite
+741,tanc_mite_mountain_medium,mountain tanc mite
+742,tanc_mite_mountain_small,lesser mountain tanc mite
+743,thune,thune
+744,thune_grassland_large,greater grassland thune
+745,thune_grassland_medium,grassland thune
+746,thune_grassland_small,lesser grassland thune
+747,torton,torton
+748,torton_grassland_large,greater grassland torton
+749,torton_grassland_medium,grassland torton
+750,torton_grassland_small,lesser grassland torton
+751,tusk_cat,tusk-cat
+752,tusk_cat_grassland_large,greater grassland tusk-cat
+753,tusk_cat_grassland_medium,grassland tusk-cat
+754,tusk_cat_grassland_small,lesser grassland tusk-cat
+755,tybis,tybis
+756,tybis_grassland_large,greater grassland tybis
+757,tybis_grassland_medium,grassland tybis
+758,tybis_grassland_small,lesser grassland tybis
+759,veermok,veermok
+760,veermok_forest_large,greater forest veermok
+761,veermok_forest_medium,forest veermok
+762,veermok_forest_small,lesser forest veermok
+763,veermok_swamp_large,greater swamp veermok
+764,veermok_swamp_medium,swamp veermok
+765,veermok_swamp_small,lesser swamp veermok
+766,verne,verne
+767,verne_forest_large,greater forest verne
+768,verne_forest_medium,forest verne
+769,verne_forest_small,lesser forest verne
+770,vesp,vesp
+771,vesp_desert_large,greater desert vesp
+772,vesp_desert_medium,desert vesp
+773,vesp_desert_small,lesser desert vesp
+774,vesp_mountain_large,greater mountain vesp
+775,vesp_mountain_medium,mountain vesp
+776,vesp_mountain_small,lesser mountain vesp
+777,vir_vir,vir vir
+778,vir_vir_grassland_large,greater grassland vir vir
+779,vir_vir_grassland_medium,vir vir grassland
+780,vir_vir_grassland_small,lesser grassland vir vir
+781,vir_vir_hill_large,greater hill vir vir
+782,vir_vir_hill_medium,vir vir hill
+783,vir_vir_hill_small,lesser hill vir vir
+784,vlutore,vlutore
+785,vlutore_grassland_large,greater grassland vlutore
+786,vlutore_grassland_medium,grassland vlutore
+787,vlutore_grassland_small,lesser grassland vlutore
+788,vlutore_mountain_large,greater mountain vlutore
+789,vlutore_mountain_medium,mountain vlutore
+790,vlutore_mountain_small,lesser mountain vlutore
+791,vog_eel,vog eel
+792,vog_eel_underwater_large,greater underwater vog eel
+793,vog_eel_underwater_medium,underwater vog eel
+794,vog_eel_underwater_small,lesser underwater vog eel
+795,voritor_lizard,voritor lizard
+796,voritor_lizard_grassland_large,greater grassland voritor lizard
+797,voritor_lizard_grassland_medium,grassland voritor lizard
+798,voritor_lizard_grassland_small,lesser grassland voritor lizard
+799,voritor_lizard_mountain_large,greater mountain voritor lizard
+800,voritor_lizard_mountain_medium,mountain voritor lizard
+801,voritor_lizard_mountain_small,lesser mountain voritor lizard
+802,vynock,vynock
+803,vynock_dune_large,greater dune vynock
+804,vynock_dune_medium,dune vynock
+805,vynock_dune_small,lesser dune vynock
+806,vynock_mountain_large,greater mountain vynock
+807,vynock_mountain_medium,mountain vynock
+808,vynock_mountain_small,lesser mountain vynock
+809,vynock_wasteland_large,greater wasteland vynock
+810,vynock_wasteland_medium,wasteland vynock
+811,vynock_wasteland_small,lesser wasteland vynock
+812,whisper_bird,whisper bird
+813,whisper_bird_jungle_large,greater jungle whisper bird
+814,whisper_bird_jungle_medium,jungle whisper bird
+815,whisper_bird_jungle_small,lesser jungle whisper bird
+816,whisper_bird_swamp_large,greater swamp whisper bird
+817,whisper_bird_swamp_medium,swamp whisper bird
+818,whisper_bird_swamp_small,lesser swamp whisper bird
+819,winged_ornith,winged ornith
+820,winged_ornith_grassland_large,greater grassland winged ornith
+821,winged_ornith_grassland_medium,grassland winged ornith
+822,winged_ornith_grassland_small,lesser grassland winged ornith
+823,winged_ornith_jungle_large,greater jungle winged ornith
+824,winged_ornith_jungle_medium,jungle winged ornith
+825,winged_ornith_jungle_small,lesser jungle winged ornith
+826,womp_rat,womp rat
+827,womp_rat_desert_large,greater desert womp rat
+828,womp_rat_desert_medium,desert womp rat
+829,womp_rat_desert_small,lesser desert womp rat
+830,woolamander,woolamander
+831,woolamander_jungle_large,greater jungle woolamander
+832,woolamander_jungle_medium,jungle woolamander
+833,woolamander_jungle_small,lesser jungle woolamander
+834,worrt,worrt
+835,worrt_desert_large,greater desert worrt
+836,worrt_desert_medium,desert worrt
+837,worrt_desert_small,lesser desert worrt
+838,zucca_boar,zucca boar
+839,zucca_boar_desert_large,greater desert zucca boar
+840,zucca_boar_desert_medium,desert zucca boar
+841,zucca_boar_desert_small,lesser desert zucca boar
+842,zucca_boar_dune_large,greater dune zucca boar
+843,zucca_boar_dune_medium,dune zucca boar
+844,zucca_boar_dune_small,lesser dune zucca boar
+845,zucca_boar_wasteland_large,greater wasteland zucca boar
+846,zucca_boar_wasteland_medium,wasteland zucca boar
+847,zucca_boar_wasteland_small,lesser wasteland zucca boar
+848,monstrosity,This monstrosity is the testbed for the mount-skinpack-style implementation of player-controlled vehicular transportation in the game.
+849,monstrosity_bike,This monstrosity Bike-Edition is a testbed for the mount-skinpack-style implementation of player-controlled vehicular transportation in the game.
+850,speederbike,Speederbike vehicle
+851,speederbike_swoop,Swoop variant of a Speederbike
+852,landspeeder_x34,X34 Landspeeder
+853,landspeeder_av21,AV-21 Landspeeder
+854,jetpack,A personal jetpack
+855,speederbike_flash,A Flash Speeder vehicle.
+856,landspeeder_x31,X31 Landspeeder

@@ -1,0 +1,28 @@
+1,drink,A type of drink.
+2,dough,This is a clump of dough.
+3,boullion,A cube of boullion.
+4,icing,Some sweet icing.
+5,ground_meat,A handful of ground meat.
+6,prepared_meat,Some prepared meat.
+7,spice,A vial of spice.
+8,stuffing,Some hearty stuffing.
+9,sugar,A small amount of sugar to sweeten food.
+10,bottle,This is a bottle.
+11,glass,An empty glass.
+12,place_setting,This is a place setting.
+13,plate,A clean plate.
+14,carbosyrup,A sticky syrupy substance fortified with carbohydrates.  Used as a sugary basis for many foods.
+15,additive,This is an additive for flavor and texture.
+16,small_glass,Drink Container
+
+A small drink container required to hold a crafted beverage.  This basic container offers no special bonus to the crafted drink's quality.
+17,crystal,Crystal
+18,large_glass,Drink Container
+
+A large drink container designed to hold a crafted beverage.  This enhanced container offers a slight bonus to the amount of beverage created when used in crafting.
+19,cask,Drink Container
+
+A very large drink container designed to hold a crafted beverage.  This enhanced container offers a moderate bonus to the amount of beverage created when used in crafting.
+20,barrel,"Drink Container
+
+A massive, temperature regulated drink container designed to hold a crafted beverage.  This enhanced container offers a large bonus to the amount of beverage created when used in crafting."
