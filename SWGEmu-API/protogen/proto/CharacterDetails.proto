@@ -16,6 +16,7 @@ message SWGEmuCharacterDetail {
 	optional int32 remaining_plots = 12;
 	optional int32 maximumim_plots = 13;
 	optional string title = 14;
+	optional string appearance_file = 15;
 	
 	repeated CharacterInventoryItem inventory_items = 20;
 	repeated SWGEmuCharacterStructureItem structures = 21;

@@ -18,7 +18,8 @@ message SWGEmuStructureItemDetails {
 	optional int32 lot_size = 13;
 	optional string template_file_name = 14;
 	optional string portals_file_name = 15;
-	
+	repeated string buildable_zones = 16;
+	 
 	optional BuildingItemDetails building_details = 20;
 	optional InstallationItemDetails installation_details = 21;
 	

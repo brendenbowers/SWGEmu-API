@@ -99,6 +99,11 @@ namespace SWGEmuAPI.Model
                     charDetails.max_lots = character.MaximumimPlots;
                 }
 
+                if (character.HasAppearanceFile)
+                {
+                    charDetails.appearance_file = character.AppearanceFile;
+                }
+
                 characters.Add(charDetails);
             }
             return characters;

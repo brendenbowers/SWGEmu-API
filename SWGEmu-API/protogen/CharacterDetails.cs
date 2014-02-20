@@ -36,34 +36,34 @@ namespace swgemurpcserver.rpc {
     static CharacterDetails() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           "ChZDaGFyYWN0ZXJEZXRhaWxzLnByb3RvEhNzd2dlbXVycGNzZXJ2ZXIucnBj" + 
-          "GhNJbnZlbnRvcnlJdGVtLnByb3RvIq4DChVTV0dFbXVDaGFyYWN0ZXJEZXRh" + 
+          "GhNJbnZlbnRvcnlJdGVtLnByb3RvIscDChVTV0dFbXVDaGFyYWN0ZXJEZXRh" + 
           "aWwSEQoJb2JqZWN0X2lkGAEgAigGEhIKCmFjY291bnRfaWQYAiACKAcSEgoK" + 
           "Zmlyc3RfbmFtZRgDIAIoCRIQCghzdXJfbmFtZRgEIAIoCRIUCgxiYW5rX2Ny" + 
           "ZWRpdHMYBSABKAcSFAoMY2FzaF9jcmVkaXRzGAYgASgHEhMKC2Jhc2VfaGVh" + 
           "bHRoGAcgASgHEhMKC2Jhc2VfYWN0aW9uGAggASgHEhEKCWJhc2VfbWluZBgK" + 
           "IAEoBxIRCgliaW9ncmFwaHkYCyABKAkSFwoPcmVtYWluaW5nX3Bsb3RzGAwg" + 
-          "ASgFEhcKD21heGltdW1pbV9wbG90cxgNIAEoBRINCgV0aXRsZRgOIAEoCRJE" + 
-          "Cg9pbnZlbnRvcnlfaXRlbXMYFCADKAsyKy5zd2dlbXVycGNzZXJ2ZXIucnBj" + 
-          "LkNoYXJhY3RlckludmVudG9yeUl0ZW0SRQoKc3RydWN0dXJlcxgVIAMoCzIx" + 
-          "LnN3Z2VtdXJwY3NlcnZlci5ycGMuU1dHRW11Q2hhcmFjdGVyU3RydWN0dXJl" + 
-          "SXRlbSJcChxTV0dFbXVDaGFyYWN0ZXJTdHJ1Y3R1cmVJdGVtEhEKCW9iamVj" + 
-          "dF9pZBgBIAIoBhITCgtvYmplY3RfbmFtZRgCIAIoCRIUCgxkaXNwbGF5X25h" + 
-          "bWUYAyACKAkikQEKGkdldENoYXJhY3RlckRldGFpbHNSZXF1ZXN0EhIKCmFj" + 
-          "Y291bnRfaWQYASACKAcSEQoJb2JqZWN0X2lkGAIgASgGEhEKCWdhbGF4eV9p" + 
-          "ZBgDIAEoBxISCgpmaXJzdF9uYW1lGAcgASgJEhAKCHN1cl9uYW1lGAggASgJ" + 
-          "EhMKC2dhbGF4eV9uYW1lGAkgASgJImQKG0dldENoYXJhY3RlckRldGFpbHNS" + 
-          "ZXNwb25zZRJFChFjaGFyYWN0ZXJfZGV0YWlscxgBIAMoCzIqLnN3Z2VtdXJw" + 
-          "Y3NlcnZlci5ycGMuU1dHRW11Q2hhcmFjdGVyRGV0YWlsMpkBCh1TV0dFbXVD" + 
-          "aGFyYWN0ZXJEZXRhaWxzU2VydmljZRJ4ChNHZXRDaGFyYWN0ZXJEZXRhaWxz" + 
-          "Ei8uc3dnZW11cnBjc2VydmVyLnJwYy5HZXRDaGFyYWN0ZXJEZXRhaWxzUmVx" + 
-          "dWVzdBowLnN3Z2VtdXJwY3NlcnZlci5ycGMuR2V0Q2hhcmFjdGVyRGV0YWls" + 
-          "c1Jlc3BvbnNlQgOAAQE=");
+          "ASgFEhcKD21heGltdW1pbV9wbG90cxgNIAEoBRINCgV0aXRsZRgOIAEoCRIX" + 
+          "Cg9hcHBlYXJhbmNlX2ZpbGUYDyABKAkSRAoPaW52ZW50b3J5X2l0ZW1zGBQg" + 
+          "AygLMisuc3dnZW11cnBjc2VydmVyLnJwYy5DaGFyYWN0ZXJJbnZlbnRvcnlJ" + 
+          "dGVtEkUKCnN0cnVjdHVyZXMYFSADKAsyMS5zd2dlbXVycGNzZXJ2ZXIucnBj" + 
+          "LlNXR0VtdUNoYXJhY3RlclN0cnVjdHVyZUl0ZW0iXAocU1dHRW11Q2hhcmFj" + 
+          "dGVyU3RydWN0dXJlSXRlbRIRCglvYmplY3RfaWQYASACKAYSEwoLb2JqZWN0" + 
+          "X25hbWUYAiACKAkSFAoMZGlzcGxheV9uYW1lGAMgAigJIpEBChpHZXRDaGFy" + 
+          "YWN0ZXJEZXRhaWxzUmVxdWVzdBISCgphY2NvdW50X2lkGAEgAigHEhEKCW9i" + 
+          "amVjdF9pZBgCIAEoBhIRCglnYWxheHlfaWQYAyABKAcSEgoKZmlyc3RfbmFt" + 
+          "ZRgHIAEoCRIQCghzdXJfbmFtZRgIIAEoCRITCgtnYWxheHlfbmFtZRgJIAEo" + 
+          "CSJkChtHZXRDaGFyYWN0ZXJEZXRhaWxzUmVzcG9uc2USRQoRY2hhcmFjdGVy" + 
+          "X2RldGFpbHMYASADKAsyKi5zd2dlbXVycGNzZXJ2ZXIucnBjLlNXR0VtdUNo" + 
+          "YXJhY3RlckRldGFpbDKZAQodU1dHRW11Q2hhcmFjdGVyRGV0YWlsc1NlcnZp" + 
+          "Y2USeAoTR2V0Q2hhcmFjdGVyRGV0YWlscxIvLnN3Z2VtdXJwY3NlcnZlci5y" + 
+          "cGMuR2V0Q2hhcmFjdGVyRGV0YWlsc1JlcXVlc3QaMC5zd2dlbXVycGNzZXJ2" + 
+          "ZXIucnBjLkdldENoYXJhY3RlckRldGFpbHNSZXNwb25zZUIDgAEB");
       pbd::FileDescriptor.InternalDescriptorAssigner assigner = delegate(pbd::FileDescriptor root) {
         descriptor = root;
         internal__static_swgemurpcserver_rpc_SWGEmuCharacterDetail__Descriptor = Descriptor.MessageTypes[0];
         internal__static_swgemurpcserver_rpc_SWGEmuCharacterDetail__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::swgemurpcserver.rpc.SWGEmuCharacterDetail, global::swgemurpcserver.rpc.SWGEmuCharacterDetail.Builder>(internal__static_swgemurpcserver_rpc_SWGEmuCharacterDetail__Descriptor,
-                new string[] { "ObjectId", "AccountId", "FirstName", "SurName", "BankCredits", "CashCredits", "BaseHealth", "BaseAction", "BaseMind", "Biography", "RemainingPlots", "MaximumimPlots", "Title", "InventoryItems", "Structures", });
+                new string[] { "ObjectId", "AccountId", "FirstName", "SurName", "BankCredits", "CashCredits", "BaseHealth", "BaseAction", "BaseMind", "Biography", "RemainingPlots", "MaximumimPlots", "Title", "AppearanceFile", "InventoryItems", "Structures", });
         internal__static_swgemurpcserver_rpc_SWGEmuCharacterStructureItem__Descriptor = Descriptor.MessageTypes[1];
         internal__static_swgemurpcserver_rpc_SWGEmuCharacterStructureItem__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::swgemurpcserver.rpc.SWGEmuCharacterStructureItem, global::swgemurpcserver.rpc.SWGEmuCharacterStructureItem.Builder>(internal__static_swgemurpcserver_rpc_SWGEmuCharacterStructureItem__Descriptor,
@@ -93,8 +93,8 @@ namespace swgemurpcserver.rpc {
   public sealed partial class SWGEmuCharacterDetail : pb::GeneratedMessage<SWGEmuCharacterDetail, SWGEmuCharacterDetail.Builder> {
     private SWGEmuCharacterDetail() { }
     private static readonly SWGEmuCharacterDetail defaultInstance = new SWGEmuCharacterDetail().MakeReadOnly();
-    private static readonly string[] _sWGEmuCharacterDetailFieldNames = new string[] { "account_id", "bank_credits", "base_action", "base_health", "base_mind", "biography", "cash_credits", "first_name", "inventory_items", "maximumim_plots", "object_id", "remaining_plots", "structures", "sur_name", "title" };
-    private static readonly uint[] _sWGEmuCharacterDetailFieldTags = new uint[] { 21, 45, 69, 61, 85, 90, 53, 26, 162, 104, 9, 96, 170, 34, 114 };
+    private static readonly string[] _sWGEmuCharacterDetailFieldNames = new string[] { "account_id", "appearance_file", "bank_credits", "base_action", "base_health", "base_mind", "biography", "cash_credits", "first_name", "inventory_items", "maximumim_plots", "object_id", "remaining_plots", "structures", "sur_name", "title" };
+    private static readonly uint[] _sWGEmuCharacterDetailFieldTags = new uint[] { 21, 122, 45, 69, 61, 85, 90, 53, 26, 162, 104, 9, 96, 170, 34, 114 };
     public static SWGEmuCharacterDetail DefaultInstance {
       get { return defaultInstance; }
     }
@@ -252,6 +252,16 @@ namespace swgemurpcserver.rpc {
       get { return title_; }
     }
     
+    public const int AppearanceFileFieldNumber = 15;
+    private bool hasAppearanceFile;
+    private string appearanceFile_ = "";
+    public bool HasAppearanceFile {
+      get { return hasAppearanceFile; }
+    }
+    public string AppearanceFile {
+      get { return appearanceFile_; }
+    }
+    
     public const int InventoryItemsFieldNumber = 20;
     private pbc::PopsicleList<global::swgemurpcserver.rpc.CharacterInventoryItem> inventoryItems_ = new pbc::PopsicleList<global::swgemurpcserver.rpc.CharacterInventoryItem>();
     public scg::IList<global::swgemurpcserver.rpc.CharacterInventoryItem> InventoryItemsList {
@@ -296,49 +306,52 @@ namespace swgemurpcserver.rpc {
       int size = SerializedSize;
       string[] field_names = _sWGEmuCharacterDetailFieldNames;
       if (hasObjectId) {
-        output.WriteFixed64(1, field_names[10], ObjectId);
+        output.WriteFixed64(1, field_names[11], ObjectId);
       }
       if (hasAccountId) {
         output.WriteFixed32(2, field_names[0], AccountId);
       }
       if (hasFirstName) {
-        output.WriteString(3, field_names[7], FirstName);
+        output.WriteString(3, field_names[8], FirstName);
       }
       if (hasSurName) {
-        output.WriteString(4, field_names[13], SurName);
+        output.WriteString(4, field_names[14], SurName);
       }
       if (hasBankCredits) {
-        output.WriteFixed32(5, field_names[1], BankCredits);
+        output.WriteFixed32(5, field_names[2], BankCredits);
       }
       if (hasCashCredits) {
-        output.WriteFixed32(6, field_names[6], CashCredits);
+        output.WriteFixed32(6, field_names[7], CashCredits);
       }
       if (hasBaseHealth) {
-        output.WriteFixed32(7, field_names[3], BaseHealth);
+        output.WriteFixed32(7, field_names[4], BaseHealth);
       }
       if (hasBaseAction) {
-        output.WriteFixed32(8, field_names[2], BaseAction);
+        output.WriteFixed32(8, field_names[3], BaseAction);
       }
       if (hasBaseMind) {
-        output.WriteFixed32(10, field_names[4], BaseMind);
+        output.WriteFixed32(10, field_names[5], BaseMind);
       }
       if (hasBiography) {
-        output.WriteString(11, field_names[5], Biography);
+        output.WriteString(11, field_names[6], Biography);
       }
       if (hasRemainingPlots) {
-        output.WriteInt32(12, field_names[11], RemainingPlots);
+        output.WriteInt32(12, field_names[12], RemainingPlots);
       }
       if (hasMaximumimPlots) {
-        output.WriteInt32(13, field_names[9], MaximumimPlots);
+        output.WriteInt32(13, field_names[10], MaximumimPlots);
       }
       if (hasTitle) {
-        output.WriteString(14, field_names[14], Title);
+        output.WriteString(14, field_names[15], Title);
+      }
+      if (hasAppearanceFile) {
+        output.WriteString(15, field_names[1], AppearanceFile);
       }
       if (inventoryItems_.Count > 0) {
-        output.WriteMessageArray(20, field_names[8], inventoryItems_);
+        output.WriteMessageArray(20, field_names[9], inventoryItems_);
       }
       if (structures_.Count > 0) {
-        output.WriteMessageArray(21, field_names[12], structures_);
+        output.WriteMessageArray(21, field_names[13], structures_);
       }
       UnknownFields.WriteTo(output);
     }
@@ -388,6 +401,9 @@ namespace swgemurpcserver.rpc {
         }
         if (hasTitle) {
           size += pb::CodedOutputStream.ComputeStringSize(14, Title);
+        }
+        if (hasAppearanceFile) {
+          size += pb::CodedOutputStream.ComputeStringSize(15, AppearanceFile);
         }
         foreach (global::swgemurpcserver.rpc.CharacterInventoryItem element in InventoryItemsList) {
           size += pb::CodedOutputStream.ComputeMessageSize(20, element);
@@ -562,6 +578,9 @@ namespace swgemurpcserver.rpc {
         if (other.HasTitle) {
           Title = other.Title;
         }
+        if (other.HasAppearanceFile) {
+          AppearanceFile = other.AppearanceFile;
+        }
         if (other.inventoryItems_.Count != 0) {
           result.inventoryItems_.Add(other.inventoryItems_);
         }
@@ -661,6 +680,10 @@ namespace swgemurpcserver.rpc {
             }
             case 114: {
               result.hasTitle = input.ReadString(ref result.title_);
+              break;
+            }
+            case 122: {
+              result.hasAppearanceFile = input.ReadString(ref result.appearanceFile_);
               break;
             }
             case 162: {
@@ -956,6 +979,27 @@ namespace swgemurpcserver.rpc {
         PrepareBuilder();
         result.hasTitle = false;
         result.title_ = "";
+        return this;
+      }
+      
+      public bool HasAppearanceFile {
+        get { return result.hasAppearanceFile; }
+      }
+      public string AppearanceFile {
+        get { return result.AppearanceFile; }
+        set { SetAppearanceFile(value); }
+      }
+      public Builder SetAppearanceFile(string value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasAppearanceFile = true;
+        result.appearanceFile_ = value;
+        return this;
+      }
+      public Builder ClearAppearanceFile() {
+        PrepareBuilder();
+        result.hasAppearanceFile = false;
+        result.appearanceFile_ = "";
         return this;
       }
       

@@ -20,6 +20,7 @@ namespace SWGEmuAPI.Models.Character
         public int max_lots { get; set; }
         public int remaining_lots { get; set; }
         public string title { get; set; }
+        public string appearance_file { get; set; }
         public List<object> Inventory { get; set; }
         public List<Structure.StructureItem> Structures { get; set; }
     }
