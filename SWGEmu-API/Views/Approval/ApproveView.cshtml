@@ -1,0 +1,106 @@
+﻿@using OAuth2.Server.Model.DataModel
+@using OAuth2.DataModels
+@using ServiceStack.ServiceInterface.ServiceModel
+@using ServiceStack.Razor
+
+@inherits ViewPage<IApprovalData>
+
+@{
+    ViewBag.Title = "Approve Access for";
+    
+    //if the model is null and the request contains a model item, we will try and use it
+    //this will happen if there was an exception               
+    if (Model == null && Request.Items.ContainsKey("Model"))
+    {
+        Model = Request.Items.GetValue<IApprovalData>("Model");
+    }
+
+    string appIconPath = null;
+    if (Model != null)
+    {
+        ViewBag.User = Model.User;
+        if(Model.Client != null)
+        {
+            ViewBag.Title += " " + this.Model.Client.name;
+            if (!string.IsNullOrWhiteSpace(Model.Client.icon))
+            {
+                appIconPath = this.Model.Client.icon;
+            }
+        }        
+    }
+    else if(ModelError != null)
+    {
+        ViewBag.Title = "Error Approving Access";
+    }    
+}
+
+@if (ModelError != null)
+{
+<div class="alert alert-error">
+   @{
+        ErrorResponse res = ModelError as ErrorResponse;
+        if (res != null)
+        {
+            Write(res.ResponseStatus.Message);
+        }
+        else
+        {
+            Write("Unknown Error");
+        }
+    }
+</div>
+}
+
+@if (Model != null && Model.Client != null)
+{
+    
+    <form method="post" action="@this.ToApplicationPath("/approval")">
+        @Html.Hidden("redirect", this.Model.Redirect)
+        @Html.Hidden("client_id", this.Model.Client.id)
+        <div style="max-width: 670px;">
+            @if (!string.IsNullOrWhiteSpace(appIconPath))
+            {
+                <img src="@appIconPath" />
+            }
+    		
+    		<strong style="vertical-align:middle; font-size: xx-large">@Model.Client.name</strong>
+    		<div class="pull-right" style="display: inline; margin-top: 15px;">
+    				<input type="submit" class="btn btn-large btn-primary" name="approval" value="Approve" /> 
+    				<input type="submit" class="btn btn-large" name="approval" value="Reject" />
+    		</div>
+    	</div>
+        <div class="container-fluid col-sm-4" style="margin-left: 4px;">
+    		<h3>App Description</h3>
+    		<p>@Model.Client.description</p>
+    		<h3>Contact</h3>
+    		<p><a href="mailto:@Model.Client.contact_email">@this.Model.Client.contact_email</a></p>
+    		<h3>Redirects To</h3>
+    		<p>@Model.Client.redirect_uri</p>
+            @if (Model.Owner != null)
+            {
+                <h3>App Owner</h3>
+                <p>@(Model.Owner.GetSingle<string>("displayName"))</p>
+            }
+    	</div>
+        <div class="container-fluid col-sm-4">
+    		    <h3>Permissions</h3>
+                @if (Model.RequestedScopes != null && Model.RequestedScopes.Count > 0)
+                {
+                    <ul>
+                    @foreach (Scope scope in Model.RequestedScopes)
+                    {
+                        <li>
+    					    <em>@scope.scope_name</em>
+    					    <p>@scope.description</p>
+    					    <input type="hidden" name="approved_scopes" value="@scope.scope_name" />
+    				    </li>       
+                    }
+                    </ul>
+                }
+                else
+                {
+                    <p>None</p>
+                }
+	    </div>
+    </form>
+}

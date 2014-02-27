@@ -1,0 +1,46 @@
+﻿@using ServiceStack.Razor
+
+@{
+    //string contentPath = this.ToApplicationPath("");
+    string contentPath = "";
+    string Title = ViewBag.Title ?? "SWGEmu";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+        @Title
+	</title>
+	
+	<script type="text/javascript" src="@contentPath/Static/js/bootstrap.js"></script>
+	<!--[if lt IE 9]>
+	<script src="@Url.Content("~/Static/js/html5.js")"></script>
+	<![endif]-->
+    
+	<link href="@contentPath/Static/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="@contentPath/Static/css/bootstrap-theme.css" type="text/css" rel="stylesheet">
+    @*@RenderSection("HeadJS")*@
+	<style type="text/css">
+       @*@RenderSection("CustomStyle")*@
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">SWGEmu</a>
+            </div>
+        </div><!-- /.container-fluid -->
+    </nav>
+    @RenderBody()
+</body>
+</html>

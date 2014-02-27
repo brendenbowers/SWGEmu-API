@@ -1,0 +1,65 @@
+﻿@using OAuth2.Server.Model.DataModel
+@using ServiceStack.ServiceInterface.ServiceModel
+@using ServiceStack.Common.Web
+@using ServiceStack.Razor;
+
+
+@inherits ViewPage<ILoginRequest>
+              
+    @{ 
+        //if the model is null and the request contains a model item, we will try and use it
+        //this will happen if there was an exception               
+        if(Model == null && Request.Items.ContainsKey("Model"))
+        {
+            Model = Request.Items.GetValue<ILoginRequest>("Model");
+        }
+        
+        ViewBag.Title = "SWGEmu Login"; 
+        
+     }
+
+    <div class="container-fluid">
+		    <div class="col-sm-6 col-sm-offset-1">
+                @if (this.ModelError != null)
+                {
+                    <div class="alert alert-error">
+                    @{
+
+                        ErrorResponse res = ModelError as ErrorResponse;
+                        if (res != null)
+                        {
+                            Write(res.ResponseStatus.Message);
+                        }
+                        else
+                        {
+                            Write("Unknown Error");
+                        }
+                    }             
+                    </div>
+
+                }                
+			    <form action="@this.ToApplicationPath("/auth/login")" method="post" class="well form-horizontal">
+                    @if (Model != null && !string.IsNullOrWhiteSpace(Model.redirect))
+                    {
+                        <input type="hidden" name="redirect" id="redirect" value="@Model.redirect" />
+                    }
+				    <div class="control-group">
+					    <label class="control-label">Server:</label>
+					    <span class="form-control">Devev</span>
+				    </div>
+				    <div class="control-group">
+					    <label class="control-label">Username:</label>
+                        @Html.TextBox("username", (Model != null && Model is LoginRequestWithCredentials) ? ((LoginRequestWithCredentials)Model).username : null, new Dictionary<string, object>() { { "class", "form-control" } })
+				    </div>
+				    <div class="control-group">
+					    <label class="control-label">Password:</label>
+					    <input type="password" name="password" class="form-control">
+				    </div>
+				    <div class="control-group center-block" style="margin-top: 5px;">
+                    	    <input class="btn btn-large btn-primary form-control" type="submit" value="Login">
+                        <input class="btn btn-large form-control" type="reset" value="Reset">
+				    </div>
+			    </form>
+               
+		    </div>
+	    </div>

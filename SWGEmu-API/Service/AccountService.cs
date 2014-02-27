@@ -9,7 +9,7 @@ namespace SWGEmuAPI.Service
 {
     public class AccountService : ServiceStack.ServiceInterface.Service
     {
-        public Model.AccountModel AccountModel { get; set; }
+        public Model.IAccountModel AccountModel { get; set; }
 
         public List<AccountResponse> Get(SWGEmuAPI.Models.Account.AccontRequest Req)
         {
