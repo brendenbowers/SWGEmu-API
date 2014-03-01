@@ -14,7 +14,7 @@ namespace OAuth2.Server.Attributes
             new Regex(@"^(?<token_type>[Bb][Ee][Aa][Rr][Ee][Rr]) (?<token>([A-Za-z0-9_-]|\.|\~|\+|\/)+)", RegexOptions.Compiled);
 
         public Model.ITokenModel TokenModel { get; set; }
-        public Model.ClientModel ClientModel { get; set; }
+        public Model.IClientModel ClientModel { get; set; }
         public Model.IResourceOwnerModel ResourceOwnerModel { get; set; }
 
         public bool SetUser { get; set; }

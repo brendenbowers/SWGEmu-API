@@ -217,6 +217,7 @@
     <Compile Include="Extension\CharacterInventoryItemExtensions.cs" />
     <Compile Include="Extension\CustomActionHandler.cs" />
     <Compile Include="Extension\PlatformExtension.cs" />
+    <Compile Include="Extension\StringExtension.cs" />
     <Compile Include="Extension\StructureItemDetailsExtension.cs" />
     <Compile Include="Extension\DateTimeExtensions.cs" />
     <Compile Include="Extension\EnumValuesExtension.cs" />
