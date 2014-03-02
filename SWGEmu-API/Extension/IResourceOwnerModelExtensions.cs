@@ -15,8 +15,8 @@ namespace OAuth2.Server.Extension
             OAuth2.DataModels.ResourceOwner owner = new DataModels.ResourceOwner()
             {
                 id = Account.account_id.ToString(),
-                 time = DateTime.UtcNow.GetTotalSeconds(),
-                 attributes = Account.ToDictonary(),
+                time = DateTime.UtcNow.GetTotalSeconds(),
+                attributes = Account.ToDictonary(),
             };
 
             if (Model.CreateOrUpdate(owner))

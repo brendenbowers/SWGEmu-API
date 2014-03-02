@@ -60,7 +60,8 @@ namespace SWGEmuAPI.Models.Structure
             {
                 structItem = new StructureItemDetails();
             }
-
+            structItem.owner_account_id = details.OwnerAccountId;
+            structItem.owner_object_guid = details.OwnerObjectId;
             structItem.portals_file_name = details.PortalsFileName;
             structItem.template_file_name = details.TemplateFileName;
             structItem.appearance_file_name = details.AppearanceFileName;

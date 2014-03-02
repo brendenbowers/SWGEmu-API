@@ -76,6 +76,7 @@ namespace SWGEmuAPI.Model
                         account_id = account.AccountId,
                         active = account.Active,
                         username = account.UserName,
+                        admin_level = account.AdminLevel,
                         created = new DateTime(account.CreatedTime)
                     };
                     accounts.Add(foundAccount);
@@ -94,7 +95,8 @@ namespace SWGEmuAPI.Model
                             galaxy_name = character.GalaxyName,
                             gender = character.Gender,
                             race = character.Race,
-                            surname = character.SurName
+                            surname = character.SurName,
+                            
                         };
                         if (character.HasBanned)
                         {

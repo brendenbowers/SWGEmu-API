@@ -232,8 +232,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Model\CacheDBTokenModel.cs" />
-    <Compile Include="Model\Implementation\AccountModel.cs" />
+    <Compile Include="Model\DataModel\LogoutRequest.cs" />
+    <Compile Include="Model\Implementation\CacheDBTokenModel.cs" />
+    <Compile Include="Model\DataModel\AccountModel.cs" />
     <Compile Include="Model\DataModel\CharacterModel.cs" />
     <Compile Include="Model\DataModel\ApprovalData.cs" />
     <Compile Include="Model\DataModel\ApprovalRequest.cs" />

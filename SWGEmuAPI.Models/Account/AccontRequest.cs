@@ -11,7 +11,7 @@ namespace SWGEmuAPI.Models.Account
     public class AccontRequest
     {
         public string username { get; set; }
-        public ulong account_id { get; set; }
+        public uint account_id { get; set; }
         public string password { get; set; }
     }
 }

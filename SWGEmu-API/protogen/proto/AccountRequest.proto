@@ -34,9 +34,8 @@ message SWGEmuAccount {
 	required string user_name = 2;
 	required bool active = 3;
 	required fixed32 created_time = 4;
-	optional fixed32 character_count = 5 [ default = 0 ];
-			
-	repeated  SWGEmuAccountCharacter characters = 6;
+	optional fixed32 admin_level = 5;
+	repeated  SWGEmuAccountCharacter characters = 10;
 }
 
 message GetAccountResponse {

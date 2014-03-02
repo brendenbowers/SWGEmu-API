@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using swgemurpcserver.rpc;
 using SWGEmuAPI.Models.Account;
+using OAuth2.DataModels;
 
 namespace SWGEmuAPI.Service
 {
@@ -14,13 +15,13 @@ namespace SWGEmuAPI.Service
 
         public List<AccountResponse> Get(SWGEmuAPI.Models.Account.AccontRequest Req)
         {
-            OAuth2.DataModels.ResourceOwner ro = this.Request.Items.GetValue<OAuth2.DataModels.ResourceOwner>("auth:user");
-            ulong roAccountID = ro.GetSingle<string>("account_id").ToULong(); 
-            ///TODO: implement admin checking to allow pulling of any account.
+            var ro = Request.Items.GetValue<ResourceOwner>("auth:user");
+            uint roAccountID = ro.id.ToUInt(); 
+            ///TODO: implement admin checking to allow pulling of any account for admins
             if(Req.account_id == 0 && string.IsNullOrWhiteSpace(Req.username)) {
                 Req.account_id = roAccountID;
             }
-            else
+            else if(ro.GetSingle<string>("admin_level") != "0")
             {
                 if (Req.account_id != 0 && Req.account_id != roAccountID)
                 {

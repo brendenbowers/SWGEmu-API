@@ -7,7 +7,8 @@ namespace SWGEmuAPI.Models.Structure
 {
     public class StructureItemDetails : StructureItem
     {
-
+        public uint owner_account_id { get; set; }
+        public ulong owner_object_guid { get; set; }
 	    public string owner_display_name { get; set; }
 	    public float world_x { get; set; }
 	    public float world_y { get; set; }

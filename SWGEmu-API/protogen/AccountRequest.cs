@@ -46,16 +46,16 @@ namespace swgemurpcserver.rpc {
           "KAcSDAoEcmFjZRgGIAIoBxISCgpmaXJzdF9uYW1lGAcgAigJEhAKCHN1cl9u" + 
           "YW1lGAggAigJEhMKC2dhbGF4eV9uYW1lGAkgAigJEhUKBmJhbm5lZBgKIAEo" + 
           "CDoFZmFsc2USFgoOYmFuX2V4cGlyYXRpb24YCyABKAcSEgoKYmFuX3JlYXNv" + 
-          "bhgMIAEoCRIRCglpbnZlbnRvcnkYDSABKAkiuQEKDVNXR0VtdUFjY291bnQS" + 
+          "bhgMIAEoCRIRCglpbnZlbnRvcnkYDSABKAkisgEKDVNXR0VtdUFjY291bnQS" + 
           "EgoKYWNjb3VudF9pZBgBIAIoBxIRCgl1c2VyX25hbWUYAiACKAkSDgoGYWN0" + 
-          "aXZlGAMgAigIEhQKDGNyZWF0ZWRfdGltZRgEIAIoBxIaCg9jaGFyYWN0ZXJf" + 
-          "Y291bnQYBSABKAc6ATASPwoKY2hhcmFjdGVycxgGIAMoCzIrLnN3Z2VtdXJw" + 
-          "Y3NlcnZlci5ycGMuU1dHRW11QWNjb3VudENoYXJhY3RlciJiChJHZXRBY2Nv" + 
-          "dW50UmVzcG9uc2USNAoIYWNjb3VudHMYASADKAsyIi5zd2dlbXVycGNzZXJ2" + 
-          "ZXIucnBjLlNXR0VtdUFjY291bnQSFgoOdmFsaWRfcGFzc3dvcmQYAiABKAgy" + 
-          "dQoUU1dHRW11QWNjb3VudFNlcnZpY2USXQoKR2V0QWNjb3VudBImLnN3Z2Vt" + 
-          "dXJwY3NlcnZlci5ycGMuR2V0QWNjb3VudFJlcXVlc3QaJy5zd2dlbXVycGNz" + 
-          "ZXJ2ZXIucnBjLkdldEFjY291bnRSZXNwb25zZUIDgAEB");
+          "aXZlGAMgAigIEhQKDGNyZWF0ZWRfdGltZRgEIAIoBxITCgthZG1pbl9sZXZl" + 
+          "bBgFIAEoBxI/CgpjaGFyYWN0ZXJzGAogAygLMisuc3dnZW11cnBjc2VydmVy" + 
+          "LnJwYy5TV0dFbXVBY2NvdW50Q2hhcmFjdGVyImIKEkdldEFjY291bnRSZXNw" + 
+          "b25zZRI0CghhY2NvdW50cxgBIAMoCzIiLnN3Z2VtdXJwY3NlcnZlci5ycGMu" + 
+          "U1dHRW11QWNjb3VudBIWCg52YWxpZF9wYXNzd29yZBgCIAEoCDJ1ChRTV0dF" + 
+          "bXVBY2NvdW50U2VydmljZRJdCgpHZXRBY2NvdW50EiYuc3dnZW11cnBjc2Vy" + 
+          "dmVyLnJwYy5HZXRBY2NvdW50UmVxdWVzdBonLnN3Z2VtdXJwY3NlcnZlci5y" + 
+          "cGMuR2V0QWNjb3VudFJlc3BvbnNlQgOAAQE=");
       pbd::FileDescriptor.InternalDescriptorAssigner assigner = delegate(pbd::FileDescriptor root) {
         descriptor = root;
         internal__static_swgemurpcserver_rpc_GetAccountRequest__Descriptor = Descriptor.MessageTypes[0];
@@ -69,7 +69,7 @@ namespace swgemurpcserver.rpc {
         internal__static_swgemurpcserver_rpc_SWGEmuAccount__Descriptor = Descriptor.MessageTypes[2];
         internal__static_swgemurpcserver_rpc_SWGEmuAccount__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::swgemurpcserver.rpc.SWGEmuAccount, global::swgemurpcserver.rpc.SWGEmuAccount.Builder>(internal__static_swgemurpcserver_rpc_SWGEmuAccount__Descriptor,
-                new string[] { "AccountId", "UserName", "Active", "CreatedTime", "CharacterCount", "Characters", });
+                new string[] { "AccountId", "UserName", "Active", "CreatedTime", "AdminLevel", "Characters", });
         internal__static_swgemurpcserver_rpc_GetAccountResponse__Descriptor = Descriptor.MessageTypes[3];
         internal__static_swgemurpcserver_rpc_GetAccountResponse__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::swgemurpcserver.rpc.GetAccountResponse, global::swgemurpcserver.rpc.GetAccountResponse.Builder>(internal__static_swgemurpcserver_rpc_GetAccountResponse__Descriptor,
@@ -1347,8 +1347,8 @@ namespace swgemurpcserver.rpc {
   public sealed partial class SWGEmuAccount : pb::GeneratedMessage<SWGEmuAccount, SWGEmuAccount.Builder> {
     private SWGEmuAccount() { }
     private static readonly SWGEmuAccount defaultInstance = new SWGEmuAccount().MakeReadOnly();
-    private static readonly string[] _sWGEmuAccountFieldNames = new string[] { "account_id", "active", "character_count", "characters", "created_time", "user_name" };
-    private static readonly uint[] _sWGEmuAccountFieldTags = new uint[] { 13, 24, 45, 50, 37, 18 };
+    private static readonly string[] _sWGEmuAccountFieldNames = new string[] { "account_id", "active", "admin_level", "characters", "created_time", "user_name" };
+    private static readonly uint[] _sWGEmuAccountFieldTags = new uint[] { 13, 24, 45, 82, 37, 18 };
     public static SWGEmuAccount DefaultInstance {
       get { return defaultInstance; }
     }
@@ -1411,18 +1411,18 @@ namespace swgemurpcserver.rpc {
       get { return createdTime_; }
     }
     
-    public const int CharacterCountFieldNumber = 5;
-    private bool hasCharacterCount;
-    private uint characterCount_;
-    public bool HasCharacterCount {
-      get { return hasCharacterCount; }
+    public const int AdminLevelFieldNumber = 5;
+    private bool hasAdminLevel;
+    private uint adminLevel_;
+    public bool HasAdminLevel {
+      get { return hasAdminLevel; }
     }
     [global::System.CLSCompliant(false)]
-    public uint CharacterCount {
-      get { return characterCount_; }
+    public uint AdminLevel {
+      get { return adminLevel_; }
     }
     
-    public const int CharactersFieldNumber = 6;
+    public const int CharactersFieldNumber = 10;
     private pbc::PopsicleList<global::swgemurpcserver.rpc.SWGEmuAccountCharacter> characters_ = new pbc::PopsicleList<global::swgemurpcserver.rpc.SWGEmuAccountCharacter>();
     public scg::IList<global::swgemurpcserver.rpc.SWGEmuAccountCharacter> CharactersList {
       get { return characters_; }
@@ -1462,11 +1462,11 @@ namespace swgemurpcserver.rpc {
       if (hasCreatedTime) {
         output.WriteFixed32(4, field_names[4], CreatedTime);
       }
-      if (hasCharacterCount) {
-        output.WriteFixed32(5, field_names[2], CharacterCount);
+      if (hasAdminLevel) {
+        output.WriteFixed32(5, field_names[2], AdminLevel);
       }
       if (characters_.Count > 0) {
-        output.WriteMessageArray(6, field_names[3], characters_);
+        output.WriteMessageArray(10, field_names[3], characters_);
       }
       UnknownFields.WriteTo(output);
     }
@@ -1490,11 +1490,11 @@ namespace swgemurpcserver.rpc {
         if (hasCreatedTime) {
           size += pb::CodedOutputStream.ComputeFixed32Size(4, CreatedTime);
         }
-        if (hasCharacterCount) {
-          size += pb::CodedOutputStream.ComputeFixed32Size(5, CharacterCount);
+        if (hasAdminLevel) {
+          size += pb::CodedOutputStream.ComputeFixed32Size(5, AdminLevel);
         }
         foreach (global::swgemurpcserver.rpc.SWGEmuAccountCharacter element in CharactersList) {
-          size += pb::CodedOutputStream.ComputeMessageSize(6, element);
+          size += pb::CodedOutputStream.ComputeMessageSize(10, element);
         }
         size += UnknownFields.SerializedSize;
         memoizedSerializedSize = size;
@@ -1635,8 +1635,8 @@ namespace swgemurpcserver.rpc {
         if (other.HasCreatedTime) {
           CreatedTime = other.CreatedTime;
         }
-        if (other.HasCharacterCount) {
-          CharacterCount = other.CharacterCount;
+        if (other.HasAdminLevel) {
+          AdminLevel = other.AdminLevel;
         }
         if (other.characters_.Count != 0) {
           result.characters_.Add(other.characters_);
@@ -1701,10 +1701,10 @@ namespace swgemurpcserver.rpc {
               break;
             }
             case 45: {
-              result.hasCharacterCount = input.ReadFixed32(ref result.characterCount_);
+              result.hasAdminLevel = input.ReadFixed32(ref result.adminLevel_);
               break;
             }
-            case 50: {
+            case 82: {
               input.ReadMessageArray(tag, field_name, result.characters_, global::swgemurpcserver.rpc.SWGEmuAccountCharacter.DefaultInstance, extensionRegistry);
               break;
             }
@@ -1803,25 +1803,25 @@ namespace swgemurpcserver.rpc {
         return this;
       }
       
-      public bool HasCharacterCount {
-        get { return result.hasCharacterCount; }
+      public bool HasAdminLevel {
+        get { return result.hasAdminLevel; }
       }
       [global::System.CLSCompliant(false)]
-      public uint CharacterCount {
-        get { return result.CharacterCount; }
-        set { SetCharacterCount(value); }
+      public uint AdminLevel {
+        get { return result.AdminLevel; }
+        set { SetAdminLevel(value); }
       }
       [global::System.CLSCompliant(false)]
-      public Builder SetCharacterCount(uint value) {
+      public Builder SetAdminLevel(uint value) {
         PrepareBuilder();
-        result.hasCharacterCount = true;
-        result.characterCount_ = value;
+        result.hasAdminLevel = true;
+        result.adminLevel_ = value;
         return this;
       }
-      public Builder ClearCharacterCount() {
+      public Builder ClearAdminLevel() {
         PrepareBuilder();
-        result.hasCharacterCount = false;
-        result.characterCount_ = 0;
+        result.hasAdminLevel = false;
+        result.adminLevel_ = 0;
         return this;
       }
       

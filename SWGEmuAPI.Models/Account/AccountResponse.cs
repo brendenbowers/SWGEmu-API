@@ -9,6 +9,7 @@ namespace SWGEmuAPI.Models.Account
     {
         public DateTime created { get; set; }
         public bool active { get; set; }
+        public uint admin_level { get; set; }
         public List<Character.CharacterResponse> characters { get; set; }
     }
 }

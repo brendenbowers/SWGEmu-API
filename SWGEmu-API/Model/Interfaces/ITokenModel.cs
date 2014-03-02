@@ -16,5 +16,8 @@ namespace OAuth2.Server.Model
             where T : DataModels.Token, new();
         T InsertToken<T>(string AccessToken, DataModels.TokenTypes TokenType, long ExpiresIn, long IssuedTime, DataModels.Client Client, System.Collections.Generic.IEnumerable<DataModels.Scope> Scope, DataModels.ResourceOwner ResourceOwner = null, string RefreshToken = null)
             where T : DataModels.Token, new();
+        bool DeleteToken(OAuth2.DataModels.Token Token);
+        bool DeleteToken(string AccessToken, string ClientID, string ResourceOwnerID);
+
     }
 }

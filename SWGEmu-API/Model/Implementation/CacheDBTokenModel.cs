@@ -115,5 +115,16 @@ namespace OAuth2.Server.Model
                 val = DBTokenModel.InsertToken<T>(AccessToken, TokenType, ExpiresIn, IssuedTime, Client, Scope, ResourceOwner, RefreshToken);
             return val;           
         }
+
+
+        public bool DeleteToken(DataModels.Token Token)
+        {
+            return DeleteToken(Token.access_token, Token.client_id, Token.resource_owner_id);
+        }
+
+        public bool DeleteToken(string AccessToken, string ClientID, string ResourceOwnerID)
+        {
+            return CacheTokenModel.DeleteToken(AccessToken, ClientID, ResourceOwnerID) && DBTokenModel.DeleteToken(AccessToken, ClientID, ResourceOwnerID);
+        }
     }
 }

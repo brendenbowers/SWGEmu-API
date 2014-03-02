@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using swgemurpcserver.rpc;
 using SWGEmuAPI.Models.Account;
+using OAuth2.DataModels;
 
 namespace SWGEmuAPI.Service
 {
@@ -26,7 +27,9 @@ namespace SWGEmuAPI.Service
 
             if (res.Count != 0)
             {
-                if(!res.TrueForAll(cur => cur.account_id == this.Request.Items.GetValue<OAuth2.DataModels.ResourceOwner>("auth:user").GetSingle<string>("account_id").ToULong())) {
+                var ro = Request.Items.GetValue<ResourceOwner>("auth:user");
+                if (ro.GetSingle<string>("admin_level") != "0" && !res.TrueForAll(cur => cur.account_id == ro.id.ToUInt()))
+                {
                     throw new ArgumentException("Requested character is not owned by the autorized account");
                 }
                 return res;

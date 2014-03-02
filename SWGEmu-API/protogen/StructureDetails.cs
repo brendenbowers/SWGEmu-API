@@ -42,46 +42,47 @@ namespace swgemurpcserver.rpc {
     static StructureDetails() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           "ChZTdHJ1Y3R1cmVEZXRhaWxzLnByb3RvEhNzd2dlbXVycGNzZXJ2ZXIucnBj" + 
-          "GhNJbnZlbnRvcnlJdGVtLnByb3RvIoIEChpTV0dFbXVTdHJ1Y3R1cmVJdGVt" + 
+          "GhNJbnZlbnRvcnlJdGVtLnByb3RvIrUEChpTV0dFbXVTdHJ1Y3R1cmVJdGVt" + 
           "RGV0YWlscxIRCglvYmplY3RfaWQYASACKAYSHAoUYXBwZWFyYW5jZV9maWxl" + 
           "X25hbWUYAiACKAkSEwoLb2JqZWN0X25hbWUYAyACKAkSFAoMZGlzcGxheV9u" + 
-          "YW1lGAQgAigJEhoKEm93bmVyX2Rpc3BsYXlfbmFtZRgFIAIoCRIPCgd3b3Js" + 
-          "ZF94GAYgASgCEg8KB3dvcmxkX3kYByABKAISDwoHd29ybGRfehgIIAEoAhIM" + 
-          "CgR6b25lGAkgASgJEg0KBXBvd2VyGAogASgFEhMKC21haW50ZW5hbmNlGAsg" + 
-          "ASgFEhUKDWRlY2F5X3BlcmNlbnQYDCABKAUSEAoIbG90X3NpemUYDSABKAUS" + 
-          "GgoSdGVtcGxhdGVfZmlsZV9uYW1lGA4gASgJEhkKEXBvcnRhbHNfZmlsZV9u" + 
-          "YW1lGA8gASgJEhcKD2J1aWxkYWJsZV96b25lcxgQIAMoCRJCChBidWlsZGlu" + 
-          "Z19kZXRhaWxzGBQgASgLMiguc3dnZW11cnBjc2VydmVyLnJwYy5CdWlsZGlu" + 
-          "Z0l0ZW1EZXRhaWxzEkoKFGluc3RhbGxhdGlvbl9kZXRhaWxzGBUgASgLMiwu" + 
-          "c3dnZW11cnBjc2VydmVyLnJwYy5JbnN0YWxsYXRpb25JdGVtRGV0YWlscyJb" + 
-          "ChNCdWlsZGluZ0l0ZW1EZXRhaWxzEkQKD2NvbnRhaW5lZF9pdGVtcxgBIAMo" + 
-          "CzIrLnN3Z2VtdXJwY3NlcnZlci5ycGMuQ2hhcmFjdGVySW52ZW50b3J5SXRl" + 
-          "bSKlAgoXSW5zdGFsbGF0aW9uSXRlbURldGFpbHMSEQoJb3BlcmF0aW5nGAEg" + 
-          "AigIEhMKC2FjdHVhbF9yYXRlGAIgAigCEhcKD21heF9ob3BwZXJfc2l6ZRgD" + 
-          "IAIoAhJEChFoYXJ2ZXN0ZXJfZGV0YWlscxgEIAEoCzIpLnN3Z2VtdXJwY3Nl" + 
-          "cnZlci5ycGMuSGFydmVzdGVySXRlbURldGFpbHMSQAoPZmFjdG9yeV9kZXRh" + 
-          "aWxzGAUgASgLMicuc3dnZW11cnBjc2VydmVyLnJwYy5GYWN0b3J5SXRlbURl" + 
-          "dGFpbHMSQQoMaG9wcGVyX2l0ZW1zGAogAygLMisuc3dnZW11cnBjc2VydmVy" + 
-          "LnJwYy5DaGFyYWN0ZXJJbnZlbnRvcnlJdGVtIi8KFEhhcnZlc3Rlckl0ZW1E" + 
-          "ZXRhaWxzEhcKD2V4dHJhY3Rpb25fcmF0ZRgBIAIoAiKbAQoSRmFjdG9yeUl0" + 
-          "ZW1EZXRhaWxzEj4KCXNjaGVtYXRpYxgBIAEoCzIrLnN3Z2VtdXJwY3NlcnZl" + 
-          "ci5ycGMuQ2hhcmFjdGVySW52ZW50b3J5SXRlbRJFChBpbmdyZWRpZW50X2l0" + 
-          "ZW1zGAogAygLMisuc3dnZW11cnBjc2VydmVyLnJwYy5DaGFyYWN0ZXJJbnZl" + 
-          "bnRvcnlJdGVtIkwKHkdldFN0cnVjdHVyZUl0ZW1EZXRhaWxzUmVxdWVzdBIR" + 
-          "CglvYmplY3RfaWQYASACKAYSFwoPb3duZXJfb2JqZWN0X2lkGAIgASgGImYK" + 
-          "H0dldFN0cnVjdHVyZUl0ZW1EZXRhaWxzUmVzcG9uc2USQwoKc3RydWN0dXJl" + 
-          "cxgBIAMoCzIvLnN3Z2VtdXJwY3NlcnZlci5ycGMuU1dHRW11U3RydWN0dXJl" + 
-          "SXRlbURldGFpbHMyqgEKIVNXR0VtdVN0cnVjdHVyZUl0ZW1EZXRhaWxzU2Vy" + 
-          "dmljZRKEAQoXR2V0U3RydWN0dXJlSXRlbURldGFpbHMSMy5zd2dlbXVycGNz" + 
-          "ZXJ2ZXIucnBjLkdldFN0cnVjdHVyZUl0ZW1EZXRhaWxzUmVxdWVzdBo0LnN3" + 
-          "Z2VtdXJwY3NlcnZlci5ycGMuR2V0U3RydWN0dXJlSXRlbURldGFpbHNSZXNw" + 
-          "b25zZUIDgAEB");
+          "YW1lGAQgAigJEhoKEm93bmVyX2Rpc3BsYXlfbmFtZRgFIAIoCRIXCg9vd25l" + 
+          "cl9vYmplY3RfaWQYBiACKAYSGAoQb3duZXJfYWNjb3VudF9pZBgHIAEoBxIP" + 
+          "Cgd3b3JsZF94GAggASgCEg8KB3dvcmxkX3kYCSABKAISDwoHd29ybGRfehgK" + 
+          "IAEoAhIMCgR6b25lGAsgASgJEg0KBXBvd2VyGAwgASgFEhMKC21haW50ZW5h" + 
+          "bmNlGA0gASgFEhUKDWRlY2F5X3BlcmNlbnQYDiABKAUSEAoIbG90X3NpemUY" + 
+          "DyABKAUSGgoSdGVtcGxhdGVfZmlsZV9uYW1lGBAgASgJEhkKEXBvcnRhbHNf" + 
+          "ZmlsZV9uYW1lGBEgASgJEhcKD2J1aWxkYWJsZV96b25lcxgSIAMoCRJCChBi" + 
+          "dWlsZGluZ19kZXRhaWxzGBQgASgLMiguc3dnZW11cnBjc2VydmVyLnJwYy5C" + 
+          "dWlsZGluZ0l0ZW1EZXRhaWxzEkoKFGluc3RhbGxhdGlvbl9kZXRhaWxzGBUg" + 
+          "ASgLMiwuc3dnZW11cnBjc2VydmVyLnJwYy5JbnN0YWxsYXRpb25JdGVtRGV0" + 
+          "YWlscyJbChNCdWlsZGluZ0l0ZW1EZXRhaWxzEkQKD2NvbnRhaW5lZF9pdGVt" + 
+          "cxgBIAMoCzIrLnN3Z2VtdXJwY3NlcnZlci5ycGMuQ2hhcmFjdGVySW52ZW50" + 
+          "b3J5SXRlbSKlAgoXSW5zdGFsbGF0aW9uSXRlbURldGFpbHMSEQoJb3BlcmF0" + 
+          "aW5nGAEgAigIEhMKC2FjdHVhbF9yYXRlGAIgAigCEhcKD21heF9ob3BwZXJf" + 
+          "c2l6ZRgDIAIoAhJEChFoYXJ2ZXN0ZXJfZGV0YWlscxgEIAEoCzIpLnN3Z2Vt" + 
+          "dXJwY3NlcnZlci5ycGMuSGFydmVzdGVySXRlbURldGFpbHMSQAoPZmFjdG9y" + 
+          "eV9kZXRhaWxzGAUgASgLMicuc3dnZW11cnBjc2VydmVyLnJwYy5GYWN0b3J5" + 
+          "SXRlbURldGFpbHMSQQoMaG9wcGVyX2l0ZW1zGAogAygLMisuc3dnZW11cnBj" + 
+          "c2VydmVyLnJwYy5DaGFyYWN0ZXJJbnZlbnRvcnlJdGVtIi8KFEhhcnZlc3Rl" + 
+          "ckl0ZW1EZXRhaWxzEhcKD2V4dHJhY3Rpb25fcmF0ZRgBIAIoAiKbAQoSRmFj" + 
+          "dG9yeUl0ZW1EZXRhaWxzEj4KCXNjaGVtYXRpYxgBIAEoCzIrLnN3Z2VtdXJw" + 
+          "Y3NlcnZlci5ycGMuQ2hhcmFjdGVySW52ZW50b3J5SXRlbRJFChBpbmdyZWRp" + 
+          "ZW50X2l0ZW1zGAogAygLMisuc3dnZW11cnBjc2VydmVyLnJwYy5DaGFyYWN0" + 
+          "ZXJJbnZlbnRvcnlJdGVtIkwKHkdldFN0cnVjdHVyZUl0ZW1EZXRhaWxzUmVx" + 
+          "dWVzdBIRCglvYmplY3RfaWQYASACKAYSFwoPb3duZXJfb2JqZWN0X2lkGAIg" + 
+          "ASgGImYKH0dldFN0cnVjdHVyZUl0ZW1EZXRhaWxzUmVzcG9uc2USQwoKc3Ry" + 
+          "dWN0dXJlcxgBIAMoCzIvLnN3Z2VtdXJwY3NlcnZlci5ycGMuU1dHRW11U3Ry" + 
+          "dWN0dXJlSXRlbURldGFpbHMyqgEKIVNXR0VtdVN0cnVjdHVyZUl0ZW1EZXRh" + 
+          "aWxzU2VydmljZRKEAQoXR2V0U3RydWN0dXJlSXRlbURldGFpbHMSMy5zd2dl" + 
+          "bXVycGNzZXJ2ZXIucnBjLkdldFN0cnVjdHVyZUl0ZW1EZXRhaWxzUmVxdWVz" + 
+          "dBo0LnN3Z2VtdXJwY3NlcnZlci5ycGMuR2V0U3RydWN0dXJlSXRlbURldGFp" + 
+          "bHNSZXNwb25zZUIDgAEB");
       pbd::FileDescriptor.InternalDescriptorAssigner assigner = delegate(pbd::FileDescriptor root) {
         descriptor = root;
         internal__static_swgemurpcserver_rpc_SWGEmuStructureItemDetails__Descriptor = Descriptor.MessageTypes[0];
         internal__static_swgemurpcserver_rpc_SWGEmuStructureItemDetails__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::swgemurpcserver.rpc.SWGEmuStructureItemDetails, global::swgemurpcserver.rpc.SWGEmuStructureItemDetails.Builder>(internal__static_swgemurpcserver_rpc_SWGEmuStructureItemDetails__Descriptor,
-                new string[] { "ObjectId", "AppearanceFileName", "ObjectName", "DisplayName", "OwnerDisplayName", "WorldX", "WorldY", "WorldZ", "Zone", "Power", "Maintenance", "DecayPercent", "LotSize", "TemplateFileName", "PortalsFileName", "BuildableZones", "BuildingDetails", "InstallationDetails", });
+                new string[] { "ObjectId", "AppearanceFileName", "ObjectName", "DisplayName", "OwnerDisplayName", "OwnerObjectId", "OwnerAccountId", "WorldX", "WorldY", "WorldZ", "Zone", "Power", "Maintenance", "DecayPercent", "LotSize", "TemplateFileName", "PortalsFileName", "BuildableZones", "BuildingDetails", "InstallationDetails", });
         internal__static_swgemurpcserver_rpc_BuildingItemDetails__Descriptor = Descriptor.MessageTypes[1];
         internal__static_swgemurpcserver_rpc_BuildingItemDetails__FieldAccessorTable = 
             new pb::FieldAccess.FieldAccessorTable<global::swgemurpcserver.rpc.BuildingItemDetails, global::swgemurpcserver.rpc.BuildingItemDetails.Builder>(internal__static_swgemurpcserver_rpc_BuildingItemDetails__Descriptor,
@@ -123,8 +124,8 @@ namespace swgemurpcserver.rpc {
   public sealed partial class SWGEmuStructureItemDetails : pb::GeneratedMessage<SWGEmuStructureItemDetails, SWGEmuStructureItemDetails.Builder> {
     private SWGEmuStructureItemDetails() { }
     private static readonly SWGEmuStructureItemDetails defaultInstance = new SWGEmuStructureItemDetails().MakeReadOnly();
-    private static readonly string[] _sWGEmuStructureItemDetailsFieldNames = new string[] { "appearance_file_name", "buildable_zones", "building_details", "decay_percent", "display_name", "installation_details", "lot_size", "maintenance", "object_id", "object_name", "owner_display_name", "portals_file_name", "power", "template_file_name", "world_x", "world_y", "world_z", "zone" };
-    private static readonly uint[] _sWGEmuStructureItemDetailsFieldTags = new uint[] { 18, 130, 162, 96, 34, 170, 104, 88, 9, 26, 42, 122, 80, 114, 53, 61, 69, 74 };
+    private static readonly string[] _sWGEmuStructureItemDetailsFieldNames = new string[] { "appearance_file_name", "buildable_zones", "building_details", "decay_percent", "display_name", "installation_details", "lot_size", "maintenance", "object_id", "object_name", "owner_account_id", "owner_display_name", "owner_object_id", "portals_file_name", "power", "template_file_name", "world_x", "world_y", "world_z", "zone" };
+    private static readonly uint[] _sWGEmuStructureItemDetailsFieldTags = new uint[] { 18, 146, 162, 112, 34, 170, 120, 104, 9, 26, 61, 42, 49, 138, 96, 130, 69, 77, 85, 90 };
     public static SWGEmuStructureItemDetails DefaultInstance {
       get { return defaultInstance; }
     }
@@ -196,7 +197,29 @@ namespace swgemurpcserver.rpc {
       get { return ownerDisplayName_; }
     }
     
-    public const int WorldXFieldNumber = 6;
+    public const int OwnerObjectIdFieldNumber = 6;
+    private bool hasOwnerObjectId;
+    private ulong ownerObjectId_;
+    public bool HasOwnerObjectId {
+      get { return hasOwnerObjectId; }
+    }
+    [global::System.CLSCompliant(false)]
+    public ulong OwnerObjectId {
+      get { return ownerObjectId_; }
+    }
+    
+    public const int OwnerAccountIdFieldNumber = 7;
+    private bool hasOwnerAccountId;
+    private uint ownerAccountId_;
+    public bool HasOwnerAccountId {
+      get { return hasOwnerAccountId; }
+    }
+    [global::System.CLSCompliant(false)]
+    public uint OwnerAccountId {
+      get { return ownerAccountId_; }
+    }
+    
+    public const int WorldXFieldNumber = 8;
     private bool hasWorldX;
     private float worldX_;
     public bool HasWorldX {
@@ -206,7 +229,7 @@ namespace swgemurpcserver.rpc {
       get { return worldX_; }
     }
     
-    public const int WorldYFieldNumber = 7;
+    public const int WorldYFieldNumber = 9;
     private bool hasWorldY;
     private float worldY_;
     public bool HasWorldY {
@@ -216,7 +239,7 @@ namespace swgemurpcserver.rpc {
       get { return worldY_; }
     }
     
-    public const int WorldZFieldNumber = 8;
+    public const int WorldZFieldNumber = 10;
     private bool hasWorldZ;
     private float worldZ_;
     public bool HasWorldZ {
@@ -226,7 +249,7 @@ namespace swgemurpcserver.rpc {
       get { return worldZ_; }
     }
     
-    public const int ZoneFieldNumber = 9;
+    public const int ZoneFieldNumber = 11;
     private bool hasZone;
     private string zone_ = "";
     public bool HasZone {
@@ -236,7 +259,7 @@ namespace swgemurpcserver.rpc {
       get { return zone_; }
     }
     
-    public const int PowerFieldNumber = 10;
+    public const int PowerFieldNumber = 12;
     private bool hasPower;
     private int power_;
     public bool HasPower {
@@ -246,7 +269,7 @@ namespace swgemurpcserver.rpc {
       get { return power_; }
     }
     
-    public const int MaintenanceFieldNumber = 11;
+    public const int MaintenanceFieldNumber = 13;
     private bool hasMaintenance;
     private int maintenance_;
     public bool HasMaintenance {
@@ -256,7 +279,7 @@ namespace swgemurpcserver.rpc {
       get { return maintenance_; }
     }
     
-    public const int DecayPercentFieldNumber = 12;
+    public const int DecayPercentFieldNumber = 14;
     private bool hasDecayPercent;
     private int decayPercent_;
     public bool HasDecayPercent {
@@ -266,7 +289,7 @@ namespace swgemurpcserver.rpc {
       get { return decayPercent_; }
     }
     
-    public const int LotSizeFieldNumber = 13;
+    public const int LotSizeFieldNumber = 15;
     private bool hasLotSize;
     private int lotSize_;
     public bool HasLotSize {
@@ -276,7 +299,7 @@ namespace swgemurpcserver.rpc {
       get { return lotSize_; }
     }
     
-    public const int TemplateFileNameFieldNumber = 14;
+    public const int TemplateFileNameFieldNumber = 16;
     private bool hasTemplateFileName;
     private string templateFileName_ = "";
     public bool HasTemplateFileName {
@@ -286,7 +309,7 @@ namespace swgemurpcserver.rpc {
       get { return templateFileName_; }
     }
     
-    public const int PortalsFileNameFieldNumber = 15;
+    public const int PortalsFileNameFieldNumber = 17;
     private bool hasPortalsFileName;
     private string portalsFileName_ = "";
     public bool HasPortalsFileName {
@@ -296,7 +319,7 @@ namespace swgemurpcserver.rpc {
       get { return portalsFileName_; }
     }
     
-    public const int BuildableZonesFieldNumber = 16;
+    public const int BuildableZonesFieldNumber = 18;
     private pbc::PopsicleList<string> buildableZones_ = new pbc::PopsicleList<string>();
     public scg::IList<string> BuildableZonesList {
       get { return pbc::Lists.AsReadOnly(buildableZones_); }
@@ -335,6 +358,7 @@ namespace swgemurpcserver.rpc {
         if (!hasObjectName) return false;
         if (!hasDisplayName) return false;
         if (!hasOwnerDisplayName) return false;
+        if (!hasOwnerObjectId) return false;
         if (HasBuildingDetails) {
           if (!BuildingDetails.IsInitialized) return false;
         }
@@ -361,40 +385,46 @@ namespace swgemurpcserver.rpc {
         output.WriteString(4, field_names[4], DisplayName);
       }
       if (hasOwnerDisplayName) {
-        output.WriteString(5, field_names[10], OwnerDisplayName);
+        output.WriteString(5, field_names[11], OwnerDisplayName);
+      }
+      if (hasOwnerObjectId) {
+        output.WriteFixed64(6, field_names[12], OwnerObjectId);
+      }
+      if (hasOwnerAccountId) {
+        output.WriteFixed32(7, field_names[10], OwnerAccountId);
       }
       if (hasWorldX) {
-        output.WriteFloat(6, field_names[14], WorldX);
+        output.WriteFloat(8, field_names[16], WorldX);
       }
       if (hasWorldY) {
-        output.WriteFloat(7, field_names[15], WorldY);
+        output.WriteFloat(9, field_names[17], WorldY);
       }
       if (hasWorldZ) {
-        output.WriteFloat(8, field_names[16], WorldZ);
+        output.WriteFloat(10, field_names[18], WorldZ);
       }
       if (hasZone) {
-        output.WriteString(9, field_names[17], Zone);
+        output.WriteString(11, field_names[19], Zone);
       }
       if (hasPower) {
-        output.WriteInt32(10, field_names[12], Power);
+        output.WriteInt32(12, field_names[14], Power);
       }
       if (hasMaintenance) {
-        output.WriteInt32(11, field_names[7], Maintenance);
+        output.WriteInt32(13, field_names[7], Maintenance);
       }
       if (hasDecayPercent) {
-        output.WriteInt32(12, field_names[3], DecayPercent);
+        output.WriteInt32(14, field_names[3], DecayPercent);
       }
       if (hasLotSize) {
-        output.WriteInt32(13, field_names[6], LotSize);
+        output.WriteInt32(15, field_names[6], LotSize);
       }
       if (hasTemplateFileName) {
-        output.WriteString(14, field_names[13], TemplateFileName);
+        output.WriteString(16, field_names[15], TemplateFileName);
       }
       if (hasPortalsFileName) {
-        output.WriteString(15, field_names[11], PortalsFileName);
+        output.WriteString(17, field_names[13], PortalsFileName);
       }
       if (buildableZones_.Count > 0) {
-        output.WriteStringArray(16, field_names[1], buildableZones_);
+        output.WriteStringArray(18, field_names[1], buildableZones_);
       }
       if (hasBuildingDetails) {
         output.WriteMessage(20, field_names[2], BuildingDetails);
@@ -427,35 +457,41 @@ namespace swgemurpcserver.rpc {
         if (hasOwnerDisplayName) {
           size += pb::CodedOutputStream.ComputeStringSize(5, OwnerDisplayName);
         }
+        if (hasOwnerObjectId) {
+          size += pb::CodedOutputStream.ComputeFixed64Size(6, OwnerObjectId);
+        }
+        if (hasOwnerAccountId) {
+          size += pb::CodedOutputStream.ComputeFixed32Size(7, OwnerAccountId);
+        }
         if (hasWorldX) {
-          size += pb::CodedOutputStream.ComputeFloatSize(6, WorldX);
+          size += pb::CodedOutputStream.ComputeFloatSize(8, WorldX);
         }
         if (hasWorldY) {
-          size += pb::CodedOutputStream.ComputeFloatSize(7, WorldY);
+          size += pb::CodedOutputStream.ComputeFloatSize(9, WorldY);
         }
         if (hasWorldZ) {
-          size += pb::CodedOutputStream.ComputeFloatSize(8, WorldZ);
+          size += pb::CodedOutputStream.ComputeFloatSize(10, WorldZ);
         }
         if (hasZone) {
-          size += pb::CodedOutputStream.ComputeStringSize(9, Zone);
+          size += pb::CodedOutputStream.ComputeStringSize(11, Zone);
         }
         if (hasPower) {
-          size += pb::CodedOutputStream.ComputeInt32Size(10, Power);
+          size += pb::CodedOutputStream.ComputeInt32Size(12, Power);
         }
         if (hasMaintenance) {
-          size += pb::CodedOutputStream.ComputeInt32Size(11, Maintenance);
+          size += pb::CodedOutputStream.ComputeInt32Size(13, Maintenance);
         }
         if (hasDecayPercent) {
-          size += pb::CodedOutputStream.ComputeInt32Size(12, DecayPercent);
+          size += pb::CodedOutputStream.ComputeInt32Size(14, DecayPercent);
         }
         if (hasLotSize) {
-          size += pb::CodedOutputStream.ComputeInt32Size(13, LotSize);
+          size += pb::CodedOutputStream.ComputeInt32Size(15, LotSize);
         }
         if (hasTemplateFileName) {
-          size += pb::CodedOutputStream.ComputeStringSize(14, TemplateFileName);
+          size += pb::CodedOutputStream.ComputeStringSize(16, TemplateFileName);
         }
         if (hasPortalsFileName) {
-          size += pb::CodedOutputStream.ComputeStringSize(15, PortalsFileName);
+          size += pb::CodedOutputStream.ComputeStringSize(17, PortalsFileName);
         }
         {
           int dataSize = 0;
@@ -613,6 +649,12 @@ namespace swgemurpcserver.rpc {
         if (other.HasOwnerDisplayName) {
           OwnerDisplayName = other.OwnerDisplayName;
         }
+        if (other.HasOwnerObjectId) {
+          OwnerObjectId = other.OwnerObjectId;
+        }
+        if (other.HasOwnerAccountId) {
+          OwnerAccountId = other.OwnerAccountId;
+        }
         if (other.HasWorldX) {
           WorldX = other.WorldX;
         }
@@ -715,47 +757,55 @@ namespace swgemurpcserver.rpc {
               result.hasOwnerDisplayName = input.ReadString(ref result.ownerDisplayName_);
               break;
             }
-            case 53: {
-              result.hasWorldX = input.ReadFloat(ref result.worldX_);
+            case 49: {
+              result.hasOwnerObjectId = input.ReadFixed64(ref result.ownerObjectId_);
               break;
             }
             case 61: {
-              result.hasWorldY = input.ReadFloat(ref result.worldY_);
+              result.hasOwnerAccountId = input.ReadFixed32(ref result.ownerAccountId_);
               break;
             }
             case 69: {
+              result.hasWorldX = input.ReadFloat(ref result.worldX_);
+              break;
+            }
+            case 77: {
+              result.hasWorldY = input.ReadFloat(ref result.worldY_);
+              break;
+            }
+            case 85: {
               result.hasWorldZ = input.ReadFloat(ref result.worldZ_);
               break;
             }
-            case 74: {
+            case 90: {
               result.hasZone = input.ReadString(ref result.zone_);
               break;
             }
-            case 80: {
+            case 96: {
               result.hasPower = input.ReadInt32(ref result.power_);
               break;
             }
-            case 88: {
+            case 104: {
               result.hasMaintenance = input.ReadInt32(ref result.maintenance_);
               break;
             }
-            case 96: {
+            case 112: {
               result.hasDecayPercent = input.ReadInt32(ref result.decayPercent_);
               break;
             }
-            case 104: {
+            case 120: {
               result.hasLotSize = input.ReadInt32(ref result.lotSize_);
               break;
             }
-            case 114: {
+            case 130: {
               result.hasTemplateFileName = input.ReadString(ref result.templateFileName_);
               break;
             }
-            case 122: {
+            case 138: {
               result.hasPortalsFileName = input.ReadString(ref result.portalsFileName_);
               break;
             }
-            case 130: {
+            case 146: {
               input.ReadStringArray(tag, field_name, result.buildableZones_);
               break;
             }
@@ -890,6 +940,50 @@ namespace swgemurpcserver.rpc {
         PrepareBuilder();
         result.hasOwnerDisplayName = false;
         result.ownerDisplayName_ = "";
+        return this;
+      }
+      
+      public bool HasOwnerObjectId {
+        get { return result.hasOwnerObjectId; }
+      }
+      [global::System.CLSCompliant(false)]
+      public ulong OwnerObjectId {
+        get { return result.OwnerObjectId; }
+        set { SetOwnerObjectId(value); }
+      }
+      [global::System.CLSCompliant(false)]
+      public Builder SetOwnerObjectId(ulong value) {
+        PrepareBuilder();
+        result.hasOwnerObjectId = true;
+        result.ownerObjectId_ = value;
+        return this;
+      }
+      public Builder ClearOwnerObjectId() {
+        PrepareBuilder();
+        result.hasOwnerObjectId = false;
+        result.ownerObjectId_ = 0;
+        return this;
+      }
+      
+      public bool HasOwnerAccountId {
+        get { return result.hasOwnerAccountId; }
+      }
+      [global::System.CLSCompliant(false)]
+      public uint OwnerAccountId {
+        get { return result.OwnerAccountId; }
+        set { SetOwnerAccountId(value); }
+      }
+      [global::System.CLSCompliant(false)]
+      public Builder SetOwnerAccountId(uint value) {
+        PrepareBuilder();
+        result.hasOwnerAccountId = true;
+        result.ownerAccountId_ = value;
+        return this;
+      }
+      public Builder ClearOwnerAccountId() {
+        PrepareBuilder();
+        result.hasOwnerAccountId = false;
+        result.ownerAccountId_ = 0;
         return this;
       }
       

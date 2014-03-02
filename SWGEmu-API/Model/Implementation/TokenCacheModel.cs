@@ -129,5 +129,30 @@ namespace OAuth2.Server.Model
         {
             Cache.AddItemToSet(Prefix + Key, AccessToken);
         }
+
+        private void RemoveFromCacheList(string Prefix, string Key, string AccessToken)
+        {
+            Cache.RemoveItemFromSet(Prefix + Key, AccessToken);
+        }
+
+        public bool DeleteToken(DataModels.Token Token)
+        {
+            return DeleteToken(Token.access_token, Token.client_id, Token.resource_owner_id);
+        }
+
+        public bool DeleteToken(string AccessToken, string ClientID, string ResourceOwnerID)
+        {
+            if (!string.IsNullOrWhiteSpace(ClientID))
+            {
+                RemoveFromCacheList(CLIENT_TO_TOKEN_URN, ClientID, AccessToken);
+            }
+
+            if (!string.IsNullOrWhiteSpace(ResourceOwnerID))
+            {
+                RemoveFromCacheList(RESOURCEOWNER_TO_TOKEN_URN, ResourceOwnerID, AccessToken);
+            }
+
+            return Cache.Remove(TOKEN_URN + AccessToken);
+        }
     }
 }

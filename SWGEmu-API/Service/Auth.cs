@@ -11,6 +11,7 @@ using OAuth2.Server.Model;
 using ServiceStack.ServiceHost;
 using OAuth2.Server.Extension;
 using SWGEmuAPI.Model;
+using OAuth2.DataModels;
 
 namespace OAuth2.Server.Service
 {
@@ -112,6 +113,32 @@ namespace OAuth2.Server.Service
             {
                 StatusCode = System.Net.HttpStatusCode.Redirect,
                 Headers = {{ HttpHeaders.Location, LoginDetails.redirect }},
+            };
+        }
+
+        public object Get(LogoutRequest LogoutDetails)
+        {
+            if (!string.IsNullOrWhiteSpace(LogoutDetails.access_token))
+            {
+                var token = TokenModel.GetToken<DataModels.Token>(LogoutDetails.access_token);
+                if (token != null)
+                {
+                    TokenModel.DeleteToken(token);
+                }
+            }
+
+            var sessionid = this.GetSessionId();
+            if (!string.IsNullOrWhiteSpace(sessionid) && Cache != null)
+            {
+                Cache.Remove(string.Format("sess:{0}:AuthResourceOwner", sessionid));
+            }
+
+            Request.Items.Remove("AuthResourceOwner");
+            this.RemoveSession();
+            return new HttpResult()
+            {
+                StatusCode = System.Net.HttpStatusCode.Redirect,
+                Location = Request.GetReferrerURI().AbsolutePath,
             };
         }
     }
