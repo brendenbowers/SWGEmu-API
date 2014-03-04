@@ -10,7 +10,7 @@ namespace OAuth2.Server.Model
 {
     public class TokenGrantModel
     {        
-        public  ITokenModel                                 TokenModel  { get; set; } //injected by IOC
+        public  ITokenModel     TokenModel  { get; set; } //injected by IOC
 
         public T Authorize<T>(OAuth2.DataModels.Client Client = null, OAuth2.DataModels.ResourceOwner Owner = null, string Scope = "")
             where T : DataModels.Token, new()

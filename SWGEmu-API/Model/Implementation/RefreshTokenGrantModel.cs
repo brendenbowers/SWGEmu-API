@@ -10,19 +10,7 @@ namespace OAuth2.Server.Model
     {
         public ITokenModel TokenModel { get; set; }
         public IApprovalModel ApprovalModel { get; set; }
-
-        public ServiceStack.OrmLite.IDbConnectionFactory DBFactory { get; set; } //injected by IOC
-
-        private IDbConnection _DB = null;
-        protected IDbConnection Db
-        {
-            get
-            {
-                return this._DB ?? (this._DB = ServiceStack.OrmLite.OrmLiteConnectionFactoryExtensions.Open(DBFactory));
-            }
-        }
-
-
+        
         public T Exchange<T>(string RefreshToken, string ClientID)
             where T : DataModels.Token, new()
         {

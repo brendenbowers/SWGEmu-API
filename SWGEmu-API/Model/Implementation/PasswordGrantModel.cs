@@ -13,18 +13,10 @@ namespace OAuth2.Server.Model
     public class PasswordGrantModel
     {
 
-        public IAccountModel AccountModel                                 { get; set; } //injected by IOC
+        public IAccountModel AccountModel                           { get; set; } //injected by IOC
         public IResourceOwnerModel ResourceOwnerModel               { get; set; } //injected by IOC
         public ITokenModel TokenModel                               { get; set; } //injected by IOC
-        public ServiceStack.OrmLite.IDbConnectionFactory DBFactory  { get; set; } //injected by IOC
-        private IDbConnection _DB = null;
-        protected IDbConnection Db
-        {
-            get
-            {
-                return this._DB ?? (this._DB = ServiceStack.OrmLite.OrmLiteConnectionFactoryExtensions.Open(DBFactory));
-            }
-        }
+                
 
         public T Authorize<T>(DataModels.ITokenRequest Request, OAuth2.DataModels.Client Client = null)
             where T : DataModels.Token, new()

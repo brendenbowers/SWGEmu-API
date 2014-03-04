@@ -234,7 +234,7 @@
     </Compile>
     <Compile Include="Model\DataModel\LogoutRequest.cs" />
     <Compile Include="Model\Implementation\CacheDBTokenModel.cs" />
-    <Compile Include="Model\DataModel\AccountModel.cs" />
+    <Compile Include="Model\Implementation\AccountModel.cs" />
     <Compile Include="Model\DataModel\CharacterModel.cs" />
     <Compile Include="Model\DataModel\ApprovalData.cs" />
     <Compile Include="Model\DataModel\ApprovalRequest.cs" />
@@ -269,8 +269,8 @@
     <Compile Include="Model\Interfaces\IResourceOwnerModel.cs" />
     <Compile Include="Model\Interfaces\IScopeModel.cs" />
     <Compile Include="Model\Interfaces\ITokenModel.cs" />
-    <Compile Include="Model\DataModel\StringDetailsModel.cs" />
-    <Compile Include="Model\DataModel\StructureModel.cs" />
+    <Compile Include="Model\Implementation\StringDetailsModel.cs" />
+    <Compile Include="Model\Implementation\StructureModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>

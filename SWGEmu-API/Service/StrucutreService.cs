@@ -17,7 +17,7 @@ namespace SWGEmuAPI.Service
         {
             SWGEmuAPI.Models.Structure.StructureItemDetails details = StructureModel.GetStructureDetails(Req.object_id, Req.owner_object_id);
             var ro = Request.Items.GetValue<ResourceOwner>("auth:user");
-            if (details != null && ro.GetSingle<string>("account_id") != "0" && ro.id.ToUInt() != details.owner_account_id)
+            if (details != null && ro.id != "0" && ro.id.ToUInt() != details.owner_account_id)
             {
                 throw new ArgumentException("Structure does not belong to the authorized user");
             }

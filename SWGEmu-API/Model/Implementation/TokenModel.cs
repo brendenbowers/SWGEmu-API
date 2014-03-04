@@ -5,6 +5,7 @@ using System.Web;
 using System.Data;
 using Dapper;
 using OAuth2.Server.Extension;
+using ServiceStack.OrmLite;
 
 namespace OAuth2.Server.Model
 {
@@ -12,62 +13,65 @@ namespace OAuth2.Server.Model
     {
         public ServiceStack.OrmLite.IDbConnectionFactory DBFactory { get; set; } //injected by IOC
 
-        private IDbConnection _DB = null;
-        protected IDbConnection Db
-        {
-            get
-            {
-                return this._DB ?? (this._DB = ServiceStack.OrmLite.OrmLiteConnectionFactoryExtensions.Open(DBFactory));
-            }
-        }
-
         public IEnumerable<T> GetTokenByResourceOwnerID<T>(string ResourceOwnerID)
             where T : DataModels.Token, new()
         {
             const string sql = "SELECT `AccessToken`.`access_token`,`AccessToken`.`client_id`,`AccessToken`.`resource_owner_id`,`AccessToken`.`issue_time`,`AccessToken`.`expires_in`, COALESCE(GROUP_CONCAT(`AccessToken_Scope`.`scope_name` SEPARATOR  ' '), '') AS scope FROM `AccessToken` LEFT JOIN `AccessToken_Scope` ON `AccessToken`.`access_token` = `AccessToken_Scope`.`access_token` WHERE `AccessToken`.`resource_owner_id` = @resourceownerid GROUP BY `AccessToken`.`access_token`,`AccessToken`.`client_id`,`AccessToken`.`resource_owner_id`,`AccessToken`.`issue_time`,`AccessToken`.`expires_in`;";
-            return Db.Query<T>(sql, new { resourceownerid = ResourceOwnerID });
+            using (IDbConnection db = DBFactory.Open())
+            {
+                return db.Query<T>(sql, new { resourceownerid = ResourceOwnerID }); 
+            }
         }
 
         public IEnumerable<T> GetTokenByClientID<T>(string ClientID)
             where T : DataModels.Token, new()
         {
             const string sql = "SELECT `AccessToken`.`access_token`,`AccessToken`.`client_id`,`AccessToken`.`resource_owner_id`,`AccessToken`.`issue_time`,`AccessToken`.`expires_in`, COALESCE(GROUP_CONCAT(`AccessToken_Scope`.`scope_name` SEPARATOR  ' '), '') AS scope FROM `AccessToken` LEFT JOIN `AccessToken_Scope` ON `AccessToken`.`access_token` = `AccessToken_Scope`.`access_token` WHERE `AccessToken`.`client_id` = @clientid GROUP BY `AccessToken`.`access_token`,`AccessToken`.`client_id`,`AccessToken`.`resource_owner_id`,`AccessToken`.`issue_time`,`AccessToken`.`expires_in`;";
-            return Db.Query<T>(sql, new { clientid = ClientID });
+            using (IDbConnection db = DBFactory.Open())
+            {
+                return db.Query<T>(sql, new { clientid = ClientID }); 
+            }
         }
 
         public T GetToken<T>(string AccessToken)
             where T : DataModels.Token, new()
         {
             const string sql = "SELECT `AccessToken`.`access_token`,`AccessToken`.`client_id`,`AccessToken`.`resource_owner_id`,`AccessToken`.`issue_time`,`AccessToken`.`expires_in`, COALESCE(GROUP_CONCAT(`AccessToken_Scope`.`scope_name` SEPARATOR  ' '), '') AS scope FROM `AccessToken` LEFT JOIN `AccessToken_Scope` ON `AccessToken`.`access_token` = `AccessToken_Scope`.`access_token` WHERE `AccessToken`.`access_token` = @accesstoken GROUP BY `AccessToken`.`access_token`,`AccessToken`.`client_id`,`AccessToken`.`resource_owner_id`,`AccessToken`.`issue_time`,`AccessToken`.`expires_in`;";
-            return Db.Query<T>(sql, new { accesstoken = AccessToken }).FirstOrDefault();
+            using (IDbConnection db = DBFactory.Open())
+            {
+                return db.Query<T>(sql, new { accesstoken = AccessToken }).FirstOrDefault(); 
+            }
         }
 
         public bool InsertToken(OAuth2.DataModels.Token Token)
         {
-            using (IDbTransaction trans = Db.BeginTransaction())
+            using (IDbConnection db = DBFactory.Open())
             {
-                int res = Db.Execute("INSERT INTO AccessToken(access_token, client_id, resource_owner_id, issue_time, expires_in, scope) VALUES (@access_token, @client_id, @resource_owner_id, @issue_time, @expires_in, @scope)",
-                    Token, trans);
-
-                if (res != 1)
+                using (IDbTransaction trans = db.BeginTransaction())
                 {
-                    trans.Rollback();
-                    return false;
-                }
+                    int res = db.Execute("INSERT INTO AccessToken(access_token, client_id, resource_owner_id, issue_time, expires_in, scope) VALUES (@access_token, @client_id, @resource_owner_id, @issue_time, @expires_in, @scope)",
+                        Token, trans);
 
-                const string sql = "INSERT INTO AccessToken_Scope(access_token, scope_name) VALUES(@access_token, @scope_name);";
-
-                foreach (string scope in Token.scope.Split(new char[] { ' ', ',', ';' }, StringSplitOptions.RemoveEmptyEntries))
-                {
-                    if (Db.Execute(sql, new { access_token = Token.access_token, scope_name = scope }, trans) != 1)
+                    if (res != 1)
                     {
                         trans.Rollback();
                         return false;
                     }
-                }
 
-                trans.Commit();
-                return true;
+                    const string sql = "INSERT INTO AccessToken_Scope(access_token, scope_name) VALUES(@access_token, @scope_name);";
+
+                    foreach (string scope in Token.scope.Split(new char[] { ' ', ',', ';' }, StringSplitOptions.RemoveEmptyEntries))
+                    {
+                        if (db.Execute(sql, new { access_token = Token.access_token, scope_name = scope }, trans) != 1)
+                        {
+                            trans.Rollback();
+                            return false;
+                        }
+                    }
+
+                    trans.Commit();
+                    return true;
+                } 
             }
         }
         
@@ -120,7 +124,10 @@ namespace OAuth2.Server.Model
 
         public bool DeleteToken(string AccessToken, string ClientID, string ResourceOwnerID)
         {
-            return Db.Execute("DELETE FROM AccessToken WHERE access_token = @access_token;", new { access_token = AccessToken }) > 0;
+            using (IDbConnection db = DBFactory.Open())
+            {
+                return db.Execute("DELETE FROM AccessToken WHERE access_token = @access_token;", new { access_token = AccessToken }) > 0; 
+            }
         }
     }
 }

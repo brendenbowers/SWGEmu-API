@@ -11,6 +11,7 @@ namespace OAuth2.Server.Model
         public IAuthorizationCodeModel  AuthorizationCodeModel  { get; set; }
         public IApprovalModel           ApprovalModel           { get; set; }
         public ITokenModel              TokenModel              { get; set; }
+        
         public Server.DataModel.AuthorizationCode Authorize(DataModels.ITokenRequest Request, DataModels.Approval Approval, DataModels.Client Client, DataModels.ResourceOwner Owner)
         {
             Server.DataModel.AuthorizationCode code = AuthorizationCodeModel.InsertAuthorizationCode(

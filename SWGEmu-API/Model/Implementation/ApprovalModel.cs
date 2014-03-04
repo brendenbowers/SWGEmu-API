@@ -6,6 +6,7 @@ using System.Data;
 using Dapper;
 using OAuth2.DataModels;
 using OAuth2.Server.Extension;
+using ServiceStack.OrmLite;
 
 
 namespace OAuth2.Server.Model
@@ -13,15 +14,6 @@ namespace OAuth2.Server.Model
     public class ApprovalModel : OAuth2.Server.Model.IApprovalModel
     {
         public ServiceStack.OrmLite.IDbConnectionFactory DBFactory { get; set; } //injected by IOC
-        private IDbConnection _DB = null;
-
-        protected IDbConnection Db
-        {
-            get
-            {
-                return this._DB ?? (this._DB = ServiceStack.OrmLite.OrmLiteConnectionFactoryExtensions.Open(DBFactory));
-            }
-        }
 
         public List<Approval> GetApprovalByResourceOwner(ResourceOwner ResourceOwner)
         {
@@ -37,7 +29,10 @@ namespace OAuth2.Server.Model
 
             const string sql = "SELECT `Approval`.`client_id`,`Approval`.`resource_owner_id`,`Approval`.`refresh_token`,`Approval`.`type`, COALESCE(GROUP_CONCAT(`Approval_Scope`.`scope_name` SEPARATOR  ' '), '') AS scope  FROM `Approval` LEFT JOIN `Approval_Scope` ON `Approval_Scope`.client_id = `Approval`.`client_id`  AND `Approval_Scope`.resource_owner_id = `Approval`.`resource_owner_id`  WHERE `Approval`.`resource_owner_id` = @resourceownerid GROUP BY `Approval`.`client_id`,`Approval`.`resource_owner_id`,`Approval`.`refresh_token`,`Approval`.`type`;";
 
-            return Db.Query<Approval>(sql, new {resourceownerid = ResourceOwnerID}).ToList();
+            using (IDbConnection db = DBFactory.Open())
+            {
+                return db.Query<Approval>(sql, new { resourceownerid = ResourceOwnerID }).ToList(); 
+            }
         }
 
         public List<Approval> GetApprovalByClientID(Client Client)
@@ -54,7 +49,10 @@ namespace OAuth2.Server.Model
 
             const string sql = "SELECT `Approval`.`client_id`,`Approval`.`resource_owner_id`,`Approval`.`refresh_token`,`Approval`.`type`, COALESCE(GROUP_CONCAT(`Approval_Scope`.`scope_name` SEPARATOR  ' '), '') AS scope  FROM `Approval` LEFT JOIN `Approval_Scope` ON `Approval_Scope`.client_id = `Approval`.`client_id`  AND `Approval_Scope`.resource_owner_id = `Approval`.`resource_owner_id`  WHERE `Approval`.`client_id` = @clientid GROUP BY `Approval`.`client_id`,`Approval`.`resource_owner_id`,`Approval`.`refresh_token`,`Approval`.`type`;";
 
-            return Db.Query<Approval>(sql, new { clientid = ClientID }).ToList();
+            using (IDbConnection db = DBFactory.Open())
+            {
+                return db.Query<Approval>(sql, new { clientid = ClientID }).ToList(); 
+            }
         } 
 
         public Approval GetApproval(Client Client, ResourceOwner ResourceOwner)
@@ -64,7 +62,10 @@ namespace OAuth2.Server.Model
             if (ResourceOwner == null)
                 throw new ArgumentNullException("ResourceOwner");
 
-            return GetApproval(Client.id, ResourceOwner.id);
+            using (IDbConnection db = DBFactory.Open())
+            {
+                return GetApproval(Client.id, ResourceOwner.id); 
+            }
         }
 
         public Approval GetApproval(string ClientID, string ResourceOwnerID)
@@ -76,7 +77,10 @@ namespace OAuth2.Server.Model
 
             const string sql = "SELECT `Approval`.`client_id`,`Approval`.`resource_owner_id`,`Approval`.`refresh_token`,`Approval`.`type`, COALESCE(GROUP_CONCAT(`Approval_Scope`.`scope_name` SEPARATOR  ' '), '') AS scope  FROM `Approval` LEFT JOIN `Approval_Scope` ON `Approval_Scope`.client_id = `Approval`.`client_id`  AND `Approval_Scope`.resource_owner_id = `Approval`.`resource_owner_id`  WHERE `Approval`.`client_id` = @clientid AND `Approval`.`resource_owner_id` = @resourceownerid GROUP BY `Approval`.`client_id`,`Approval`.`resource_owner_id`,`Approval`.`refresh_token`,`Approval`.`type`;";
 
-            return Db.Query<Approval>(sql, new { clientid = ClientID, resourceownerid = ResourceOwnerID }).FirstOrDefault();
+            using (IDbConnection db = DBFactory.Open())
+            {
+                return db.Query<Approval>(sql, new { clientid = ClientID, resourceownerid = ResourceOwnerID }).FirstOrDefault(); 
+            }
         }
 
         public Approval GetApprovalByRefreshToken(DataModels.Client Client, string RefreshToken)
@@ -94,71 +98,80 @@ namespace OAuth2.Server.Model
                 throw new ArgumentException("Invalid Refresh Token");
 
             const string sql = "SELECT `Approval`.`client_id`,`Approval`.`resource_owner_id`,`Approval`.`refresh_token`,`Approval`.`type`, COALESCE(GROUP_CONCAT(`Approval_Scope`.`scope_name` SEPARATOR  ' '), '') AS scope FROM `Approval` LEFT JOIN `Approval_Scope` ON `Approval_Scope`.client_id = `Approval`.`client_id` AND `Approval_Scope`.resource_owner_id = `Approval`.`resource_owner_id` WHERE `Approval`.`client_id` = @clientid AND `Approval`.`refresh_token` = @refreshtoken GROUP BY `Approval`.`client_id`,`Approval`.`resource_owner_id`,`Approval`.`refresh_token`,`Approval`.`type`;";
-            return Db.Query<Approval>(sql, new { clientid = ClientID, refreshtoken = RefreshToken }).FirstOrDefault();
+            using (IDbConnection db = DBFactory.Open())
+            {
+                return db.Query<Approval>(sql, new { clientid = ClientID, refreshtoken = RefreshToken }).FirstOrDefault(); 
+            }
         }
 
         public bool AddOrUpdateApproval(Approval Approval)
         {
-            using (IDbTransaction trans = Db.BeginTransaction())
+            using (IDbConnection db = DBFactory.Open())
             {
-                var insertParms = new
+                using (IDbTransaction trans = db.BeginTransaction())
                 {
-                    client_id = Approval.client_id,
-                    resource_owner_id = Approval.resource_owner_id,
-                    scope = Approval.scope,
-                    refresh_token = Approval.refresh_token,
-                    type = Approval.type.ToString(),
-                };
+                    var insertParms = new
+                    {
+                        client_id = Approval.client_id,
+                        resource_owner_id = Approval.resource_owner_id,
+                        scope = Approval.scope,
+                        refresh_token = Approval.refresh_token,
+                        type = Approval.type.ToString(),
+                    };
 
-                int res = Db.Execute("REPLACE INTO Approval(`client_id`,`resource_owner_id`,`scope`,`refresh_token`,`type`) VALUES(@client_id, @resource_owner_id, @scope, @refresh_token, @type)", insertParms, trans);
+                    int res = db.Execute("REPLACE INTO Approval(`client_id`,`resource_owner_id`,`scope`,`refresh_token`,`type`) VALUES(@client_id, @resource_owner_id, @scope, @refresh_token, @type)", insertParms, trans);
 
-                if (res <= 0)
-                {
-                    trans.Rollback();
-                    return false;
-                }
-
-                const string sql = "INSERT INTO Approval_Scope(client_id, resource_owner_id, scope_name) VALUES(@client_id, @resource_owner_id, @scope_name);";
-                
-                foreach (string scope in Approval.scope.Split(new char[] { ' ', ',', ';'}, StringSplitOptions.RemoveEmptyEntries))
-                {
-                    if (Db.Execute(sql, new { client_id = Approval.client_id, resource_owner_id = Approval.resource_owner_id, scope_name = scope}, trans) != 1)
+                    if (res <= 0)
                     {
                         trans.Rollback();
                         return false;
                     }
-                }
 
-                trans.Commit();
-                return true;
+                    const string sql = "INSERT INTO Approval_Scope(client_id, resource_owner_id, scope_name) VALUES(@client_id, @resource_owner_id, @scope_name);";
 
+                    foreach (string scope in Approval.scope.Split(new char[] { ' ', ',', ';' }, StringSplitOptions.RemoveEmptyEntries))
+                    {
+                        if (db.Execute(sql, new { client_id = Approval.client_id, resource_owner_id = Approval.resource_owner_id, scope_name = scope }, trans) != 1)
+                        {
+                            trans.Rollback();
+                            return false;
+                        }
+                    }
+
+                    trans.Commit();
+                    return true;
+
+                } 
             }
 
         }
 
         public bool DeleteApproval(string ClientID, string ResourceOwnerID)
         {
-            using (IDbTransaction transaction = Db.BeginTransaction())
+            using (IDbConnection db = DBFactory.Open())
             {
-                const string approvalSQL = "DELETE FROM `Approval` WHERE `Approval`.`client_id` = @clientid AND `Approval`.resource_owner_id = @resourceownerid";
-                const string tokenSQL = "DELETE FROM `AccessToken` WHERE `AccessToken`.`client_id` = @clientid AND `AccessToken`.`resource_owner_id` = @resourceownerid";
-                var parms = new {clientid = ClientID, resourceownerid = ResourceOwnerID};
-                bool res = Db.Execute(approvalSQL, parms, transaction) > 0;
-                if (!res)
+                using (IDbTransaction transaction = db.BeginTransaction())
                 {
-                    transaction.Rollback();
-                    return false;
-                }
+                    const string approvalSQL = "DELETE FROM `Approval` WHERE `Approval`.`client_id` = @clientid AND `Approval`.resource_owner_id = @resourceownerid";
+                    const string tokenSQL = "DELETE FROM `AccessToken` WHERE `AccessToken`.`client_id` = @clientid AND `AccessToken`.`resource_owner_id` = @resourceownerid";
+                    var parms = new { clientid = ClientID, resourceownerid = ResourceOwnerID };
+                    bool res = db.Execute(approvalSQL, parms, transaction) > 0;
+                    if (!res)
+                    {
+                        transaction.Rollback();
+                        return false;
+                    }
 
-                res = Db.Execute(tokenSQL, parms, transaction) > 0;
-                if (!res)
-                {
-                    transaction.Rollback();
-                    return false;
-                }
+                    res = db.Execute(tokenSQL, parms, transaction) > 0;
+                    if (!res)
+                    {
+                        transaction.Rollback();
+                        return false;
+                    }
 
-                transaction.Commit();
-                return true;
+                    transaction.Commit();
+                    return true;
+                } 
             }
             
 

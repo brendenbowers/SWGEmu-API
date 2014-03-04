@@ -5,7 +5,7 @@ using System.Web;
 using System.Data;
 using OAuth2.DataModels;
 using Dapper;
-
+using ServiceStack.OrmLite;
 using ServiceStack.ServiceHost;
 
 
@@ -16,15 +16,7 @@ namespace OAuth2.Server.Model
     {
         public ServiceStack.OrmLite.IDbConnectionFactory DBFactory { get; set; } //injected by IOC
         public IHttpResponse Response { get; set; }
-        private IDbConnection _DB = null;
-
-        protected IDbConnection Db
-        {
-            get
-            {
-                return this._DB ?? (this._DB = ServiceStack.OrmLite.OrmLiteConnectionFactoryExtensions.Open(DBFactory));
-            }
-        }
+        
 
         public IEnumerable<Scope> GetScopeDetails(string Scopes)
         {
@@ -37,14 +29,20 @@ namespace OAuth2.Server.Model
                 return new List<Scope>();
 
             const string sql = "SELECT `scope_name`,`description`,`owned_by` FROM `Scope` WHERE `scope_name` IN @scopes";
-            
-            return Db.Query<Scope>(sql, new { scopes = Scopes });
+
+            using (IDbConnection db = DBFactory.Open())
+            {
+                return db.Query<Scope>(sql, new { scopes = Scopes }); 
+            }
         }
 
         public IEnumerable<Scope> GetScopeDetails()
         {
             const string sql = "SELECT `scope_name`,`description`,`owned_by` FROM `Scope`;";
-            return Db.Query<Scope>(sql);
+            using (IDbConnection db = DBFactory.Open())
+            {
+                return db.Query<Scope>(sql); 
+            }
         }
 
         public IEnumerable<Scope> GetOwnedScopeDetails(ResourceOwner Owner)
@@ -55,18 +53,24 @@ namespace OAuth2.Server.Model
         public IEnumerable<Scope> GetOwnedScopeDetails(string ResourceOwnerID)
         {
             const string sql = "SELECT `scope_name`,`description`,`owned_by` FROM `Scope` WHERE (COALESCE(`owned_by`,'NULL') = COALESCE(@owned_by, 'NULL'))";
-            return Db.Query<Scope>(sql, new { owned_by = ResourceOwnerID });
+            using (IDbConnection db = DBFactory.Open())
+            {
+                return db.Query<Scope>(sql, new { owned_by = ResourceOwnerID }); 
+            }
         }
         
         public Scope CreateScope(Scope Scope)
         {
             const string sql = "INSERT INTO Scope(`scope_name`,`description`,`owned_by`) VALUES(@scope_name,@description,@owned_by);";
 
-            if (Db.Execute(sql, Scope) != 0)
+            using (IDbConnection db = DBFactory.Open())
             {
-                return Scope;
+                if (db.Execute(sql, Scope) != 0)
+                {
+                    return Scope;
+                }
+                return null; 
             }
-            return null;
         }
 
 
@@ -78,23 +82,29 @@ namespace OAuth2.Server.Model
         public Scope SetScope(Scope Scope, string OwnerID)
         {
             const string sql = "UPDATE Scope SET `description` = @description, `owned_by` = @owned_by WHERE `scope_name` = @scope_name AND (COALESCE(`owned_by`,'NULL') = COALESCE(@resource_owner_id, 'NULL'))";
-            if (Db.Execute(sql, new { description = Scope.description, owned_by = Scope.owned_by, resource_owner_id = OwnerID }) != 0)
+            using (IDbConnection db = DBFactory.Open())
             {
-                return Scope;
-            }
+                if (db.Execute(sql, new { description = Scope.description, owned_by = Scope.owned_by, resource_owner_id = OwnerID }) != 0)
+                {
+                    return Scope;
+                }
 
-            return null;
+                return null; 
+            }
         }
 
         public Scope SetScope(Scope Scope)
         {
             const string sql = "UPDATE Scope SET `description` = @description, `owned_by` = @owned_by WHERE `scope_name` = @scope_name";
-            if (Db.Execute(sql, Scope) != 0)
+            using (IDbConnection db = DBFactory.Open())
             {
-                return Scope;
-            }
+                if (db.Execute(sql, Scope) != 0)
+                {
+                    return Scope;
+                }
 
-            return null;
+                return null; 
+            }
         }
 
         public Scope UpdateScope(Scope Scope, ResourceOwner Owner)
@@ -105,23 +115,29 @@ namespace OAuth2.Server.Model
         public Scope UpdateScope(Scope Scope, string OwnerID)
         {
             const string sql = "UPDATE Scope SET `description` =  COALESCE(`description`, @description), `owned_by` = COALESCE(`owned_by`, @owned_by) WHERE `scope_name` = @scope_name AND (COALESCE(`owned_by`,'NULL') = COALESCE(@resource_owner_id, 'NULL'))";
-            if (Db.Execute(sql, new { description = Scope.description, owned_by = Scope.owned_by, resource_owner_id = OwnerID }) != 0)
+            using (IDbConnection db = DBFactory.Open())
             {
-                return Scope;
-            }
+                if (db.Execute(sql, new { description = Scope.description, owned_by = Scope.owned_by, resource_owner_id = OwnerID }) != 0)
+                {
+                    return Scope;
+                }
 
-            return null;
+                return null; 
+            }
         }
 
         public Scope UpdateScope(Scope Scope)
         {
             const string sql = "UPDATE Scope SET `description` =  COALESCE(`description`, @description), `owned_by` = COALESCE(`owned_by`, @owned_by) WHERE `scope_name` = @scope_name;";
-            if (Db.Execute(sql, Scope) != 0)
+            using (IDbConnection db = DBFactory.Open())
             {
-                return Scope;
-            }
+                if (db.Execute(sql, Scope) != 0)
+                {
+                    return Scope;
+                }
 
-            return null;
+                return null; 
+            }
         }
 
         public bool DeleteScope(Scope Scope, ResourceOwner Owner)
@@ -132,7 +148,10 @@ namespace OAuth2.Server.Model
         public bool DeleteScope(string ScopeName, string OwnerID)
         {
             const string sql = "DELETE FROM Scope WHERE `scope_name` = @scope_name AND (COALESCE(`owned_by`,'NULL') = COALESCE(@resource_owner_id, 'NULL'));";
-            return Db.Execute(sql, new { scope_name = ScopeName, owned_by = OwnerID }) != 0;
+            using (IDbConnection db = DBFactory.Open())
+            {
+                return db.Execute(sql, new { scope_name = ScopeName, owned_by = OwnerID }) != 0; 
+            }
         }
 
         public bool DeleteScope(Scope Scope)
@@ -143,14 +162,20 @@ namespace OAuth2.Server.Model
         public bool DeleteScope(string ScopeName)
         {
             const string sql = "DELETE FROM Scope WHERE `scope_name` = @scope_name;";
-            return Db.Execute(sql, new { scope_name = ScopeName }) != 0;
+            using (IDbConnection db = DBFactory.Open())
+            {
+                return db.Execute(sql, new { scope_name = ScopeName }) != 0; 
+            }
         }
 
 
         public bool ScopeExists(string Scope)
         {
             const string sql = "SELECT COUNT(*) FROM Scope WHERE scope_name = @scope_name";
-            return Db.Query<long>(sql, new { scope_name = Scope }).Single() != 0;
+            using (IDbConnection db = DBFactory.Open())
+            {
+                return db.Query<long>(sql, new { scope_name = Scope }).Single() != 0; 
+            }
         }
 
         public bool ScopeExists(Scope Scope)
