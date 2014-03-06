@@ -1,6 +1,0 @@
-syntax: glob
-packages
-*.user
-SWGEmu-API/bin
-*.suo
-SWGEmu-API/obj

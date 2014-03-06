@@ -300,7 +300,7 @@
     <Folder Include="Validators\Interfaces\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\CSharp-OAuth2\OAuth2.DataModels\OAuth2.DataModels.csproj">
+    <ProjectReference Include="..\OAuth2.DataModels\OAuth2.DataModels.csproj">
       <Project>{18402de4-9d02-428b-80f1-5b3288cdecc8}</Project>
       <Name>OAuth2.DataModels</Name>
     </ProjectReference>

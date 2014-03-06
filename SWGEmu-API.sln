@@ -14,7 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		CopyAndBuildProto.bat = CopyAndBuildProto.bat
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuth2.DataModels", "..\CSharp-OAuth2\OAuth2.DataModels\OAuth2.DataModels.csproj", "{18402DE4-9D02-428B-80F1-5B3288CDECC8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuth2.DataModels", "OAuth2.DataModels\OAuth2.DataModels.csproj", "{18402DE4-9D02-428B-80F1-5B3288CDECC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
