@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using OAuth2.DataModels;
-using SWGEmuAPI.Models.Account;
+using SWGEmuAPI.Model.Account;
 
 namespace OAuth2.Server.Extension
 {

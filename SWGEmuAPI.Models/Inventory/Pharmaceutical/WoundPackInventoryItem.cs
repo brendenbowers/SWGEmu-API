@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace SWGEmuAPI.Models.Inventory.Pharmaceutical
+namespace SWGEmuAPI.Model.Inventory.Pharmaceutical
 {
     public class WoundPackInventoryItem : PharmaceuticalInventoryItem
     {

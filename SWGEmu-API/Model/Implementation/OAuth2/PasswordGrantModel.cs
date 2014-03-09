@@ -6,7 +6,7 @@ using System.Data;
 using System.Security;
 using OAuth2.Server.Extension;
 using SWGEmuAPI.Model;
-using SWGEmuAPI.Models.Account;
+using SWGEmuAPI.Model.Account;
 
 namespace OAuth2.Server.Model
 {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace SWGEmuAPI.Models.Character
+namespace SWGEmuAPI.Model.Character
 {
     public class CharacterResponse : CharacterDetailsRequest
     {

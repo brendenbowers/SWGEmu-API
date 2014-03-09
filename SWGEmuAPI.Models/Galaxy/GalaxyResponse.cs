@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace SWGEmuAPI.Models.Galaxy
+namespace SWGEmuAPI.Model.Galaxy
 {
     public class GalaxyResponse : GalaxyRequest
     {

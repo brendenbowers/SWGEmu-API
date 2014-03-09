@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace SWGEmuAPI.Models.Inventory.Armor
+namespace SWGEmuAPI.Model.Inventory.Armor
 {
     public enum ArmorRating : int
     {

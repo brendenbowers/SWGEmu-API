@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace SWGEmuAPI.Models.Inventory
+namespace SWGEmuAPI.Model.Inventory
 {
     public class CharacterInventoryItem
     {

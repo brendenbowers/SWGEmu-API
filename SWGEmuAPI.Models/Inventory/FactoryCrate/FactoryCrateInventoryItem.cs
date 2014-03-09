@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace SWGEmuAPI.Models.Inventory.FactoryCrate
+namespace SWGEmuAPI.Model.Inventory.FactoryCrate
 {
     public class FactoryCrateInventoryItem : CharacterInventoryItem
     {

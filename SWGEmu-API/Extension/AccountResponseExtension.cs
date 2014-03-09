@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace SWGEmuAPI.Models.Account
+namespace SWGEmuAPI.Model.Account
 {
     public static class AccountResponseExtension
     {
-        public static Dictionary<string, object[]> ToDictonary(this SWGEmuAPI.Models.Account.AccountResponse res)
+        public static Dictionary<string, object[]> ToDictonary(this SWGEmuAPI.Model.Account.AccountResponse res)
         {
             return new Dictionary<string, object[]> 
             {

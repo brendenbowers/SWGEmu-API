@@ -8,7 +8,7 @@ using System.Text.RegularExpressions;
 
 namespace SWGEmuAPI.Model
 {
-    public class StringDetailsModel
+    public class StringDetailsModel : IStringDetailsModel
     {
 
         private static Regex MATCHSTRINGID = new Regex(@"@(?<filename>\w+):(?<id>\w+)", RegexOptions.Compiled);
@@ -68,7 +68,15 @@ namespace SWGEmuAPI.Model
                 File = File.Substring(0, File.Length - 4);
             }
 
-            return _fileDetails.GetOrAdd(File, LoadFile).Get(Item);
+            try
+            {
+                return _fileDetails.GetOrAdd(File, LoadFile).Get(Item);
+            }
+            catch (FileNotFoundException) { }
+            catch (DirectoryNotFoundException) { }
+
+            return string.Format("@{0}:{1}", File, Item);
+            
         }
         /// <summary>
         /// Item Details for the id in format of @{File}:Item

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace SWGEmuAPI.Models.Inventory.Resource
+namespace SWGEmuAPI.Model.Inventory.Resource
 {
     public class ResourceSpawnClass
     {

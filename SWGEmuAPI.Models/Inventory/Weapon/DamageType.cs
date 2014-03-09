@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace SWGEmuAPI.Models.Inventory.Weapon
+namespace SWGEmuAPI.Model.Inventory.Weapon
 {
     public enum WeaponDamageType : int
     {

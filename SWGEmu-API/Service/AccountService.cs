@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using swgemurpcserver.rpc;
-using SWGEmuAPI.Models.Account;
+using SWGEmuAPI.Model.Account;
 using OAuth2.DataModels;
 
 namespace SWGEmuAPI.Service
@@ -13,7 +13,7 @@ namespace SWGEmuAPI.Service
     {
         public Model.IAccountModel AccountModel { get; set; }
 
-        public List<AccountResponse> Get(SWGEmuAPI.Models.Account.AccontRequest Req)
+        public List<AccountResponse> Get(SWGEmuAPI.Model.Account.AccontRequest Req)
         {
             var ro = Request.Items.GetValue<ResourceOwner>("auth:user");
             uint roAccountID = ro.id.ToUInt(); 

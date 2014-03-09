@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using ServiceStack.ServiceHost;
 
-namespace SWGEmuAPI.Models.Character
+namespace SWGEmuAPI.Model.Character
 {
     [Route("/account/{account_id}/characters", Verbs = "GET")]
     [Route("/account/characters", Verbs = "GET")]

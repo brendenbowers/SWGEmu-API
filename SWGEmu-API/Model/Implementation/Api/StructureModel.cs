@@ -4,14 +4,16 @@ using System.Linq;
 using System.Web;
 using DeltaVSoft.RCFProto;
 using swgemurpcserver.rpc;
-using SWGEmuAPI.Models.Inventory;
-using SWGEmuAPI.Models.Structure;
+using SWGEmuAPI.Model.Inventory;
+using SWGEmuAPI.Model.Structure;
 
 namespace SWGEmuAPI.Model
 {
-    public class StructureModel
+    public class StructureModel : IStructureModel
     {
         public SWGEmuStructureItemDetailsService.Stub RPCServiceStub { get; set; }
+        
+        public IStructureTransformModel StructureTransform { get; set; }
 
         public StructureItemDetails GetStructureDetails(ulong objectID, ulong? ownerID)
         {
@@ -41,7 +43,7 @@ namespace SWGEmuAPI.Model
                 var structDetails = res.StructuresList.FirstOrDefault();
                 if (structDetails != null)
                 {
-                    return structDetails.ToStructureItemDetails();
+                    return StructureTransform.TransformStructureDetails(structDetails);
                 }
             }
             return null;

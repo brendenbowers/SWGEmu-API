@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using ServiceStack.ServiceHost;
 
-namespace SWGEmuAPI.Models.Galaxy
+namespace SWGEmuAPI.Model.Galaxy
 {
     [Route("/galaxy",Verbs="GET")]
     [Route("/galaxy/{galaxy_id}", Verbs = "GET")]

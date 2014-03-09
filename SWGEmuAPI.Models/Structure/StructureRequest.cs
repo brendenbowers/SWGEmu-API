@@ -5,7 +5,7 @@ using System.Text;
 using ServiceStack.ServiceHost;
 
 
-namespace SWGEmuAPI.Models.Structure
+namespace SWGEmuAPI.Model.Structure
 {
     [Route("/structures",Verbs="GET")]    
     public class StructureRequest

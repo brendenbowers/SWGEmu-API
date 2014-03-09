@@ -2,28 +2,28 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using SWGEmuAPI.Models.Inventory;
-using SWGEmuAPI.Models.Inventory.Armor;
-using SWGEmuAPI.Models.Inventory.Crafting;
-using SWGEmuAPI.Models.Inventory.FactoryCrate;
-using SWGEmuAPI.Models.Inventory.Pharmaceutical;
-using SWGEmuAPI.Models.Inventory.Resource;
-using SWGEmuAPI.Models.Inventory.Weapon;
+using SWGEmuAPI.Model.Inventory;
+using SWGEmuAPI.Model.Inventory.Armor;
+using SWGEmuAPI.Model.Inventory.Crafting;
+using SWGEmuAPI.Model.Inventory.FactoryCrate;
+using SWGEmuAPI.Model.Inventory.Pharmaceutical;
+using SWGEmuAPI.Model.Inventory.Resource;
+using SWGEmuAPI.Model.Inventory.Weapon;
+using SWGEmuAPI.Model;
 
-namespace SWGEmuAPI.Models.Inventory
+namespace SWGEmuAPI.Model
 {
-    public static class CharacterInventoryItemExtensions
+    public class InventoryItemTransformModel : IInventoryItemTransformModel
     {
+        public IStringDetailsModel StringDetailsModel { get; set; }
 
-        public static Model.StringDetailsModel StringDetailsModel { get; set; }
-        
-        public static Models.Inventory.CharacterInventoryItem ToInventoryItem(this swgemurpcserver.rpc.CharacterInventoryItem inventoryItem)
+        public Model.Inventory.CharacterInventoryItem TransformInventoryItem(swgemurpcserver.rpc.CharacterInventoryItem inventoryItem)
         {
-            Models.Inventory.CharacterInventoryItem returnVal = null;
+            Model.Inventory.CharacterInventoryItem returnVal = null;
 
             if (inventoryItem.HasArmorDetails)
             {
-                returnVal = new Models.Inventory.Armor.ArmorInventoryItem()
+                returnVal = new Model.Inventory.Armor.ArmorInventoryItem()
                 {
                     acid = inventoryItem.ArmorDetails.Acid,
                     action_encumberance = inventoryItem.ArmorDetails.ActionEncumberance,
@@ -43,7 +43,7 @@ namespace SWGEmuAPI.Models.Inventory
             }
             else if (inventoryItem.HasWeaponDetails)
             {
-                returnVal = new Models.Inventory.Weapon.WeaponInventoryItem()
+                returnVal = new Model.Inventory.Weapon.WeaponInventoryItem()
                 {
                      action_attack_cost = inventoryItem.WeaponDetails.ActionAttackCost,
                      armor_piercing = inventoryItem.WeaponDetails.ArmorPiercing,
@@ -67,7 +67,7 @@ namespace SWGEmuAPI.Models.Inventory
             }
             else if (inventoryItem.HasResourceDetails)
             {
-                returnVal = new Models.Inventory.Resource.ResourceContainerInventoryItem()
+                returnVal = new Model.Inventory.Resource.ResourceContainerInventoryItem()
                 {
                     attributes = inventoryItem.ResourceDetails.AttributesList
                         .ToList()
@@ -87,7 +87,7 @@ namespace SWGEmuAPI.Models.Inventory
             {
                 returnVal = new FactoryCrateInventoryItem()
                 {
-                     contained_items = inventoryItem.FactoryCrateDetails.ContainedItems.ToInventoryItem(),
+                     contained_items = TransformInventoryItem(inventoryItem.FactoryCrateDetails.ContainedItems),
                      count = inventoryItem.FactoryCrateDetails.Count,
                      max_items = inventoryItem.FactoryCrateDetails.MaxItems
                 };
@@ -182,7 +182,7 @@ namespace SWGEmuAPI.Models.Inventory
                 returnVal = new ManufacturingSchematicInventoryItem()
                 {
                     manufacture_limit = inventoryItem.MfgSchemDetails.ManufactureLimit,
-                    prototype_details = inventoryItem.MfgSchemDetails.PrototypeDetails.ToInventoryItem(),
+                    prototype_details = TransformInventoryItem(inventoryItem.MfgSchemDetails.PrototypeDetails),
                     blueprint_entries = inventoryItem.MfgSchemDetails.BlueprintEntriesList
                         .ToList()
                         .ConvertAll<BlueprintEntryItem>(cur => new BlueprintEntryItem()
@@ -200,7 +200,7 @@ namespace SWGEmuAPI.Models.Inventory
                              identical = cur.Identical,
                              ingredient_slot_name = cur.IngredientSlotName,
                              required_quantity = cur.RequiredQuantity,
-                             ingredient = cur.Ingredient.ToInventoryItem()
+                             ingredient = TransformInventoryItem(cur.Ingredient)
                         }).ToList()
 
                 };
@@ -208,7 +208,7 @@ namespace SWGEmuAPI.Models.Inventory
 
             if (returnVal == null)
             {
-                returnVal = new Models.Inventory.CharacterInventoryItem();
+                returnVal = new Model.Inventory.CharacterInventoryItem();
             }
 
             returnVal.portals_file_name = inventoryItem.PortalsFileName;

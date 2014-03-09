@@ -83,7 +83,7 @@ namespace OAuth2.Server.Service
             
             OAuth2.DataModels.ResourceOwner owner = null;
 
-            List<SWGEmuAPI.Models.Account.AccountResponse> accounts = AccountModel.GetAccount(LoginDetails.username, userPassword);
+            List<SWGEmuAPI.Model.Account.AccountResponse> accounts = AccountModel.GetAccount(LoginDetails.username, userPassword);
 
 
             if (accounts == null || accounts.Count == 0)

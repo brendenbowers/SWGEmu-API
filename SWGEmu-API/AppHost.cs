@@ -22,6 +22,7 @@ using ServiceStack.ServiceInterface.Validation;
 using OAuth2.DataModels;
 using ServiceStack.CacheAccess.Providers;
 using ServiceStack.Common.Web;
+using SWGEmuAPI.Model;
 
 namespace SWGEmuAPI
 {
@@ -51,14 +52,17 @@ namespace SWGEmuAPI
 
             container.Register<RcfProtoChannel>(AccquireChannel).ReusedWithin(ReuseScope.Request);
 
+            container.RegisterAutoWiredAs<InventoryItemTransformModel,IInventoryItemTransformModel>();
+            container.RegisterAutoWiredAs<StructureTransformModel, IStructureTransformModel>();
+
             container.Register<swgemurpcserver.rpc.SWGEmuAccountService.Stub>(c => swgemurpcserver.rpc.SWGEmuAccountService.CreateStub(c.Resolve<DeltaVSoft.RCFProto.RcfProtoChannel>())).ReusedWithin(ReuseScope.Request);
             container.Register<swgemurpcserver.rpc.SWGEmuCharacterDetailsService.Stub>(c => swgemurpcserver.rpc.SWGEmuCharacterDetailsService.Stub.CreateStub(c.Resolve<DeltaVSoft.RCFProto.RcfProtoChannel>())).ReusedWithin(ReuseScope.Request);
             container.Register<swgemurpcserver.rpc.SWGEmuStructureItemDetailsService.Stub>(c => swgemurpcserver.rpc.SWGEmuStructureItemDetailsService.CreateStub(c.Resolve<RcfProtoChannel>())).ReusedWithin(ReuseScope.Request);
             container.RegisterAutoWiredAs<Model.AccountModel, Model.IAccountModel>().ReusedWithin(ReuseScope.Request);
-            container.RegisterAutoWired<Model.CharacterModel>().ReusedWithin(ReuseScope.Request);
-            container.RegisterAutoWired<Model.StructureModel>().ReusedWithin(ReuseScope.Request);
+            container.RegisterAutoWiredAs<Model.CharacterModel, Model.ICharacterModel>().ReusedWithin(ReuseScope.Request);
+            container.RegisterAutoWiredAs<Model.StructureModel, IStructureModel>().ReusedWithin(ReuseScope.Request);
 
-            container.Register<Model.StringDetailsModel>(c =>
+            container.Register<Model.IStringDetailsModel>(c =>
                 {
 
                     string path = SWGEmuAPI.Properties.Settings.Default.DetailsFilePath;
@@ -67,21 +71,12 @@ namespace SWGEmuAPI
                     //throw new Exception(ServiceStack.Text.JsonSerializer.SerializeToString<List<string>>(realpaths));
                     if (!pathInfo.Exists)
                     {
-                        throw new System.IO.DirectoryNotFoundException("Direcotry for string details not found: " + path);
+                        //throw new System.IO.DirectoryNotFoundException("Direcotry for string details not found: " + path);
                     }
 
                     return new Model.StringDetailsModel(new FileSystemVirtualDirectory(VirtualPathProvider, null, pathInfo));
                 }).ReusedWithin(ReuseScope.Hierarchy);
 
-            try
-            {
-                SWGEmuAPI.Models.Inventory.CharacterInventoryItemExtensions.StringDetailsModel = container.Resolve<Model.StringDetailsModel>();
-                SWGEmuAPI.Models.Structure.StructureItemDetailsExtension.StringDetailsModel = container.Resolve<Model.StringDetailsModel>();
-            }
-            catch (Exception diex)
-            {
-
-            }
 
             SetConfig(new EndpointHostConfig
             {
@@ -98,17 +93,18 @@ namespace SWGEmuAPI
                     ? emitGlobalHeadersHandler
                     : null); 
 
+            //cahcing
             container.Register<IRedisClientsManager>(c => new PooledRedisClientManager("localhost:6379"));
             container.Register<ICacheClient>(c => (ICacheClient)c.Resolve<IRedisClientsManager>().GetCacheClient()).ReusedWithin(Funq.ReuseScope.None);
             container.Register<IRedisClient>(c => c.Resolve<IRedisClientsManager>().GetClient()).ReusedWithin(Funq.ReuseScope.Request);
-            //container.Register<ICacheClient>(new MemoryCacheClient());
 
             Plugins.Add(new ServiceStack.ServiceInterface.Admin.RequestLogsFeature());
             Plugins.Add(new RazorFormat());
             Plugins.Add(new SessionFeature());
             Plugins.Add(new ValidationFeature());
 
-            //container.RegisterValidators(typeof(Validators.ValidateClient).Assembly);
+
+            //OAuth2 classes
             container.Register<IDbConnectionFactory>(c => new OrmLiteConnectionFactory(Properties.Settings.Default.ConnectionString, ServiceStack.OrmLite.MySql.MySqlDialectProvider.Instance));
             container.RegisterAutoWiredAs<OAuth2.Server.Model.ClientModel, OAuth2.Server.Model.IClientModel>();
             container.RegisterAutoWiredAs<OAuth2.Server.Model.ResourceOwnerModel, OAuth2.Server.Model.IResourceOwnerModel>();
@@ -124,6 +120,7 @@ namespace SWGEmuAPI
             container.RegisterAutoWired<OAuth2.Server.Model.RefreshTokenGrantModel>();
             container.RegisterAutoWired<OAuth2.Server.Model.TokenGrantModel>();
 
+            //add filter to inject client details from basic auth
             RequestFilters.Add(AddClientDetails);
         }
 

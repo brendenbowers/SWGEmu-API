@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using SWGEmuAPI.Models.Inventory;
+using SWGEmuAPI.Model.Inventory;
 
-namespace SWGEmuAPI.Models.Structure
+namespace SWGEmuAPI.Model.Structure
 {
     public class FactoryInstallationItemDeatils : InstallationStructureItemDetails
     {

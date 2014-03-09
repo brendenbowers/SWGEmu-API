@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using swgemurpcserver.rpc;
-using SWGEmuAPI.Models.Account;
+using SWGEmuAPI.Model.Account;
 using OAuth2.DataModels;
 
 namespace SWGEmuAPI.Service
@@ -11,11 +11,11 @@ namespace SWGEmuAPI.Service
     [OAuth2.Server.Attributes.BearerTokenAuthenticate]
     public class CharacterService : ServiceStack.ServiceInterface.Service
     {
-        public Model.CharacterModel CharacterModel { get; set; }
+        public Model.ICharacterModel CharacterModel { get; set; }
 
-        public List<Models.Character.CharacterDetailsResponse> Get(Models.Character.CharacterDetailsRequest req)
+        public List<Model.Character.CharacterDetailsResponse> Get(Model.Character.CharacterDetailsRequest req)
         {
-            List<Models.Character.CharacterDetailsResponse> res = null;
+            List<Model.Character.CharacterDetailsResponse> res = null;
             if (req.character_oid != 0)
             {                
                 res = CharacterModel.GetCharacter(req.character_oid, req.account_id);

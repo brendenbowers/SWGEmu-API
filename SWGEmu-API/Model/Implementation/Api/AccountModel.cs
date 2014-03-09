@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using swgemurpcserver.rpc;
-using SWGEmuAPI.Models.Account;
+using SWGEmuAPI.Model.Account;
 using DeltaVSoft.RCFProto;
 
 namespace SWGEmuAPI.Model
@@ -81,12 +81,12 @@ namespace SWGEmuAPI.Model
                     };
                     accounts.Add(foundAccount);
 
-                    foundAccount.characters = new List<Models.Character.CharacterResponse>();
+                    foundAccount.characters = new List<Model.Character.CharacterResponse>();
 
                     foreach (var character in account.CharactersList)
                     {
 
-                        var charResponse = new Models.Character.CharacterResponse()
+                        var charResponse = new Model.Character.CharacterResponse()
                         {
                             account_id = account.AccountId,
                             character_oid = character.ObjectId,

@@ -2,16 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using SWGEmuAPI.Models.Structure;
-using SWGEmuAPI.Models.Inventory;
+using SWGEmuAPI.Model.Structure;
+using SWGEmuAPI.Model.Inventory;
+using SWGEmuAPI.Model;
 
-namespace SWGEmuAPI.Models.Structure
+namespace SWGEmuAPI.Model
 {
-    public static class StructureItemDetailsExtension
+    public class StructureTransformModel  : IStructureTransformModel
     {
-        public static Model.StringDetailsModel StringDetailsModel { get; set; }
+        public IStringDetailsModel StringDetails { get; set; }
+        public IInventoryItemTransformModel InventoryTransform { get; set; }
 
-        public static StructureItemDetails ToStructureItemDetails(this swgemurpcserver.rpc.SWGEmuStructureItemDetails details)
+        public StructureItemDetails TransformStructureDetails(swgemurpcserver.rpc.SWGEmuStructureItemDetails details)
         {
             StructureItemDetails structItem = null;
             if (details.HasBuildingDetails)
@@ -19,7 +21,7 @@ namespace SWGEmuAPI.Models.Structure
                 structItem = new BuildingStructureItemDetails()
                 {
                     contained_items = details.BuildingDetails.ContainedItemsList.ToList()
-                        .ConvertAll<object>(cur => cur.ToInventoryItem()).ToList()
+                        .ConvertAll<object>(cur => InventoryTransform.TransformInventoryItem(cur)).ToList()
                 };
             }
             else if (details.HasInstallationDetails)
@@ -29,9 +31,9 @@ namespace SWGEmuAPI.Models.Structure
                 {
                     instDetails = new FactoryInstallationItemDeatils()
                     {
-                        shcematic = details.InstallationDetails.FactoryDetails.Schematic.ToInventoryItem(),
+                        shcematic = InventoryTransform.TransformInventoryItem(details.InstallationDetails.FactoryDetails.Schematic),
                         ingredient_items = details.InstallationDetails.FactoryDetails.IngredientItemsList.ToList()
-                            .ConvertAll<object>(cur => cur.ToInventoryItem()).ToList()
+                            .ConvertAll<object>(cur => InventoryTransform.TransformInventoryItem(cur)).ToList()
                     };
                 }
                 else if (details.InstallationDetails.HasHarvesterDetails)
@@ -51,7 +53,7 @@ namespace SWGEmuAPI.Models.Structure
                 instDetails.max_hopper_size = details.InstallationDetails.MaxHopperSize;
                 instDetails.actual_rate = details.InstallationDetails.ActualRate;
                 instDetails.hopper_items = details.InstallationDetails.HopperItemsList.ToList()
-                    .ConvertAll<object>(cur => cur.ToInventoryItem()).ToList();
+                    .ConvertAll<object>(cur => InventoryTransform.TransformInventoryItem(cur)).ToList();
 
                 structItem = instDetails;
             }
@@ -78,26 +80,26 @@ namespace SWGEmuAPI.Models.Structure
             structItem.world_z = details.WorldZ;
             structItem.zone = details.Zone;
 
-            if (StringDetailsModel != null)
+            if (StringDetails != null)
             {
-                structItem.resolved_object_name = StringDetailsModel.Get(details.ObjectName);
+                structItem.resolved_object_name = StringDetails.Get(details.ObjectName);
             }
 
             return structItem;
         }
 
-        public static StructureItem ToStructureItem(this swgemurpcserver.rpc.SWGEmuCharacterStructureItem charStructItem)
+        public StructureItem TransformStructure(swgemurpcserver.rpc.SWGEmuCharacterStructureItem charStructItem)
         {
-            var item =  new StructureItem()
+            var item = new StructureItem()
             {
-                 display_name = charStructItem.DisplayName,
-                 object_id = charStructItem.ObjectId,
-                 object_name = charStructItem.ObjectName
+                display_name = charStructItem.DisplayName,
+                object_id = charStructItem.ObjectId,
+                object_name = charStructItem.ObjectName
             };
 
-            if (StringDetailsModel != null)
+            if (StringDetails != null)
             {
-                item.resolved_object_name = StringDetailsModel.Get(charStructItem.ObjectName);
+                item.resolved_object_name = StringDetails.Get(charStructItem.ObjectName);
             }
 
             return item;

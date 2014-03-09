@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using swgemurpcserver.rpc;
-using SWGEmuAPI.Models.Character;
-using SWGEmuAPI.Models.Inventory;
-using SWGEmuAPI.Models.Structure;
+using SWGEmuAPI.Model.Character;
+using SWGEmuAPI.Model.Inventory;
+using SWGEmuAPI.Model.Structure;
 using DeltaVSoft.RCFProto;
 
 namespace SWGEmuAPI.Model
 {
-    public class CharacterModel
+    public class CharacterModel : ICharacterModel
     {
         public SWGEmuCharacterDetailsService.Stub RPCServiceStub { get; set; }
+        public IInventoryItemTransformModel InventoryTransform { get; set; }
+        public IStructureTransformModel StructureTransform { get; set; }
 
         public List<CharacterDetailsResponse> GetCharacter(string characterName, uint accountID)
         {
@@ -69,14 +71,14 @@ namespace SWGEmuAPI.Model
                 {
                     charDetails.Inventory = character.InventoryItemsList
                         .ToList()
-                        .ConvertAll<object>(cur => cur.ToInventoryItem())
+                        .ConvertAll<object>(cur => InventoryTransform.TransformInventoryItem(cur))
                         .ToList();
                 }
 
                 if (character.StructuresList.Count > 0)
                 {
                     charDetails.Structures = character.StructuresList.ToList()
-                        .ConvertAll<StructureItem>(cur => cur.ToStructureItem()).ToList();
+                        .ConvertAll<StructureItem>(cur => StructureTransform.TransformStructure(cur)).ToList();
                 }
 
                 if (character.HasBiography)
